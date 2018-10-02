@@ -1,0 +1,102 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    {% block stylesheets %}
+        {# {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %} #}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css', 99) %}
+        {% do assets.addCss('theme://css/custom.css', 98) %}
+        {% do assets.addCss('theme://css/lib.css', 98) %}
+    {% endblock %}
+        
+    {# {% endblock %} #}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {# {% do assets.addJs('jquery', 100) %} #}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }} site-container">
+
+{% block header %}
+    {# <div class="header">
+        <div class="wrapper padding">
+            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
+                <i class="fa fa-rebel"></i>
+                {{ config.site.title }}
+            </a>
+            {% block header_navigation %}
+            <nav class="main-nav">
+                {% include 'partials/navigation.html.twig' %}
+            </nav>
+            {% endblock %}
+        </div>
+    </div> #}
+    <section style="margin: 0px 5%;">
+      <section class="top-rectangle"></section>
+      <header class="navbar">
+        <section class="navbar-section">
+          <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">
+            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+              Your browser does not support SVG
+            </object>
+            {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
+          </a>
+        </section>
+        <section class="navbar-section">
+          <span class="nav-item small-font">For Engineers</span>
+          <span class="nav-item small-font">About</span>
+        </section>
+      </header>
+    </section>
+    
+{% endblock %}
+
+{% block body %}
+    <section id="body" style="min-height: 1000px">
+        <div>
+        {% block content %}{% endblock %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+      <div class="navbar" style="padding-top: 30px;">
+        <section class="navbar-section">
+          <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">
+            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+              Your browser does not support SVG
+            </object>
+            {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
+          </a>
+        </section>
+        <section class="navbar-section">
+          <span class="nav-item small-font">For Engineers</span>
+          <span class="nav-item small-font">About</span>
+        </section>
+      </div>
+    </div>
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>
