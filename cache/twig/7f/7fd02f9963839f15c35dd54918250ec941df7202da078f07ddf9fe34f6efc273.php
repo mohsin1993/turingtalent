@@ -35,32 +35,32 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 33
+        // line 36
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 34
+        // line 37
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo " site-container\">
 
 ";
-        // line 36
+        // line 39
         $this->displayBlock('header', $context, $blocks);
-        // line 69
+        // line 57
         echo "
 ";
-        // line 70
+        // line 58
         $this->displayBlock('body', $context, $blocks);
-        // line 77
+        // line 65
         echo "
 ";
-        // line 78
+        // line 66
         $this->displayBlock('footer', $context, $blocks);
-        // line 96
+        // line 84
         echo "
 ";
-        // line 97
+        // line 85
         $this->displayBlock('bottom', $context, $blocks);
-        // line 100
+        // line 88
         echo "
 </body>
 </html>
@@ -96,23 +96,22 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
         // line 14
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\" />
-    <link href=\"https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900\" rel=\"stylesheet\" />
-    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css\" rel=\"stylesheet\" />
+    
     ";
-        // line 17
+        // line 16
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 23
+        // line 26
         echo "        
     ";
-        // line 25
+        // line 28
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 
     ";
-        // line 27
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 30
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 33
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -120,100 +119,109 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
     }
 
-    // line 17
+    // line 16
     public function block_stylesheets($context, array $blocks = array())
     {
+        // line 17
+        echo "        ";
         // line 18
         echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css", 1 => 99), "method");
         // line 19
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css", 1 => 99), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/custom.css", 1 => 98), "method");
         // line 20
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/custom.css", 1 => 98), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/lib.css", 1 => 98), "method");
         // line 21
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/lib.css", 1 => 98), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900", 1 => 100), "method");
         // line 22
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css", 1 => 101), "method");
+        // line 23
+        echo "        ";
+        // line 24
+        echo "    ";
+        // line 25
         echo "    ";
     }
 
-    // line 27
+    // line 30
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 28
+        // line 31
         echo "        ";
-        // line 29
+        // line 32
         echo "    ";
     }
 
-    // line 36
+    // line 39
     public function block_header($context, array $blocks = array())
     {
-        // line 37
-        echo "    ";
-        // line 50
-        echo "    <section style=\"margin: 0px 5%;\">
-      <section class=\"top-rectangle\"></section>
-      <header class=\"navbar\">
-        <section class=\"navbar-section\">
-          <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
-            <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 55
+        // line 40
+        echo "  <section class=\"content-padding\">
+    <section class=\"top-rectangle\"></section>
+    <header class=\"navbar\">
+      <section class=\"navbar-section\">
+        <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
+          <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
+        // line 45
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
-              Your browser does not support SVG
-            </object>
-            ";
-        // line 59
-        echo "          </a>
-        </section>
-        <section class=\"navbar-section\">
-          <span class=\"nav-item small-font\">For Engineers</span>
-          <span class=\"nav-item small-font\">About</span>
-        </section>
-      </header>
-    </section>
-    
+            Your browser does not support SVG
+          </object>
+          ";
+        // line 49
+        echo "        </a>
+      </section>
+      <ul class=\"navbar-section\">
+        ";
+        // line 52
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 52)->display($context);
+        // line 53
+        echo "      </ul>
+    </header>
+  </section>
 ";
     }
 
-    // line 70
+    // line 58
     public function block_body($context, array $blocks = array())
     {
-        // line 71
-        echo "    <section id=\"body\" style=\"min-height: 1000px\">
+        // line 59
+        echo "    <section id=\"body\">
         <div>
         ";
-        // line 73
+        // line 61
         $this->displayBlock('content', $context, $blocks);
-        // line 74
+        // line 62
         echo "        </div>
     </section>
 ";
     }
 
-    // line 73
+    // line 61
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 78
+    // line 66
     public function block_footer($context, array $blocks = array())
     {
-        // line 79
-        echo "    <div class=\"footer\">
+        // line 67
+        echo "    <div class=\"footer\" style=\"padding: 0px 15px;\">
       <div class=\"navbar\" style=\"padding-top: 30px;\">
         <section class=\"navbar-section\">
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
             <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 83
+        // line 71
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
               Your browser does not support SVG
             </object>
             ";
-        // line 87
+        // line 75
         echo "          </a>
         </section>
         <section class=\"navbar-section\">
@@ -225,10 +233,10 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
     }
 
-    // line 97
+    // line 85
     public function block_bottom($context, array $blocks = array())
     {
-        // line 98
+        // line 86
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
@@ -247,7 +255,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     public function getDebugInfo()
     {
-        return array (  232 => 98,  229 => 97,  217 => 87,  211 => 83,  205 => 79,  202 => 78,  197 => 73,  191 => 74,  189 => 73,  185 => 71,  182 => 70,  169 => 59,  163 => 55,  156 => 50,  154 => 37,  151 => 36,  147 => 29,  145 => 28,  142 => 27,  138 => 22,  135 => 21,  132 => 20,  129 => 19,  127 => 18,  124 => 17,  116 => 30,  114 => 27,  108 => 25,  105 => 23,  103 => 17,  97 => 14,  93 => 13,  90 => 12,  88 => 11,  77 => 7,  74 => 6,  71 => 5,  64 => 100,  62 => 97,  59 => 96,  57 => 78,  54 => 77,  52 => 70,  49 => 69,  47 => 36,  42 => 34,  39 => 33,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
+        return array (  240 => 86,  237 => 85,  225 => 75,  219 => 71,  213 => 67,  210 => 66,  205 => 61,  199 => 62,  197 => 61,  193 => 59,  190 => 58,  183 => 53,  181 => 52,  176 => 49,  170 => 45,  163 => 40,  160 => 39,  156 => 32,  154 => 31,  151 => 30,  147 => 25,  145 => 24,  143 => 23,  140 => 22,  137 => 21,  134 => 20,  131 => 19,  128 => 18,  126 => 17,  123 => 16,  115 => 33,  113 => 30,  107 => 28,  104 => 26,  102 => 16,  97 => 14,  93 => 13,  90 => 12,  88 => 11,  77 => 7,  74 => 6,  71 => 5,  64 => 88,  62 => 85,  59 => 84,  57 => 66,  54 => 65,  52 => 58,  49 => 57,  47 => 39,  42 => 37,  39 => 36,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -274,13 +282,16 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/logo.png') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
-    <link href=\"https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900\" rel=\"stylesheet\" />
-    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css\" rel=\"stylesheet\" />
+    
     {% block stylesheets %}
         {# {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %} #}
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css', 99) %}
         {% do assets.addCss('theme://css/custom.css', 98) %}
         {% do assets.addCss('theme://css/lib.css', 98) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
+        {# <link href=\"https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900\" rel=\"stylesheet\" /> #}
+    {# <link href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css\" rel=\"stylesheet\" /> #}
     {% endblock %}
         
     {# {% endblock %} #}
@@ -296,41 +307,26 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 <body id=\"top\" class=\"{{ page.header.body_classes }} site-container\">
 
 {% block header %}
-    {# <div class=\"header\">
-        <div class=\"wrapper padding\">
-            <a class=\"logo left\" href=\"{{ base_url == '' ? '/' : base_url }}\">
-                <i class=\"fa fa-rebel\"></i>
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class=\"main-nav\">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
-        </div>
-    </div> #}
-    <section style=\"margin: 0px 5%;\">
-      <section class=\"top-rectangle\"></section>
-      <header class=\"navbar\">
-        <section class=\"navbar-section\">
-          <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
-            <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ url('theme://images/turing-talent-logo.svg') }}\">
-              Your browser does not support SVG
-            </object>
-            {# <img src=\"{{ url('theme://images/turing-talent-logo.svg') }}\" class=\"Turing-Talent-Logo\"> #}
-          </a>
-        </section>
-        <section class=\"navbar-section\">
-          <span class=\"nav-item small-font\">For Engineers</span>
-          <span class=\"nav-item small-font\">About</span>
-        </section>
-      </header>
-    </section>
-    
+  <section class=\"content-padding\">
+    <section class=\"top-rectangle\"></section>
+    <header class=\"navbar\">
+      <section class=\"navbar-section\">
+        <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
+          <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ url('theme://images/turing-talent-logo.svg') }}\">
+            Your browser does not support SVG
+          </object>
+          {# <img src=\"{{ url('theme://images/turing-talent-logo.svg') }}\" class=\"Turing-Talent-Logo\"> #}
+        </a>
+      </section>
+      <ul class=\"navbar-section\">
+        {% include 'partials/navigation.html.twig' %}
+      </ul>
+    </header>
+  </section>
 {% endblock %}
 
 {% block body %}
-    <section id=\"body\" style=\"min-height: 1000px\">
+    <section id=\"body\">
         <div>
         {% block content %}{% endblock %}
         </div>
@@ -338,7 +334,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 {% endblock %}
 
 {% block footer %}
-    <div class=\"footer\">
+    <div class=\"footer\" style=\"padding: 0px 15px;\">
       <div class=\"navbar\" style=\"padding-top: 30px;\">
         <section class=\"navbar-section\">
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">

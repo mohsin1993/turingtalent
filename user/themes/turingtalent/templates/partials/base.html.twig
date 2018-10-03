@@ -12,13 +12,16 @@
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" />
+    
     {% block stylesheets %}
         {# {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %} #}
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css', 99) %}
         {% do assets.addCss('theme://css/custom.css', 98) %}
         {% do assets.addCss('theme://css/lib.css', 98) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
+        {# <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" rel="stylesheet" /> #}
+    {# <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" /> #}
     {% endblock %}
         
     {# {% endblock %} #}
@@ -34,41 +37,26 @@
 <body id="top" class="{{ page.header.body_classes }} site-container">
 
 {% block header %}
-    {# <div class="header">
-        <div class="wrapper padding">
-            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <i class="fa fa-rebel"></i>
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
-        </div>
-    </div> #}
-    <section style="margin: 0px 5%;">
-      <section class="top-rectangle"></section>
-      <header class="navbar">
-        <section class="navbar-section">
-          <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">
-            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
-              Your browser does not support SVG
-            </object>
-            {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
-          </a>
-        </section>
-        <section class="navbar-section">
-          <span class="nav-item small-font">For Engineers</span>
-          <span class="nav-item small-font">About</span>
-        </section>
-      </header>
-    </section>
-    
+  <section class="content-padding">
+    <section class="top-rectangle"></section>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand mr-2 nav-item small-font">
+          <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+            Your browser does not support SVG
+          </object>
+          {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
+        </a>
+      </section>
+      <ul class="navbar-section">
+        {% include 'partials/navigation.html.twig' %}
+      </ul>
+    </header>
+  </section>
 {% endblock %}
 
 {% block body %}
-    <section id="body" style="min-height: 1000px">
+    <section id="body">
         <div>
         {% block content %}{% endblock %}
         </div>
@@ -76,7 +64,7 @@
 {% endblock %}
 
 {% block footer %}
-    <div class="footer">
+    <div class="footer" style="padding: 0px 15px;">
       <div class="navbar" style="padding-top: 30px;">
         <section class="navbar-section">
           <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">

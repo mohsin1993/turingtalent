@@ -30,8 +30,6 @@
 }
 
 .top-rectangle{
-  margin: auto;
-  max-width: 800px;
   height: 8px;
   border-radius: 2px;
   background-color: #f1f1f1;
@@ -106,7 +104,7 @@ button{
 }
 
 .navbar{
-  padding: @navbar-top-padding @extra-navbar-padding @navbar-bottom-padding @extra-navbar-padding;
+  padding: 20px 24px 30px 16px;
 
   .navbar-brand{
     padding: 0px !important;
@@ -115,24 +113,42 @@ button{
   .Turing-Talent-Logo{
     vertical-align: middle;
   }
+  ul{
+    list-style: none;
+    margin: 0px;
+    li{
+      margin: 0px;
+    }
+  }
   .nav-item{
     white-space: nowrap;
     text-decoration: none;
     text-align: right;
-    color: #b7b7b7;
+    
     padding: 0px 0px 0px 15px;
-    line-height: 20px;
+    line-height: 20.36px;
     cursor: pointer;
-    -webkit-transition: color 200ms linear;
-    -ms-transition: color 200ms linear;
-    transition: color 200ms linear;
-    &:hover, .active{
+
+    a{
+      color: #b7b7b7;
+      border: none;
+      text-decoration: none !important;
+      -webkit-transition: color 200ms linear;
+      -ms-transition: color 200ms linear;
+      transition: color 200ms linear;
+    }
+    
+    a:hover, a.active{
       -webkit-transition: color 200ms linear;
       -ms-transition: color 200ms linear;
       transition: color 200ms linear;
       color: #686868;
     }
   }
+}
+
+*:focus {
+  box-shadow: none !important;
 }
 
 .small-font{
@@ -150,8 +166,8 @@ button{
 }
 
 .content-padding{
-  padding-left: @extra-content-padding !important;
-  padding-right: @extra-content-padding !important;
+  max-width: 800px;
+  margin: auto;
 }
 
 .banner-section{
@@ -198,6 +214,10 @@ button{
   }
 }
 
+.pl0{
+  padding-left: 0px;
+}
+
 .left-border{
   border-radius: 2px;
   border-left: solid 10px #f1f1f1;
@@ -211,6 +231,10 @@ button{
   line-height: normal;
   letter-spacing: 0.10px;
   color: #686868;
+}
+
+.mb0{
+  margin-bottom: 0px !important;
 }
 
 .tt-section{
@@ -232,7 +256,8 @@ button{
     line-height: normal;
     letter-spacing: 0.42px;
     color: #686868;
-
+    .pl0;
+    
     &.small{
       line-height: 24px;
       letter-spacing: normal;
@@ -400,6 +425,10 @@ button{
   object-fit: contain;
 }
 
+object{
+  pointer-events: none;
+}
+
 .job{
   .content-padding;
   .small-font;
@@ -408,7 +437,7 @@ button{
     .normal-font;
     height: 32px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     letter-spacing: 0.1px;
     color: #82b604;
@@ -461,12 +490,19 @@ button{
 
 .about-sect{
   margin-top: 56px;
+  h3{
+    margin-bottom: 0px !important;
+  }
+  .title{
+    margin-top: 0px !important;
+  }
 }
 
 .people{
   margin-top: 15px;
   img{
-    margin-bottom: 21px;
+    min-height: 160px;
+    margin-bottom: 16px;
   }
   .title{
     margin-bottom: 13px;
@@ -475,5 +511,23 @@ button{
     div{
       margin-top: 5px;
     }
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
 }

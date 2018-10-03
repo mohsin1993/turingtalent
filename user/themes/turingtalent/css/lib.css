@@ -10,7 +10,7 @@
 }
 @media (min-width: 1280px) {
   .people {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 }
 .site-container {
@@ -63,8 +63,6 @@
   color: #b7b7b7;
 }
 .top-rectangle {
-  margin: auto;
-  max-width: 800px;
   height: 8px;
   border-radius: 2px;
   background-color: #f1f1f1;
@@ -131,7 +129,7 @@ button.primary {
   display: none !important;
 }
 .navbar {
-  padding: 20px 3% 30px 3%;
+  padding: 20px 24px 30px 16px;
 }
 .navbar .navbar-brand {
   padding: 0px !important;
@@ -139,24 +137,38 @@ button.primary {
 .navbar .Turing-Talent-Logo {
   vertical-align: middle;
 }
+.navbar ul {
+  list-style: none;
+  margin: 0px;
+}
+.navbar ul li {
+  margin: 0px;
+}
 .navbar .nav-item {
   white-space: nowrap;
   text-decoration: none;
   text-align: right;
-  color: #b7b7b7;
   padding: 0px 0px 0px 15px;
-  line-height: 20px;
+  line-height: 20.36px;
   cursor: pointer;
+}
+.navbar .nav-item a {
+  color: #b7b7b7;
+  border: none;
+  text-decoration: none !important;
   -webkit-transition: color 200ms linear;
   -ms-transition: color 200ms linear;
   transition: color 200ms linear;
 }
-.navbar .nav-item:hover,
-.navbar .nav-item .active {
+.navbar .nav-item a:hover,
+.navbar .nav-item a.active {
   -webkit-transition: color 200ms linear;
   -ms-transition: color 200ms linear;
   transition: color 200ms linear;
   color: #686868;
+}
+*:focus {
+  box-shadow: none !important;
 }
 .small-font {
   font-family: Inconsolata !important;
@@ -171,8 +183,8 @@ button.primary {
   font-stretch: normal;
 }
 .content-padding {
-  padding-left: 50px !important;
-  padding-right: 50px !important;
+  max-width: 800px;
+  margin: auto;
 }
 .banner-section {
   max-width: 900px;
@@ -213,6 +225,9 @@ button.primary {
   margin-left: 8px;
   position: relative;
 }
+.pl0 {
+  padding-left: 0px;
+}
 .left-border {
   border-radius: 2px;
   border-left: solid 10px #f1f1f1;
@@ -225,6 +240,9 @@ button.primary {
   line-height: normal;
   letter-spacing: 0.1px;
   color: #686868;
+}
+.mb0 {
+  margin-bottom: 0px !important;
 }
 .tt-section {
   margin-top: 40px;
@@ -245,6 +263,7 @@ button.primary {
   line-height: normal;
   letter-spacing: 0.42px;
   color: #686868;
+  padding-left: 0px;
 }
 .tt-section .tt-section-content.small {
   line-height: 24px;
@@ -385,9 +404,12 @@ button.primary {
   height: 160px;
   object-fit: contain;
 }
+object {
+  pointer-events: none;
+}
 .job {
-  padding-left: 50px !important;
-  padding-right: 50px !important;
+  max-width: 800px;
+  margin: auto;
   font-family: Inconsolata !important;
   font-size: 16px !important;
   font-style: normal !important;
@@ -402,7 +424,7 @@ button.primary {
   font-stretch: normal;
   height: 32px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   letter-spacing: 0.1px;
   color: #82b604;
@@ -458,15 +480,38 @@ button.primary {
 .about-sect {
   margin-top: 56px;
 }
+.about-sect h3 {
+  margin-bottom: 0px !important;
+}
+.about-sect .title {
+  margin-top: 0px !important;
+}
 .people {
   margin-top: 15px;
 }
 .people img {
-  margin-bottom: 21px;
+  min-height: 160px;
+  margin-bottom: 16px;
 }
 .people .title {
   margin-bottom: 13px;
 }
 .people .desc div {
   margin-top: 5px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
 }

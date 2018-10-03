@@ -28,7 +28,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
     public function block_content($context, array $blocks = array())
     {
         // line 3
-        echo "  <section style=\"padding-bottom: 37px;\">
+        echo "  <section class=\"animated fadeInDown\" style=\"padding-bottom: 37px;\">
     <div class=\"banner-section\">
       ";
         // line 9
@@ -56,9 +56,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         We’re All About The Talent
       </h3>
       <div class=\"columns content-padding\">
@@ -70,9 +70,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         One Monthly Fee, Many Benefits.
       </h3>
       ";
@@ -172,9 +172,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 60px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Simple and Transparent Pricing
       </h3>
       <div class=\"columns content-padding\">
@@ -275,15 +275,15 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section signup\" style=\"margin-top: 60px\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Sign Up to Get Started
       </h3>
       <form class=\"step1 hidden\">
-        <div class=\"columns content-padding\" style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
-            <div class=\"columns\"> 
+            <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
@@ -298,9 +298,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         </div>
       </form>
       <form class=\"step2 hidden\">
-        <div class=\"columns content-padding\"  style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
-            <div class=\"columns\"> 
+            <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
@@ -328,15 +328,17 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         </div>
       </form>
       <div class=\"step3\">
-        <div class=\"columns content-padding\"  style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div>
-              <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script>
-            </div>
+              ";
+        // line 299
+        echo "              ";
+        // line 300
+        echo "            </div>
           </div>
         </div>
       </div>
@@ -357,7 +359,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  154 => 116,  132 => 97,  110 => 78,  87 => 58,  80 => 53,  49 => 21,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  341 => 300,  339 => 299,  154 => 116,  132 => 97,  110 => 78,  87 => 58,  80 => 53,  49 => 21,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -372,7 +374,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% block content %}
-  <section style=\"padding-bottom: 37px;\">
+  <section class=\"animated fadeInDown\" style=\"padding-bottom: 37px;\">
     <div class=\"banner-section\">
       {# {% set sections = page.collection %}
       {% for section in sections %}
@@ -399,9 +401,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         We’re All About The Talent
       </h3>
       <div class=\"columns content-padding\">
@@ -413,9 +415,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         One Monthly Fee, Many Benefits.
       </h3>
       {# <div class=\"columns content-padding\">
@@ -505,9 +507,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 60px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Simple and Transparent Pricing
       </h3>
       <div class=\"columns content-padding\">
@@ -608,15 +610,15 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section signup\" style=\"margin-top: 60px\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Sign Up to Get Started
       </h3>
       <form class=\"step1 hidden\">
-        <div class=\"columns content-padding\" style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
-            <div class=\"columns\"> 
+            <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
@@ -631,9 +633,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         </div>
       </form>
       <form class=\"step2 hidden\">
-        <div class=\"columns content-padding\"  style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
-            <div class=\"columns\"> 
+            <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
@@ -661,14 +663,14 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         </div>
       </form>
       <div class=\"step3\">
-        <div class=\"columns content-padding\"  style=\"margin-left: 0px;\">
+        <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div>
-              <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script>
+              {# <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div> #}
+              {# <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script> #}
             </div>
           </div>
         </div>

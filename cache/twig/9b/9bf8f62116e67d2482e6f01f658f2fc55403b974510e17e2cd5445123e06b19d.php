@@ -28,7 +28,8 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
     public function block_content($context, array $blocks = array())
     {
         // line 3
-        echo "  <section class=\"main-header normal-font content-padding\">
+        echo "<section>
+  <section class=\"main-header normal-font content-padding\">
     <div class=\"columns ml0\">
       <div class=\"col-12\">
         <h1 class=\"normal-font\">
@@ -37,9 +38,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"content-padding left-border normal-font\">
+      <h3 class=\"left-border normal-font\">
         Why Turing Talent
       </h3>
       <div class=\"columns content-padding\">
@@ -51,9 +52,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\">
+      <h3 class=\"left-border normal-font\">
         More than a Job
       </h3>
       <div class=\"columns content-padding\">
@@ -69,7 +70,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 43
+        // line 44
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/talent.svg");
         echo "\">
                   Your browser does not support SVG
@@ -89,7 +90,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 60
+        // line 61
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
@@ -110,7 +111,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 78
+        // line 79
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
@@ -130,7 +131,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 95
+        // line 96
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
@@ -152,12 +153,12 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"margin: 0px\">
+      <h3 class=\"left-border normal-font\" style=\"margin: 0px\">
         Application Process
       </h3>
-      <div class=\"columns content-padding ml0\">
+      <div class=\"columns content-padding\">
         <div class=\"column col-9 tt-section-content small\">
           <div class=\"small-font\">
             <ol>
@@ -172,12 +173,12 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 45px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"margin: 0px\">
+      <h3 class=\"left-border normal-font\" style=\"margin: 0px\">
         Open Jobs
       </h3>
-      <div class=\"columns content-padding ml0\">
+      <div class=\"columns content-padding\">
         <div class=\"column col-9 tt-section-content small\">
           <div class=\"small-font\">
             <ul>
@@ -191,6 +192,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
+</section>
 ";
     }
 
@@ -206,7 +208,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
 
     public function getDebugInfo()
     {
-        return array (  134 => 95,  114 => 78,  93 => 60,  73 => 43,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  135 => 96,  115 => 79,  94 => 61,  74 => 44,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -221,6 +223,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% block content %}
+<section>
   <section class=\"main-header normal-font content-padding\">
     <div class=\"columns ml0\">
       <div class=\"col-12\">
@@ -230,9 +233,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"content-padding left-border normal-font\">
+      <h3 class=\"left-border normal-font\">
         Why Turing Talent
       </h3>
       <div class=\"columns content-padding\">
@@ -244,9 +247,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\">
+      <h3 class=\"left-border normal-font\">
         More than a Job
       </h3>
       <div class=\"columns content-padding\">
@@ -333,12 +336,12 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"margin: 0px\">
+      <h3 class=\"left-border normal-font\" style=\"margin: 0px\">
         Application Process
       </h3>
-      <div class=\"columns content-padding ml0\">
+      <div class=\"columns content-padding\">
         <div class=\"column col-9 tt-section-content small\">
           <div class=\"small-font\">
             <ol>
@@ -353,12 +356,12 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
-  <section>
+  <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 45px;\">
-      <h3 class=\"content-padding left-border normal-font\" style=\"margin: 0px\">
+      <h3 class=\"left-border normal-font\" style=\"margin: 0px\">
         Open Jobs
       </h3>
-      <div class=\"columns content-padding ml0\">
+      <div class=\"columns content-padding\">
         <div class=\"column col-9 tt-section-content small\">
           <div class=\"small-font\">
             <ul>
@@ -372,6 +375,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
     </div>
   </section>
+</section>
 {% endblock %}
 ", "for-engineers.html.twig", "/Users/mohsanriaz/Sites/grav-admin/user/themes/turingtalent/templates/for-engineers.html.twig");
     }

@@ -28,25 +28,25 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
     public function block_content($context, array $blocks = array())
     {
         // line 3
-        echo "  <section class=\"main-header normal-font content-padding tt-section\">
-    <div class=\"columns \">
+        echo "  <section style=\"min-height: 153px;\" class=\"main-header normal-font content-padding tt-section \">
+    <div class=\"columns\">
       <div class=\"col-9 col-md-12 col-xs-12 column\">
         <h1 class=\"normal-font\">
           About
         </h1>
-        <p class=\"normal-font tt-section-content mt32\">
+        <p class=\"normal-font tt-section-content mt32 mb0\">
           Talent is everywhere, opportunity is not. We are changing that. 
         </p>
       </div>
     </div>
   </section>
-  <section class=\"about-sect content-padding tt-section\">
+  <section style=\"min-height: 413px;\" class=\"about-sect content-padding tt-section\">
     <h3 class=\"left-border normal-font ml-50\">
       Founders
     </h3>
     <div class=\"columns\">
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
-        <img class=\"bitmap\" src=\"";
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
+        <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"";
         // line 21
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/christina.png");
         echo "\" srcset=\"";
@@ -61,8 +61,8 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
           <div>Previously: Cambridge, Scalized, HgCapital, DN.</div>
         </div>
       </div>
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
-        <img class=\"bitmap\" src=\"";
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
+        <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"";
         // line 30
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/corine.png");
         echo "\" srcset=\"";
@@ -79,12 +79,12 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
     </div>
   </section>
-  <section class=\"about-sect content-padding tt-section\">
+  <section min-height=\"548px;\" class=\"about-sect content-padding tt-section\">
     <h3 class=\"left-border normal-font ml-50\">
       Advisors
     </h3>
     <div class=\"columns\">
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"";
         // line 46
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/daniel.png");
@@ -100,7 +100,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
           <div>He regularly speaks at universities to inspire the next generation about applied technical challenges.</div>
         </div>
       </div>
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"";
         // line 55
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/jon.png");
@@ -148,25 +148,25 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% block content %}
-  <section class=\"main-header normal-font content-padding tt-section\">
-    <div class=\"columns \">
+  <section style=\"min-height: 153px;\" class=\"main-header normal-font content-padding tt-section \">
+    <div class=\"columns\">
       <div class=\"col-9 col-md-12 col-xs-12 column\">
         <h1 class=\"normal-font\">
           About
         </h1>
-        <p class=\"normal-font tt-section-content mt32\">
+        <p class=\"normal-font tt-section-content mt32 mb0\">
           Talent is everywhere, opportunity is not. We are changing that. 
         </p>
       </div>
     </div>
   </section>
-  <section class=\"about-sect content-padding tt-section\">
+  <section style=\"min-height: 413px;\" class=\"about-sect content-padding tt-section\">
     <h3 class=\"left-border normal-font ml-50\">
       Founders
     </h3>
     <div class=\"columns\">
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
-        <img class=\"bitmap\" src=\"{{url('theme://images/christina.png')}}\" srcset=\"{{url('theme://images/christina@2x.png')}} 2x, {{url('theme://images/christina@3x.png')}} 3x\" />
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
+        <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"{{url('theme://images/christina.png')}}\" srcset=\"{{url('theme://images/christina@2x.png')}} 2x, {{url('theme://images/christina@3x.png')}} 3x\" />
         <div class=\"title\">Christina Chen</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things talent facing</div>
@@ -174,8 +174,8 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
           <div>Previously: Cambridge, Scalized, HgCapital, DN.</div>
         </div>
       </div>
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
-        <img class=\"bitmap\" src=\"{{url('theme://images/corine.png')}}\" srcset=\"{{url('theme://images/corine@2x.png')}} 2x, {{url('theme://images/corine@3x.png')}} 3x\" />
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
+        <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"{{url('theme://images/corine.png')}}\" srcset=\"{{url('theme://images/corine@2x.png')}} 2x, {{url('theme://images/corine@3x.png')}} 3x\" />
         <div class=\"title\">Corinne Sawers</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things companies facing</div>
@@ -185,12 +185,12 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
     </div>
   </section>
-  <section class=\"about-sect content-padding tt-section\">
+  <section min-height=\"548px;\" class=\"about-sect content-padding tt-section\">
     <h3 class=\"left-border normal-font ml-50\">
       Advisors
     </h3>
     <div class=\"columns\">
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"{{url('theme://images/daniel.png')}}\" srcset=\"{{url('theme://images/daniel@2x.png')}} 2x, {{url('theme://images/daniel@3x.png')}} 3x\" />
         <div class=\"title\">Daniel Bernhardt</div>
         <div class=\"desc small-font\">
@@ -199,7 +199,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
           <div>He regularly speaks at universities to inspire the next generation about applied technical challenges.</div>
         </div>
       </div>
-      <div class=\"col-6 col-md-12 col-xs-12 column people\">
+      <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"{{url('theme://images/jon.png')}}\" srcset=\"{{url('theme://images/jon@2x.png')}} 2x, {{url('theme://images/jon@3x.png')}} 3x\" />
         <div class=\"title\">Jon Crowcroft</div>
         <div class=\"desc small-font\">

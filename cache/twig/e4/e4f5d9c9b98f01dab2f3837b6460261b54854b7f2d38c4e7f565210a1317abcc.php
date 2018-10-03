@@ -17,17 +17,37 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
     {
         // line 24
         echo "
-<ul>
-  <li>
-    <a>For Engineers</a>
-  </li>
-  <li>
-    <a>About</a>
-  </li>
-    ";
-        // line 53
-        echo "</ul>
-
+";
+        // line 25
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "children", array()), "visible", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
+            // line 26
+            echo "    ";
+            $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("active") : (""));
+            // line 27
+            echo "    <li class=\"";
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo " nav-item small-font\">
+        <a class=\"";
+            // line 28
+            echo (isset($context["current_page"]) ? $context["current_page"] : null);
+            echo "\" href=\"";
+            echo $this->getAttribute($context["page"], "url", array());
+            echo "\">
+          ";
+            // line 29
+            echo $this->getAttribute($context["page"], "menu", array());
+            echo "
+        </a>
+    </li>
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 33
+        echo "
 ";
     }
 
@@ -137,7 +157,7 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
 
     public function getDebugInfo()
     {
-        return array (  110 => 22,  102 => 18,  96 => 17,  92 => 16,  87 => 15,  80 => 11,  73 => 8,  67 => 7,  63 => 6,  58 => 5,  55 => 4,  52 => 3,  47 => 2,  35 => 1,  29 => 53,  19 => 24,);
+        return array (  130 => 22,  122 => 18,  116 => 17,  112 => 16,  107 => 15,  100 => 11,  93 => 8,  87 => 7,  83 => 6,  78 => 5,  75 => 4,  72 => 3,  67 => 2,  55 => 1,  50 => 33,  40 => 29,  34 => 28,  29 => 27,  26 => 26,  22 => 25,  19 => 24,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -174,35 +194,14 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
     {% endfor %}
 {% endmacro %}
 
-<ul>
-  <li>
-    <a>For Engineers</a>
-  </li>
-  <li>
-    <a>About</a>
-  </li>
-    {# {% if theme_config.dropdown.enabled %}
-        {{ _self.loop(pages) }}
-    {% else %}
-        {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class=\"{{ current_page }}\">
-                <a href=\"{{ page.url }}\">
-                    {% if page.header.icon %}<i class=\"fa fa-{{ page.header.icon }}\"></i>{% endif %}
-                    {{ page.menu }}
-                </a>
-            </li>
-        {% endfor %}
-    {% endif %}
-    {% for mitem in site.menu %}
-        <li>
-            <a href=\"{{ mitem.url }}\">
-                {% if mitem.icon %}<i class=\"fa fa-{{ mitem.icon }}\"></i>{% endif %}
-                {{ mitem.text }}
-            </a>
-        </li>
-    {% endfor %} #}
-</ul>
+{% for page in pages.children.visible %}
+    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+    <li class=\"{{ current_page }} nav-item small-font\">
+        <a class=\"{{ current_page }}\" href=\"{{ page.url }}\">
+          {{ page.menu }}
+        </a>
+    </li>
+{% endfor %}
 
 ", "partials/navigation.html.twig", "/Users/mohsanriaz/Sites/grav-admin/user/themes/turingtalent/templates/partials/navigation.html.twig");
     }
