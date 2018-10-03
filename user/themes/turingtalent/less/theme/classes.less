@@ -159,6 +159,8 @@ button{
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .normal-font{
@@ -166,6 +168,8 @@ button{
   font-style: normal;
   font-stretch: normal;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .content-padding{
@@ -520,14 +524,20 @@ object{
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -moz-transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -ms-transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -o-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    transform: translate3d(0, @animate-distance, 0) rotate(0.001deg);
+    -webkit-transform: translate3d(0, @animate-distance, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, @animate-distance, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, @animate-distance, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, @animate-distance, 0) rotate(0.001deg);
   }
 
   100% {
     opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, 0, 0) rotate(0.001deg);
   }
 }
 

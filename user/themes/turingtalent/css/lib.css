@@ -26,6 +26,8 @@
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
@@ -38,6 +40,8 @@
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
@@ -50,6 +54,8 @@
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
@@ -62,6 +68,8 @@
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
@@ -182,12 +190,16 @@ button.primary {
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .normal-font {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .content-padding {
   max-width: 800px;
@@ -423,6 +435,8 @@ object {
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .job h3 {
   border-radius: 2px;
@@ -431,6 +445,8 @@ object {
   font-style: normal;
   font-stretch: normal;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 32px;
   font-size: 24px;
   font-weight: 800;
@@ -447,6 +463,8 @@ object {
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 24px;
   letter-spacing: normal;
   color: #4a4a4a;
@@ -463,6 +481,8 @@ object {
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .job button {
   font-family: 'Inconsolata', monospace !important;
@@ -471,6 +491,8 @@ object {
   font-stretch: normal !important;
   font-weight: normal !important;
   font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin-top: 56px;
   width: 385px;
 }
@@ -514,13 +536,19 @@ object {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -moz-transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -ms-transform: translate3d(0, 5%, 0) rotate(0.001deg);
-    -o-transform: translate3d(0, 5%, 0) rotate(0.001deg);
+    transform: translate3d(0, 20px, 0) rotate(0.001deg);
+    -webkit-transform: translate3d(0, 20px, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, 20px, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, 20px, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, 20px, 0) rotate(0.001deg);
   }
   100% {
     opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -moz-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -ms-transform: translate3d(0, 0, 0) rotate(0.001deg);
+    -o-transform: translate3d(0, 0, 0) rotate(0.001deg);
   }
 }
 .fouc {

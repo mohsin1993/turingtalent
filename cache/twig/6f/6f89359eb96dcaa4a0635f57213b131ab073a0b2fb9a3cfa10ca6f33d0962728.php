@@ -54,7 +54,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
         echo " 2x, ";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/christina@3x.png");
         echo " 3x\" />
-        <div class=\"title\">Christina Chen</div>
+        <div class=\"title normal-font\">Christina Chen</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things talent facing</div>
           <div>Software-engineer-turned-VC-turned-entrepreneur. 10 years in the tech industry. Geek at heart. </div>
@@ -70,7 +70,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
         echo " 2x, ";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/corine@3x.png");
         echo " 3x\" />
-        <div class=\"title\">Corinne Sawers</div>
+        <div class=\"title normal-font\">Corinne Sawers</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things companies facing</div>
           <div>8+ years using markets for impact. Co-founder of disruptive political start up More United. Amateur aerial circus artist. </div>
@@ -93,7 +93,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
         echo " 2x, ";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/daniel@3x.png");
         echo " 3x\" />
-        <div class=\"title\">Daniel Bernhardt</div>
+        <div class=\"title normal-font\">Daniel Bernhardt</div>
         <div class=\"desc small-font\">
           <div>Software Engineering Manager at Facebook</div>
           <div>Formerly @Microsft @Google. Daniel brings a wealth of experience in building and nurturing highly effective and collaborative engineering teams. </div>
@@ -109,7 +109,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
         echo " 2x, ";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/jon@3x.png");
         echo " 3x\" />
-        <div class=\"title\">Jon Crowcroft</div>
+        <div class=\"title normal-font\">Jon Crowcroft</div>
         <div class=\"desc small-font\">
           <div>CS Professor at Cambridge University</div>
           <div>Jon is one of the most respected figure in computer science. He’s a Fellow at The Royal Society, The ACM, The IEEE, The Royal Academy of Engineering, The Institute of Engineering and Technology, The Alan Turing Institute - just to name a few. </div>
@@ -167,7 +167,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
     <div class=\"columns\">
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"{{url('theme://images/christina.png')}}\" srcset=\"{{url('theme://images/christina@2x.png')}} 2x, {{url('theme://images/christina@3x.png')}} 3x\" />
-        <div class=\"title\">Christina Chen</div>
+        <div class=\"title normal-font\">Christina Chen</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things talent facing</div>
           <div>Software-engineer-turned-VC-turned-entrepreneur. 10 years in the tech industry. Geek at heart. </div>
@@ -176,7 +176,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"{{url('theme://images/corine.png')}}\" srcset=\"{{url('theme://images/corine@2x.png')}} 2x, {{url('theme://images/corine@3x.png')}} 3x\" />
-        <div class=\"title\">Corinne Sawers</div>
+        <div class=\"title normal-font\">Corinne Sawers</div>
         <div class=\"desc small-font\">
           <div>Responsible for all things companies facing</div>
           <div>8+ years using markets for impact. Co-founder of disruptive political start up More United. Amateur aerial circus artist. </div>
@@ -192,7 +192,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
     <div class=\"columns\">
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"{{url('theme://images/daniel.png')}}\" srcset=\"{{url('theme://images/daniel@2x.png')}} 2x, {{url('theme://images/daniel@3x.png')}} 3x\" />
-        <div class=\"title\">Daniel Bernhardt</div>
+        <div class=\"title normal-font\">Daniel Bernhardt</div>
         <div class=\"desc small-font\">
           <div>Software Engineering Manager at Facebook</div>
           <div>Formerly @Microsft @Google. Daniel brings a wealth of experience in building and nurturing highly effective and collaborative engineering teams. </div>
@@ -201,7 +201,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <img class=\"bitmap\" src=\"{{url('theme://images/jon.png')}}\" srcset=\"{{url('theme://images/jon@2x.png')}} 2x, {{url('theme://images/jon@3x.png')}} 3x\" />
-        <div class=\"title\">Jon Crowcroft</div>
+        <div class=\"title normal-font\">Jon Crowcroft</div>
         <div class=\"desc small-font\">
           <div>CS Professor at Cambridge University</div>
           <div>Jon is one of the most respected figure in computer science. He’s a Fellow at The Royal Society, The ACM, The IEEE, The Royal Academy of Engineering, The Institute of Engineering and Technology, The Alan Turing Institute - just to name a few. </div>

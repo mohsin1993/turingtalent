@@ -42,22 +42,22 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
   </section>
   <section class=\"job\">
     <div>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         About Host Compliance
       </h3>
-      <p>
+      <p class=\"animated fadeInDown\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat posuere est, ac ultrices tortor hendrerit scelerisque. Nulla quis ligula ut quam elementum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat pretium erat, sed mattis lacus dictum a. Maecenas quis ligula magna, quis accumsan turpis. Nunc pharetra.
       </p>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         About Turing Talent
       </h3>
-      <p>
+      <p class=\"animated fadeInDown\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat posuere est, ac ultrices tortor hendrerit scelerisque. Nulla quis ligula ut quam elementum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat pretium erat, sed mattis lacus dictum a. Maecenas quis ligula magna, quis accumsan turpis. Nunc pharetra.
       </p>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         Skills & Experience
       </h3>
-      <ul>
+      <ul class=\"animated fadeInDown\">
         <li>AngularJS 1.x (3+ years)</li>
         <li>jQuery (3+ years)</li>
         <li>CSS</li>
@@ -65,10 +65,10 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
         <li>UX experience</li>
         <li>A passion for fast-paced development and daily releases</li>
       </ul>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         Key Responsibilities
       </h3>
-      <ul>
+      <ul class=\"animated fadeInDown\">
         <li>Expand and improve our AngularJS codebase</li>
         <li>Produce scalable, well written, testable code</li>
         <li>Make constant, measured improvements to the application’s user experience</li>
@@ -125,22 +125,22 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
   </section>
   <section class=\"job\">
     <div>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         About Host Compliance
       </h3>
-      <p>
+      <p class=\"animated fadeInDown\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat posuere est, ac ultrices tortor hendrerit scelerisque. Nulla quis ligula ut quam elementum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat pretium erat, sed mattis lacus dictum a. Maecenas quis ligula magna, quis accumsan turpis. Nunc pharetra.
       </p>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         About Turing Talent
       </h3>
-      <p>
+      <p class=\"animated fadeInDown\">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat posuere est, ac ultrices tortor hendrerit scelerisque. Nulla quis ligula ut quam elementum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat pretium erat, sed mattis lacus dictum a. Maecenas quis ligula magna, quis accumsan turpis. Nunc pharetra.
       </p>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         Skills & Experience
       </h3>
-      <ul>
+      <ul class=\"animated fadeInDown\">
         <li>AngularJS 1.x (3+ years)</li>
         <li>jQuery (3+ years)</li>
         <li>CSS</li>
@@ -148,10 +148,10 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
         <li>UX experience</li>
         <li>A passion for fast-paced development and daily releases</li>
       </ul>
-      <h3>
+      <h3 class=\"animated fadeInDown\">
         Key Responsibilities
       </h3>
-      <ul>
+      <ul class=\"animated fadeInDown\">
         <li>Expand and improve our AngularJS codebase</li>
         <li>Produce scalable, well written, testable code</li>
         <li>Make constant, measured improvements to the application’s user experience</li>
