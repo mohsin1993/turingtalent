@@ -1,3 +1,18 @@
+@media (min-width: 600px) {
+  .people {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 840px) {
+  .people {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .people {
+    margin-bottom: 40px;
+  }
+}
 .site-container {
   margin-right: auto;
   margin-left: auto;
@@ -365,6 +380,11 @@ button.primary {
   font-size: 24px;
   font-weight: 800;
 }
+.bitmap {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
 .job {
   padding-left: 50px !important;
   padding-right: 50px !important;
@@ -425,4 +445,28 @@ button.primary {
 }
 .ml0 {
   margin-left: 0px !important;
+}
+.ml-40 {
+  margin-left: -40px;
+}
+.ml-50 {
+  margin-left: -50px;
+}
+.mt32 {
+  margin-top: 32px;
+}
+.about-sect {
+  margin-top: 56px;
+}
+.people {
+  margin-top: 15px;
+}
+.people img {
+  margin-bottom: 21px;
+}
+.people .title {
+  margin-bottom: 13px;
+}
+.people .desc div {
+  margin-top: 5px;
 }
