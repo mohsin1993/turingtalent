@@ -1,6 +1,6 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 <!DOCTYPE html>
-<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<html class="fouc" lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
 <head>
 {% block head %}
     <meta charset="utf-8" />
@@ -12,13 +12,18 @@
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <style>
+      .fouc{
+        opacity: 0
+      }
+    </style>
     
     {% block stylesheets %}
         {# {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %} #}
-        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.3/spectre.min.css', 99) %}
-        {% do assets.addCss('theme://css/custom.css', 98) %}
-        {% do assets.addCss('theme://css/lib.css', 98) %}
+        {% do assets.addCss('https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css', 99) %}
+        {# {% do assets.addCss('theme://css/custom.css', 98) %} #}
         {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
+        {% do assets.addCss('theme://css/lib.css', 98) %}
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
         {# <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" rel="stylesheet" /> #}
     {# <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" /> #}
@@ -30,9 +35,9 @@
     {% block javascripts %}
         {# {% do assets.addJs('jquery', 100) %} #}
     {% endblock %}
-    {{ assets.js() }}
+    {# {{ assets.js() }} #}
 
-{% endblock head%}
+{% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }} site-container">
 
@@ -45,10 +50,9 @@
           <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
             Your browser does not support SVG
           </object>
-          {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
-        </a>
+         </a>
       </section>
-      <ul class="navbar-section">
+      <ul class="navbar-section right">
         {% include 'partials/navigation.html.twig' %}
       </ul>
     </header>
@@ -74,16 +78,33 @@
             {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
           </a>
         </section>
-        <section class="navbar-section">
-          <span class="nav-item small-font">For Engineers</span>
-          <span class="nav-item small-font">About</span>
-        </section>
+        <ul class="navbar-section right">
+          {% include 'partials/navigation.html.twig' %}
+        </ul>
       </div>
     </div>
 {% endblock %}
 
 {% block bottom %}
-    {{ assets.js('bottom') }}
+    {# {{ assets.js('bottom') }} #}
+    <script>
+      function fadeIn(el, time) {
+      el.style.opacity = 0;
+
+      var last = +new Date();
+      var tick = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+
+        if (+el.style.opacity < 1) {
+          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+        }
+      };
+
+      tick();
+    }
+    fadeIn(document.querySelector(".fouc"), 300);
+    </script>
 {% endblock %}
 
 </body>

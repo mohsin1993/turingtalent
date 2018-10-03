@@ -20,44 +20,48 @@
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
 }
 :-moz-placeholder {
   /* Firefox 18- */
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
@@ -77,6 +81,7 @@ button {
   padding: 4px 6px;
   width: 100%;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
 button.primary {
@@ -171,16 +176,18 @@ button.primary {
   box-shadow: none !important;
 }
 .small-font {
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
 }
 .normal-font {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
+  font-display: optional;
 }
 .content-padding {
   max-width: 800px;
@@ -283,7 +290,7 @@ button.primary {
   margin-left: 10px;
 }
 .tt-section .divided-sects .content li::before {
-  content: "_";
+  content: "\005F";
   margin-right: 5px;
   font-size: 12px;
   margin-left: -10px;
@@ -410,11 +417,12 @@ object {
 .job {
   max-width: 800px;
   margin: auto;
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
 }
 .job h3 {
   border-radius: 2px;
@@ -422,6 +430,7 @@ object {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
+  font-display: optional;
   height: 32px;
   font-size: 24px;
   font-weight: 800;
@@ -432,11 +441,12 @@ object {
   margin-left: -50px !important;
 }
 .job h3 + p {
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   line-height: 24px;
   letter-spacing: normal;
   color: #4a4a4a;
@@ -447,18 +457,20 @@ object {
 }
 .job ol,
 .job ul {
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
 }
 .job button {
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
   margin-top: 56px;
   width: 385px;
 }
@@ -500,18 +512,17 @@ object {
   margin-top: 5px;
 }
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
     transform: translate3d(0, 5%, 0) rotate(0.001deg);
     -moz-transform: translate3d(0, 5%, 0) rotate(0.001deg);
     -ms-transform: translate3d(0, 5%, 0) rotate(0.001deg);
     -o-transform: translate3d(0, 5%, 0) rotate(0.001deg);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
   }
+}
+.fouc {
+  opacity: 0;
 }

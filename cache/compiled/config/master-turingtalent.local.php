@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1538227208,
-    'checksum' => 'e1202da1a65762872e9c25e0f4f43bf6',
+    'timestamp' => 1538600443,
+    'checksum' => 'e9fd6298b1caff26faf5486e6ec7220a',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1537701574
+            ],
+            'plugins/minify-html' => [
+                'file' => 'user/config/plugins/minify-html.yaml',
+                'modified' => 1538600443
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -72,6 +76,10 @@ return [
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1535007886
+            ],
+            'plugins/minify-html' => [
+                'file' => 'user/plugins/minify-html/minify-html.yaml',
+                'modified' => 1538600368
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
@@ -253,6 +261,11 @@ return [
                     2 => 'blue',
                     3 => 'green'
                 ]
+            ],
+            'minify-html' => [
+                'enabled' => false,
+                'cache' => false,
+                'mode' => 'fastest'
             ],
             'problems' => [
                 'enabled' => true,

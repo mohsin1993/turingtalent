@@ -45,6 +45,7 @@ button{
   padding: 4px 6px;
   width: 100%;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 
   &.primary{
@@ -152,17 +153,19 @@ button{
 }
 
 .small-font{
-  font-family: Inconsolata !important;
+  font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
   font-stretch: normal !important;
   font-weight: normal !important;
+  font-display: optional;
 }
 
 .normal-font{
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-stretch: normal;
+  font-display: optional;
 }
 
 .content-padding{
@@ -278,7 +281,7 @@ button{
       }
       li{
         &::before{
-          content: "_";
+          content: "\005F";
           margin-right: 5px;
           font-size: 12px;
           margin-left: -10px;
@@ -525,9 +528,10 @@ object{
 
   100% {
     opacity: 1;
-    transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
   }
+}
+
+
+.fouc{
+  opacity: 0;
 }
