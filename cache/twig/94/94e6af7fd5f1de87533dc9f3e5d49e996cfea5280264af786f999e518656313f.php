@@ -32,24 +32,26 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
     <div class=\"banner-section\">
       ";
         // line 9
-        echo "      <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
-      <div class=\"columns\">
-        <div class=\"column col-8 text-section\">
-          <div class=\"content\">
-            <p class=\"normal-font\">
-              Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
-            </p>
+        echo "      <div class=\"padded\">
+        <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
+        <div class=\"columns\">
+          <div class=\"column col-8 text-section\">
+            <div class=\"content\">
+              <p class=\"normal-font\">
+                Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class=\"column col-4 text-right image-section\">
-          <div class=\"image\">
-            <div class=\"oval\">
-              <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"";
-        // line 21
+          <div class=\"column col-4 text-right image-section\">
+            <div class=\"image\">
+              <div class=\"oval\">
+                <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"";
+        // line 22
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/distributed.svg");
         echo "\">
-                Your browser does not support SVG
-              </object>
+                  Your browser does not support SVG
+                </object>
+              </div>
             </div>
           </div>
         </div>
@@ -76,14 +78,14 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         One Monthly Fee, Many Benefits.
       </h3>
       ";
-        // line 53
+        // line 55
         echo "      <div class=\"divided-sects content-padding\" style=\"margin-top: 40px;\">
         <div class=\"columns\">
           <div class=\"column col-3\" style=\"padding-right: 25px;\">
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 58
+        // line 60
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/talent.svg");
         echo "\">
                   Your browser does not support SVG
@@ -106,7 +108,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 78
+        // line 80
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
@@ -128,7 +130,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 97
+        // line 99
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
@@ -150,7 +152,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div>
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 116
+        // line 118
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
@@ -334,9 +336,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div>
-              <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script>
-            </div>
+              ";
+        // line 301
+        echo "              ";
+        // line 302
+        echo "            </div>
           </div>
         </div>
       </div>
@@ -357,7 +361,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  154 => 116,  132 => 97,  110 => 78,  87 => 58,  80 => 53,  49 => 21,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  343 => 302,  341 => 301,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -378,21 +382,23 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       {% for section in sections %}
         {{section.content}}
       {% endfor %} #}
-      <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
-      <div class=\"columns\">
-        <div class=\"column col-8 text-section\">
-          <div class=\"content\">
-            <p class=\"normal-font\">
-              Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
-            </p>
+      <div class=\"padded\">
+        <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
+        <div class=\"columns\">
+          <div class=\"column col-8 text-section\">
+            <div class=\"content\">
+              <p class=\"normal-font\">
+                Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class=\"column col-4 text-right image-section\">
-          <div class=\"image\">
-            <div class=\"oval\">
-              <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/distributed.svg') }}\">
-                Your browser does not support SVG
-              </object>
+          <div class=\"column col-4 text-right image-section\">
+            <div class=\"image\">
+              <div class=\"oval\">
+                <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/distributed.svg') }}\">
+                  Your browser does not support SVG
+                </object>
+              </div>
             </div>
           </div>
         </div>
@@ -667,8 +673,8 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div>
-              <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script>
+              {# <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div> #}
+              {# <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script> #}
             </div>
           </div>
         </div>

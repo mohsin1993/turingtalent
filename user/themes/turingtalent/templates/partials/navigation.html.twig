@@ -26,7 +26,7 @@
     {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
     <li class="{{ current_page }} nav-item small-font">
         <a class="{{ current_page }}" href="{{ page.url }}">
-          {{ page.menu }}
+          <b>{{ page.menu }}</b>
         </a>
     </li>
 {% endfor %}

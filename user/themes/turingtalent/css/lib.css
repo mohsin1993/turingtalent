@@ -211,7 +211,12 @@ button.primary {
   border-radius: 4px;
   background-color: #5fb7e0;
   color: #ffffff;
-  padding: 75px 50px 15px 50px;
+  padding: 75px 0px 15px 0px;
+}
+.banner-section .padded {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner-section p {
   height: 128px;
@@ -222,8 +227,8 @@ button.primary {
   color: #ffffff;
 }
 .banner-section h1 {
-  font-size: 49px;
-  font-weight: 800;
+  font-size: 48px;
+  font-weight: 900;
   line-height: normal;
   color: #ffffff;
   height: 66px;

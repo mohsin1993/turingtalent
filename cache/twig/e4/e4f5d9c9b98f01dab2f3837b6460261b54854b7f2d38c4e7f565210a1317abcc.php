@@ -35,10 +35,10 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
             echo "\" href=\"";
             echo $this->getAttribute($context["page"], "url", array());
             echo "\">
-          ";
+          <b>";
             // line 29
             echo $this->getAttribute($context["page"], "menu", array());
-            echo "
+            echo "</b>
         </a>
     </li>
 ";
@@ -198,7 +198,7 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
     {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
     <li class=\"{{ current_page }} nav-item small-font\">
         <a class=\"{{ current_page }}\" href=\"{{ page.url }}\">
-          {{ page.menu }}
+          <b>{{ page.menu }}</b>
         </a>
     </li>
 {% endfor %}

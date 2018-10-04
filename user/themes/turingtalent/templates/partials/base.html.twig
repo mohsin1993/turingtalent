@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
-
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
     <style>
@@ -19,23 +18,17 @@
     </style>
     
     {% block stylesheets %}
-        {# {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %} #}
         {% do assets.addCss('https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css', 99) %}
-        {# {% do assets.addCss('theme://css/custom.css', 98) %} #}
         {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
         {% do assets.addCss('theme://css/lib.css', 98) %}
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
-        {# <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" rel="stylesheet" /> #}
-    {# <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" /> #}
     {% endblock %}
-        
-    {# {% endblock %} #}
     {{ assets.css() }}
 
     {% block javascripts %}
-        {# {% do assets.addJs('jquery', 100) %} #}
+      {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
+      {% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
     {% endblock %}
-    {# {{ assets.js() }} #}
 
 {% endblock head %}
 </head>
@@ -86,25 +79,22 @@
 {% endblock %}
 
 {% block bottom %}
-    {# {{ assets.js('bottom') }} #}
     <script>
       function fadeIn(el, time) {
-      el.style.opacity = 0;
-
-      var last = +new Date();
-      var tick = function() {
-        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
-        last = +new Date();
-
-        if (+el.style.opacity < 1) {
-          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
-        }
-      };
-
-      tick();
-    }
-    fadeIn(document.querySelector(".fouc"), 300);
+        el.style.opacity = 0;
+        var last = +new Date();
+        var tick = function() {
+          el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+          last = +new Date();
+          if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+          }
+        };
+        tick();
+      }
+      fadeIn(document.querySelector(".fouc"), 300);
     </script>
+    {{ assets.js('bottom') }}
 {% endblock %}
 
 </body>
