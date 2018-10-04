@@ -1,5 +1,5 @@
 ---
 title: about
-menu: Aboutsasd
+menu: About Page
 ---
 
