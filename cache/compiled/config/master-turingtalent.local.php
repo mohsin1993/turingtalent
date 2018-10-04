@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1538600443,
-    'checksum' => 'e9fd6298b1caff26faf5486e6ec7220a',
+    'timestamp' => 1538663207,
+    'checksum' => 'b89906c637bbf578a43ff2b8f8f2e45a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -33,19 +33,23 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1535007886
+                'modified' => 1538663048
+            ],
+            'security' => [
+                'file' => 'system/config/security.yaml',
+                'modified' => 1538663048
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1535007886
+                'modified' => 1538663048
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1535007886
+                'modified' => 1538663048
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1535007886
+                'modified' => 1538663048
             ]
         ],
         'user/plugins' => [
@@ -68,6 +72,10 @@ return [
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1538227186
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/plugins/git-sync/git-sync.yaml',
+                'modified' => 1538663206
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -197,6 +205,10 @@ return [
                         0 => 'image/*'
                     ]
                 ]
+            ],
+            'git-sync' => [
+                'enabled' => true,
+                'text_var' => 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
             ],
             'login' => [
                 'enabled' => true,
@@ -538,6 +550,38 @@ return [
                 ]
             ]
         ],
+        'security' => [
+            'xss_whitelist' => [
+                0 => 'admin.super'
+            ],
+            'xss_enabled' => [
+                'on_events' => true,
+                'invalid_protocols' => true,
+                'moz_binding' => true,
+                'html_inline_styles' => true,
+                'dangerous_tags' => true
+            ],
+            'xss_dangerous_tags' => [
+                0 => 'applet',
+                1 => 'meta',
+                2 => 'xml',
+                3 => 'blink',
+                4 => 'link',
+                5 => 'style',
+                6 => 'script',
+                7 => 'embed',
+                8 => 'object',
+                9 => 'iframe',
+                10 => 'frame',
+                11 => 'frameset',
+                12 => 'ilayer',
+                13 => 'layer',
+                14 => 'bgsound',
+                15 => 'title',
+                16 => 'base'
+            ],
+            'salt' => 'KWIOBRvuph6bd9'
+        ],
         'site' => [
             'title' => 'Grav',
             'default_lang' => 'en',
@@ -775,9 +819,6 @@ return [
                 'yaml_compat' => true,
                 'twig_compat' => true
             ]
-        ],
-        'security' => [
-            'salt' => 'KWIOBRvuph6bd9'
         ]
     ]
 ];
