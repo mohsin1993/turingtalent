@@ -1,0 +1,101 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html class="fouc" lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <style>
+      .fouc{
+        opacity: 0
+      }
+    </style>
+    
+    {% block stylesheets %}
+        {% do assets.addCss('https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css', 99) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
+        {% do assets.addCss('theme://css/lib.css', 98) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+      {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
+      {% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
+    {% endblock %}
+
+{% endblock head %}
+</head>
+<body id="top" class="{{ page.header.body_classes }} site-container">
+
+{% block header %}
+  <section class="content-padding">
+    <section class="top-rectangle"></section>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand mr-2 nav-item small-font">
+          <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+            Your browser does not support SVG
+          </object>
+         </a>
+      </section>
+      <ul class="navbar-section right">
+        {% include 'partials/navigation.html.twig' %}
+      </ul>
+    </header>
+  </section>
+{% endblock %}
+
+{% block body %}
+    <section id="body">
+        <div>
+        {% block content %}{% endblock %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer" style="padding: 0px 15px;">
+      <div class="navbar" style="padding-top: 30px;">
+        <section class="navbar-section">
+          <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">
+            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+              Your browser does not support SVG
+            </object>
+            {# <img src="{{ url('theme://images/turing-talent-logo.svg') }}" class="Turing-Talent-Logo"> #}
+          </a>
+        </section>
+        <ul class="navbar-section right">
+          {% include 'partials/navigation.html.twig' %}
+        </ul>
+      </div>
+    </div>
+{% endblock %}
+
+{% block bottom %}
+    <script>
+      function fadeIn(el, time) {
+        el.style.opacity = 0;
+        var last = +new Date();
+        var tick = function() {
+          el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+          last = +new Date();
+          if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+          }
+        };
+        tick();
+      }
+      fadeIn(document.querySelector(".fouc"), 300);
+    </script>
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>
