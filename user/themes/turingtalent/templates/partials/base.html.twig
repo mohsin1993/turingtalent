@@ -27,6 +27,7 @@
 
     {% block javascripts %}
       {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
+      {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
       {% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
     {% endblock %}
 

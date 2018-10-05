@@ -208,7 +208,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"tab-containers\">
             <div class=\"columns\">
               <div class=\"col-8\">
-                <div id=\"lang-tab\" class=\"tab-content active\">
+                <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
                   <div class=\"headline small-font\">Whats is your required tech stack?</div>
                   <div class=\"details\">
                     <div class=\"options\">
@@ -222,39 +222,43 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span class=\"option small-font\">Ruby</span>
                       <span class=\"option small-font\">Other</span>
                     </div>
-                    <div class=\"tota-price\">
-                      
-                    </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div id=\"exp-tab\" class=\"tab-content\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
-                  <div class=\"details\">
-                    <div class=\"options\">
-
-                    </div>
-                  </div>
-                </div>
-                <div id=\"dev-tab\" class=\"tab-content\">
+                <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
                   <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-                      <span class=\"option\">1-5</span>
-                      <span class=\"option\">6-25</span>
-                      <span class=\"option\">26-50</span>
-                      <span class=\"option\">50+</span>
+                      <span class=\"option small-font\">1-5</span>
+                      <span class=\"option small-font\">6-25</span>
+                      <span class=\"option small-font\">26-50</span>
+                      <span class=\"option small-font\">50+</span>
                     </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div id=\"servic-tab\" class=\"tab-content\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
+                <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
+                  <div class=\"headline small-font\">How many years of experience do you require?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-
+                      <span class=\"option small-font\">1-2</span>
+                      <span class=\"option small-font\">2-5</span>
+                      <span class=\"option small-font\">5+</span>
                     </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <button class=\"small-font\">Next</button>
+                <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
+                  <div class=\"headline small-font\">Whats service do you need?</div>
+                  <div class=\"details\">
+                    <div class=\"options\">
+                      <span class=\"option small-font\">Service 1</span>
+                      <span class=\"option small-font\">Service 2</span>
+                      <span class=\"option small-font\">Service 3</span>
+                    </div>
+                  </div>
+                  <button class=\"small-font submit\">Submit</button>
+                </div>
               </div>
               <div class=\"col-4\">
                 <div class=\"total-price\">
@@ -282,7 +286,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Sign Up to Get Started
       </h3>
-      <form class=\"step1 hidden\">
+      <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
@@ -292,44 +296,45 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
-                  <button class=\"small-font\">Next</button>
+                  <button type=\"button\" class=\"small-font next\">
+                    Next
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </form>
-      <form class=\"step2 hidden\">
+      <form class=\"step2 hidden animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
+                  <input class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Name</label>
-                  <input class=\"form-control\" placeholder=\"Your Name\" type=\"text\">
+                  <input class=\"form-control\" name=\"name\" placeholder=\"Your Name\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Company</label>
-                  <input class=\"form-control\" placeholder=\"Your Company\" type=\"text\">
+                  <input class=\"form-control\" name=\"company\" placeholder=\"Your Company\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Website</label>
-                  <input class=\"form-control\" placeholder=\"Your Website\" type=\"text\">
+                  <input class=\"form-control\" name=\"website\" placeholder=\"Your Website\" type=\"text\">
                 </div>
-              
                 <div>
-                  <button class=\"primary small-font\">Submit</button>
+                  <button type=\"button\" class=\"primary small-font\">Submit</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </form>
-      <div class=\"step3\">
+      <div class=\"step3 hidden animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
@@ -337,9 +342,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             </div>
             <div style=\"margin-top: 20px;\"> 
               ";
-        // line 301
+        // line 306
         echo "              ";
-        // line 302
+        // line 307
         echo "            </div>
           </div>
         </div>
@@ -361,7 +366,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  343 => 302,  341 => 301,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  348 => 307,  346 => 306,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -545,7 +550,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"tab-containers\">
             <div class=\"columns\">
               <div class=\"col-8\">
-                <div id=\"lang-tab\" class=\"tab-content active\">
+                <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
                   <div class=\"headline small-font\">Whats is your required tech stack?</div>
                   <div class=\"details\">
                     <div class=\"options\">
@@ -559,39 +564,43 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span class=\"option small-font\">Ruby</span>
                       <span class=\"option small-font\">Other</span>
                     </div>
-                    <div class=\"tota-price\">
-                      
-                    </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div id=\"exp-tab\" class=\"tab-content\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
-                  <div class=\"details\">
-                    <div class=\"options\">
-
-                    </div>
-                  </div>
-                </div>
-                <div id=\"dev-tab\" class=\"tab-content\">
+                <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
                   <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-                      <span class=\"option\">1-5</span>
-                      <span class=\"option\">6-25</span>
-                      <span class=\"option\">26-50</span>
-                      <span class=\"option\">50+</span>
+                      <span class=\"option small-font\">1-5</span>
+                      <span class=\"option small-font\">6-25</span>
+                      <span class=\"option small-font\">26-50</span>
+                      <span class=\"option small-font\">50+</span>
                     </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div id=\"servic-tab\" class=\"tab-content\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
+                <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
+                  <div class=\"headline small-font\">How many years of experience do you require?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-
+                      <span class=\"option small-font\">1-2</span>
+                      <span class=\"option small-font\">2-5</span>
+                      <span class=\"option small-font\">5+</span>
                     </div>
                   </div>
+                  <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <button class=\"small-font\">Next</button>
+                <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
+                  <div class=\"headline small-font\">Whats service do you need?</div>
+                  <div class=\"details\">
+                    <div class=\"options\">
+                      <span class=\"option small-font\">Service 1</span>
+                      <span class=\"option small-font\">Service 2</span>
+                      <span class=\"option small-font\">Service 3</span>
+                    </div>
+                  </div>
+                  <button class=\"small-font submit\">Submit</button>
+                </div>
               </div>
               <div class=\"col-4\">
                 <div class=\"total-price\">
@@ -619,7 +628,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
         Sign Up to Get Started
       </h3>
-      <form class=\"step1 hidden\">
+      <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
@@ -629,44 +638,45 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
-                  <button class=\"small-font\">Next</button>
+                  <button type=\"button\" class=\"small-font next\">
+                    Next
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </form>
-      <form class=\"step2 hidden\">
+      <form class=\"step2 hidden animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
+                  <input class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Name</label>
-                  <input class=\"form-control\" placeholder=\"Your Name\" type=\"text\">
+                  <input class=\"form-control\" name=\"name\" placeholder=\"Your Name\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Company</label>
-                  <input class=\"form-control\" placeholder=\"Your Company\" type=\"text\">
+                  <input class=\"form-control\" name=\"company\" placeholder=\"Your Company\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Website</label>
-                  <input class=\"form-control\" placeholder=\"Your Website\" type=\"text\">
+                  <input class=\"form-control\" name=\"website\" placeholder=\"Your Website\" type=\"text\">
                 </div>
-              
                 <div>
-                  <button class=\"primary small-font\">Submit</button>
+                  <button type=\"button\" class=\"primary small-font\">Submit</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </form>
-      <div class=\"step3\">
+      <div class=\"step3 hidden animated fadeIn\">
         <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
