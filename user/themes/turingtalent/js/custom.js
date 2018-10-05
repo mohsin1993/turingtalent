@@ -79,12 +79,22 @@ $(".tab-content button.next").on("click", function (e) {
 })
 
 $(".signup .step1 button.next").on("click", function (e) {
-  $(this).html('<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>');
   var email = $(this).closest("form").find("input[name=email]").val();
-  axios.get('https://person-stream.clearbit.com/v2/combined/find?email='+email).then(function (resp) {
-    loadSecondForm(resp.data);
-  });
+  if (validateEmail(email)) {
+    $(this).html('<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>');
+    axios.get('https://person-stream.clearbit.com/v2/combined/find?email='+email).then(function (resp) {
+      loadSecondForm(resp.data);
+    });
+  } else {
+    $(this).closest("form").find("input[name=email]").addClass("error");
+    $(this).closest("form").find(".alert.alert-danger").slideDown("slow");
+  }
 })
+
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
 
 function loadSecondForm(data) {
   var form = $(".signup .step2");

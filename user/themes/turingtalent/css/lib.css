@@ -384,12 +384,18 @@ button.primary {
 }
 .pricing .tab-containers .tab-content {
   display: none;
+  min-height: 188.7px;
+  position: relative;
+}
+.pricing .tab-containers .tab-content button {
+  position: absolute;
+  bottom: 0px;
 }
 .pricing .tab-containers .tab-content.active {
   display: block;
 }
 .pricing .tab-containers .options .option {
-  margin-right: 16px;
+  margin-right: 12px;
   margin-bottom: 16px;
   padding: 7px 20px;
   border-radius: 4px;
@@ -630,4 +636,20 @@ input {
   100% {
     transform: translate(19px, 0);
   }
+}
+.error {
+  border: 1px solid #d66051;
+}
+.alert-danger {
+  color: #d66051;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert {
+  height: 50px;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }

@@ -173,8 +173,7 @@
                   <div class="headline small-font">Whats is your required tech stack?</div>
                   <div class="details">
                     <div class="options">
-                      <span class="option small-font">C</span>
-                      <span class="option small-font">C++</span>
+                      <span class="option small-font">C/C++</span>
                       <span class="option small-font">C#</span>
                       <span class="option small-font">JavaScript</span>
                       <span class="option small-font">Java</span>
@@ -218,7 +217,7 @@
                       <span class="option small-font">Service 3</span>
                     </div>
                   </div>
-                  <button class="small-font submit">Submit</button>
+                  <button class="small-font primary submit">Estimate Price</button>
                 </div>
               </div>
               <div class="col-4">
@@ -249,12 +248,15 @@
       </h3>
       <form class="step1 animated fadeIn">
         <div class="columns content-padding">
-          <div class="column col-9 tt-section-content">
+          <div class="column col-9 tt-section-content" style="padding-right: 0px !important;">
             <div class="columns ml0"> 
               <div class="col-8">
                 <div class="form-group">
+                  <div class="alert alert-danger small-font" style="display: none;" role="alert">
+                    Valid email address is required!
+                  </div>
                   <label class="small-font">Email</label>
-                  <input class="form-control" name="email" placeholder="Your Email" type="text">
+                  <input required class="form-control" name="email" placeholder="Your Email" type="text">
                 </div>
                 <div>
                   <button type="button" class="small-font next">

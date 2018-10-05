@@ -212,8 +212,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   <div class=\"headline small-font\">Whats is your required tech stack?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-                      <span class=\"option small-font\">C</span>
-                      <span class=\"option small-font\">C++</span>
+                      <span class=\"option small-font\">C/C++</span>
                       <span class=\"option small-font\">C#</span>
                       <span class=\"option small-font\">JavaScript</span>
                       <span class=\"option small-font\">Java</span>
@@ -257,7 +256,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span class=\"option small-font\">Service 3</span>
                     </div>
                   </div>
-                  <button class=\"small-font submit\">Submit</button>
+                  <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
               </div>
               <div class=\"col-4\">
@@ -288,12 +287,15 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\">
+          <div class=\"column col-9 tt-section-content\" style=\"padding-right: 0px !important;\">
             <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
+                  <div class=\"alert alert-danger small-font\" style=\"display: none;\" role=\"alert\">
+                    Valid email address is required!
+                  </div>
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
+                  <input required class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
                   <button type=\"button\" class=\"small-font next\">
@@ -342,9 +344,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             </div>
             <div style=\"margin-top: 20px;\"> 
               ";
-        // line 306
+        // line 308
         echo "              ";
-        // line 307
+        // line 309
         echo "            </div>
           </div>
         </div>
@@ -366,7 +368,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  348 => 307,  346 => 306,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  350 => 309,  348 => 308,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -554,8 +556,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   <div class=\"headline small-font\">Whats is your required tech stack?</div>
                   <div class=\"details\">
                     <div class=\"options\">
-                      <span class=\"option small-font\">C</span>
-                      <span class=\"option small-font\">C++</span>
+                      <span class=\"option small-font\">C/C++</span>
                       <span class=\"option small-font\">C#</span>
                       <span class=\"option small-font\">JavaScript</span>
                       <span class=\"option small-font\">Java</span>
@@ -599,7 +600,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span class=\"option small-font\">Service 3</span>
                     </div>
                   </div>
-                  <button class=\"small-font submit\">Submit</button>
+                  <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
               </div>
               <div class=\"col-4\">
@@ -630,12 +631,15 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\">
+          <div class=\"column col-9 tt-section-content\" style=\"padding-right: 0px !important;\">
             <div class=\"columns ml0\"> 
               <div class=\"col-8\">
                 <div class=\"form-group\">
+                  <div class=\"alert alert-danger small-font\" style=\"display: none;\" role=\"alert\">
+                    Valid email address is required!
+                  </div>
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" placeholder=\"Your Email\" type=\"text\">
+                  <input required class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
                   <button type=\"button\" class=\"small-font next\">
