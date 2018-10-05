@@ -65,7 +65,7 @@ function navigateTab(selector) {
   $(tabList + " li").removeClass("active");
   $("a[href='"+selector+"']").closest("li").addClass("active");
   $(tabContainer).find('.tab-content').removeClass("active");
-  $(tabContainer).find(selector).addClass("active fadeIn animated");
+  $(tabContainer).find(selector).addClass("active");
 }
 
 $(options+" .option").on("click", function (e) {
