@@ -80,7 +80,8 @@ $(".tab-content button.next").on("click", function (e) {
 
 $(".signup .step1 button.next").on("click", function (e) {
   $(this).html('<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>');
-  axios.get('https://person-stream.clearbit.com/v2/combined/find?email=Reece_Cullen@spring.com').then(function (resp) {
+  var email = $(this).closest("form").find("input[name=email]").val();
+  axios.get('https://person-stream.clearbit.com/v2/combined/find?email='+email).then(function (resp) {
     loadSecondForm(resp.data);
   });
 })
