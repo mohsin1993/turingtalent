@@ -82,8 +82,11 @@ $(".signup .step1 button.next").on("click", function (e) {
   var email = $(this).closest("form").find("input[name=email]").val();
   if (validateEmail(email)) {
     $(this).html('<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>');
-    axios.get('https://person-stream.clearbit.com/v2/combined/find?email='+email).then(function (resp) {
+    axios.get('https://person-stream.clearbit.com/v2/combined/find?email=' + email).then(function (resp) {
       loadSecondForm(resp.data);
+    }).catch(function(resp) {
+      var obj = { person: { email: email } };
+      loadSecondForm(obj)
     });
   } else {
     $(this).closest("form").find("input[name=email]").addClass("error");
