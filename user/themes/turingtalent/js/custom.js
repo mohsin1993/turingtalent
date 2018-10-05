@@ -108,6 +108,6 @@ function loadSecondForm(data) {
   form.find("[name='company']").val(company);
   form.find("[name='website']").val(website);
 
-  $(".signup .step1").addClass("hidden");
-  $(".signup .step2").removeClass("hidden");
+  $(".signup .step1").slideUp();
+  $(".signup .step2").slideDown();
 }

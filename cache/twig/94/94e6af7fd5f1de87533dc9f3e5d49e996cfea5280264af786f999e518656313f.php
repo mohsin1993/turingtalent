@@ -307,7 +307,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           </div>
         </div>
       </form>
-      <form class=\"step2 hidden animated fadeIn\">
+      <form class=\"step2\" style=\"display: none;\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
@@ -336,7 +336,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           </div>
         </div>
       </form>
-      <div class=\"step3 hidden animated fadeIn\">
+      <div class=\"step3\" style=\"display: none;\">
         <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
@@ -651,7 +651,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           </div>
         </div>
       </form>
-      <form class=\"step2 hidden animated fadeIn\">
+      <form class=\"step2\" style=\"display: none;\">
         <div class=\"columns content-padding\">
           <div class=\"column col-9 tt-section-content\">
             <div class=\"columns ml0\"> 
@@ -680,7 +680,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           </div>
         </div>
       </form>
-      <div class=\"step3 hidden animated fadeIn\">
+      <div class=\"step3\" style=\"display: none;\">
         <div class=\"columns content-padding\">
           <div class=\"column col-12 tt-section-content\">
             <div class=\"headline small-font\">
