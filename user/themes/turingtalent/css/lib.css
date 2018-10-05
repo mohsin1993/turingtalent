@@ -178,7 +178,7 @@ button.primary {
   -webkit-transition: color 200ms linear;
   -ms-transition: color 200ms linear;
   transition: color 200ms linear;
-  color: #686868;
+  color: #9b9b9b;
 }
 *:focus {
   box-shadow: none !important;
