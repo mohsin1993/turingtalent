@@ -83,7 +83,7 @@ $(".signup .step1 button.next").on("click", function (e) {
   if (validateEmail(email)) {
     $(this).html('<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>');
     axios.get('https://person-stream.clearbit.com/v2/combined/find?email=' + email).then(function (resp) {
-      loadSecondForm(resp.data);
+      loadSecondForm(resp.data, email);
     }).catch(function(resp) {
       var obj = { person: { email: email } };
       loadSecondForm(obj)
@@ -99,9 +99,9 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-function loadSecondForm(data) {
+function loadSecondForm(data, email) {
   var form = $(".signup .step2");
-  var email = (data && data.person && data.person.email) ? data.person.email : '';
+  var email = (data && data.person && data.person.email) ? data.person.email : email;
   var name = (data && data.person && data.person.name && data.person.name.fullName) ? data.person.name.fullName : '';
   var company = (data && data.company && data.company.name) ? data.company.name : '';
   var website = (data && data.company && data.company.domain) ? data.company.domain : '';
