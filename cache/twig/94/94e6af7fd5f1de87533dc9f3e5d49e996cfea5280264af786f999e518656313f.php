@@ -206,71 +206,142 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             </ul>
           </div>
           <div class=\"tab-containers\">
-            <div class=\"columns\">
-              <div class=\"col-8\">
-                <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
+            <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
+              <div class=\"headline small-font\">Whats is your required tech stack?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">C/C++</span>
-                      <span class=\"option small-font\">C#</span>
-                      <span class=\"option small-font\">JavaScript</span>
-                      <span class=\"option small-font\">Java</span>
-                      <span class=\"option small-font\">PHP</span>
-                      <span class=\"option small-font\">Python</span>
-                      <span class=\"option small-font\">Ruby</span>
-                      <span class=\"option small-font\">Other</span>
+                    <div class=\"options\" data-key=\"Language\">
+                      <span data-value=\"C / C++\" class=\"option small-font\">C / C++</span>
+                      <span data-value=\"C#\" class=\"option small-font\">C#</span>
+                      <span data-value=\"Javascript\" class=\"option small-font\">JavaScript</span>
+                      <span data-value=\"Java\" class=\"option small-font\">Java</span>
+                      <span data-value=\"PHP\" class=\"option small-font\">PHP</span>
+                      <span data-value=\"Python\" class=\"active option small-font\">Python</span>
+                      <span data-value=\"Ruby\" class=\"option small-font\">Ruby</span>
+                      <span data-value=\"Other\" class=\"option small-font\">Other</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">1-5</span>
-                      <span class=\"option small-font\">6-25</span>
-                      <span class=\"option small-font\">26-50</span>
-                      <span class=\"option small-font\">50+</span>
+                    <div class=\"options\" data-key=\"Developers\">
+                      <span data-value=\"1-10\" class=\"active option small-font\">1-10</span>
+                      <span data-value=\"11-50\" class=\"option small-font\">11-50</span>
+                      <span data-value=\"50-100\" class=\"option small-font\">50-100</span>
+                      <span data-value=\"100+\" class=\"option small-font\">100+</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">How many years of experience do you require?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">How many years of experience do you require?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">1-2</span>
-                      <span class=\"option small-font\">2-5</span>
-                      <span class=\"option small-font\">5+</span>
+                    <div class=\"options\" data-key=\"Experience\">
+                      <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
+                      <span data-value=\"3-6 years\" class=\"option small-font\">3-6 years</span>
+                      <span data-value=\"6-9 years\" class=\"option small-font\">6-9 years</span>
+                      <span data-value=\"9+ years\" class=\"option small-font\">9+ years</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">Whats service do you need?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">Whats service do you need?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">Service 1</span>
-                      <span class=\"option small-font\">Service 2</span>
-                      <span class=\"option small-font\">Service 3</span>
+                    <div class=\"options\" data-key=\"Services\">
+                      <span data-value=\"Talent sourcing & screening\" class=\"option small-font active\">Talent sourcing & screening</span>
+                      <span data-value=\"Managed office\" class=\"option small-font\">Managed office</span>
+                      <span data-value=\"Payroll & accounting\" class=\"option small-font\">Payroll & accounting</span>
+                      <span data-value=\"Community & development\" class=\"option small-font\">Community & development</span>
                     </div>
                   </div>
                   <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
-              </div>
-              <div class=\"col-4\">
-                <div class=\"total-price\">
-                  <div class=\"rectangle\">
-                    <div class=\"price-label small-font\">
-                      \$12,500
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
                     </div>
-                    <div class=\"time small-font\">
-                      per month
+                    <div class=\"est small-font\">
+                      Estimate
                     </div>
-                  </div>
-                  <div class=\"est small-font\">
-                    Estimate
                   </div>
                 </div>
               </div>
@@ -295,10 +366,10 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                     Valid email address is required!
                   </div>
                   <label class=\"small-font\">Email</label>
-                  <input required class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
+                  <input  class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
-                  <button type=\"button\" class=\"small-font next\">
+                  <button type=\"submit\" class=\"small-font next\">
                     Next
                   </button>
                 </div>
@@ -314,22 +385,22 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
+                  <input class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Name</label>
-                  <input class=\"form-control\" name=\"name\" placeholder=\"Your Name\" type=\"text\">
+                  <input class=\"form-control\" name=\"Name\" placeholder=\"Your Name\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Company</label>
-                  <input class=\"form-control\" name=\"company\" placeholder=\"Your Company\" type=\"text\">
+                  <input class=\"form-control\" name=\"Company\" placeholder=\"Your Company\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Website</label>
-                  <input class=\"form-control\" name=\"website\" placeholder=\"Your Website\" type=\"text\">
+                  <input class=\"form-control\" name=\"Website\" placeholder=\"Your Website\" type=\"text\">
                 </div>
                 <div>
-                  <button type=\"button\" class=\"primary small-font\">Submit</button>
+                  <button type=\"submit\" class=\"primary small-font\">Submit</button>
                 </div>
               </div>
             </div>
@@ -343,10 +414,12 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
+              <div class=\"calendly-loader\" style=\"min-width:320px;height:380px;margin-left: 27%;margin-top: 15%;\">
+                <div class=\"dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+              </div>
+              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;display: none;\"></div>
               ";
-        // line 308
-        echo "              ";
-        // line 309
+        // line 383
         echo "            </div>
           </div>
         </div>
@@ -368,7 +441,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  350 => 309,  348 => 308,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  423 => 383,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -550,71 +623,142 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             </ul>
           </div>
           <div class=\"tab-containers\">
-            <div class=\"columns\">
-              <div class=\"col-8\">
-                <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
-                  <div class=\"headline small-font\">Whats is your required tech stack?</div>
+            <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
+              <div class=\"headline small-font\">Whats is your required tech stack?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">C/C++</span>
-                      <span class=\"option small-font\">C#</span>
-                      <span class=\"option small-font\">JavaScript</span>
-                      <span class=\"option small-font\">Java</span>
-                      <span class=\"option small-font\">PHP</span>
-                      <span class=\"option small-font\">Python</span>
-                      <span class=\"option small-font\">Ruby</span>
-                      <span class=\"option small-font\">Other</span>
+                    <div class=\"options\" data-key=\"Language\">
+                      <span data-value=\"C / C++\" class=\"option small-font\">C / C++</span>
+                      <span data-value=\"C#\" class=\"option small-font\">C#</span>
+                      <span data-value=\"Javascript\" class=\"option small-font\">JavaScript</span>
+                      <span data-value=\"Java\" class=\"option small-font\">Java</span>
+                      <span data-value=\"PHP\" class=\"option small-font\">PHP</span>
+                      <span data-value=\"Python\" class=\"active option small-font\">Python</span>
+                      <span data-value=\"Ruby\" class=\"option small-font\">Ruby</span>
+                      <span data-value=\"Other\" class=\"option small-font\">Other</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">1-5</span>
-                      <span class=\"option small-font\">6-25</span>
-                      <span class=\"option small-font\">26-50</span>
-                      <span class=\"option small-font\">50+</span>
+                    <div class=\"options\" data-key=\"Developers\">
+                      <span data-value=\"1-10\" class=\"active option small-font\">1-10</span>
+                      <span data-value=\"11-50\" class=\"option small-font\">11-50</span>
+                      <span data-value=\"50-100\" class=\"option small-font\">50-100</span>
+                      <span data-value=\"100+\" class=\"option small-font\">100+</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">How many years of experience do you require?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">How many years of experience do you require?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">1-2</span>
-                      <span class=\"option small-font\">2-5</span>
-                      <span class=\"option small-font\">5+</span>
+                    <div class=\"options\" data-key=\"Experience\">
+                      <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
+                      <span data-value=\"3-6 years\" class=\"option small-font\">3-6 years</span>
+                      <span data-value=\"6-9 years\" class=\"option small-font\">6-9 years</span>
+                      <span data-value=\"9+ years\" class=\"option small-font\">9+ years</span>
                     </div>
                   </div>
                   <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
-                  <div class=\"headline small-font\">Whats service do you need?</div>
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
+                    </div>
+                    <div class=\"est small-font\">
+                      Estimate
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
+              <div class=\"headline small-font\">Whats service do you need?</div>
+              <div class=\"columns\">
+                <div class=\"col-8\">
                   <div class=\"details\">
-                    <div class=\"options\">
-                      <span class=\"option small-font\">Service 1</span>
-                      <span class=\"option small-font\">Service 2</span>
-                      <span class=\"option small-font\">Service 3</span>
+                    <div class=\"options\" data-key=\"Services\">
+                      <span data-value=\"Talent sourcing & screening\" class=\"option small-font active\">Talent sourcing & screening</span>
+                      <span data-value=\"Managed office\" class=\"option small-font\">Managed office</span>
+                      <span data-value=\"Payroll & accounting\" class=\"option small-font\">Payroll & accounting</span>
+                      <span data-value=\"Community & development\" class=\"option small-font\">Community & development</span>
                     </div>
                   </div>
                   <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
-              </div>
-              <div class=\"col-4\">
-                <div class=\"total-price\">
-                  <div class=\"rectangle\">
-                    <div class=\"price-label small-font\">
-                      \$12,500
+                <div class=\"col-4\">
+                  <div class=\"total-price\">
+                    <div class=\"rectangle\">
+                      <div class=\"price-label small-font\">
+                        <div style=\"display: none;\" class=\"loader dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+                        <div class=\"value\">
+                          \$12,500
+                        </div>
+                      </div>
+                      <div class=\"time small-font\">
+                        per month
+                      </div>
                     </div>
-                    <div class=\"time small-font\">
-                      per month
+                    <div class=\"est small-font\">
+                      Estimate
                     </div>
-                  </div>
-                  <div class=\"est small-font\">
-                    Estimate
                   </div>
                 </div>
               </div>
@@ -639,10 +783,10 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                     Valid email address is required!
                   </div>
                   <label class=\"small-font\">Email</label>
-                  <input required class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
+                  <input  class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div>
-                  <button type=\"button\" class=\"small-font next\">
+                  <button type=\"submit\" class=\"small-font next\">
                     Next
                   </button>
                 </div>
@@ -658,22 +802,22 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"col-8\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
-                  <input class=\"form-control\" name=\"email\" placeholder=\"Your Email\" type=\"text\">
+                  <input class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Name</label>
-                  <input class=\"form-control\" name=\"name\" placeholder=\"Your Name\" type=\"text\">
+                  <input class=\"form-control\" name=\"Name\" placeholder=\"Your Name\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Company</label>
-                  <input class=\"form-control\" name=\"company\" placeholder=\"Your Company\" type=\"text\">
+                  <input class=\"form-control\" name=\"Company\" placeholder=\"Your Company\" type=\"text\">
                 </div>
                 <div class=\"form-group\">
                   <label class=\"small-font\">Website</label>
-                  <input class=\"form-control\" name=\"website\" placeholder=\"Your Website\" type=\"text\">
+                  <input class=\"form-control\" name=\"Website\" placeholder=\"Your Website\" type=\"text\">
                 </div>
                 <div>
-                  <button type=\"button\" class=\"primary small-font\">Submit</button>
+                  <button type=\"submit\" class=\"primary small-font\">Submit</button>
                 </div>
               </div>
             </div>
@@ -687,7 +831,10 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              {# <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;\"></div> #}
+              <div class=\"calendly-loader\" style=\"min-width:320px;height:380px;margin-left: 27%;margin-top: 15%;\">
+                <div class=\"dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
+              </div>
+              <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;display: none;\"></div>
               {# <script type=\"text/javascript\" src=\"https://assets.calendly.com/assets/external/widget.js\"></script> #}
             </div>
           </div>

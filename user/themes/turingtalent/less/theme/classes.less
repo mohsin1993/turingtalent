@@ -280,6 +280,9 @@ button{
   }
 
   .divided-sects{
+    .image{
+      height: 70px;
+    }
     .content{
       margin-top: 12px;
       line-height: 20px;
@@ -309,7 +312,6 @@ button{
   }
   .total-price{
     text-align: center;
-    margin-top: 62px;
     display: table-caption;
     margin-left: auto;
     display: table;
@@ -317,10 +319,10 @@ button{
       line-height: normal;
       letter-spacing: normal;
       color: #b7b7b7;
-      margin-top: 47px;
+      margin-top: 60px;
     }
     .rectangle{
-      height: 80px;
+      height: 83px;
       min-width: 176px;
       border-radius: 4px;
       border: solid 1px #b7b7b7;
@@ -328,6 +330,8 @@ button{
       position: relative;
 
       .price-label{
+        height: 33px;
+        overflow: hidden;
         font-size: 32px !important;
         font-weight: bold !important;
         line-height: normal;
@@ -338,6 +342,12 @@ button{
         top: 16px;
         left: 0;
         right: 0;
+        .value{
+          height: 33px;
+        }
+        .loader{
+          height: 18px;
+        }
       }
 
       .time{
@@ -361,6 +371,11 @@ button{
       color: #4a4a4a;
       margin-right: 24px;   
       flex: 0 0 0;
+      &:first-child{
+        a{
+          padding-left: 0px !important;
+        }
+      }
       &.active{
         a{
           color: #048ab6;
@@ -378,18 +393,22 @@ button{
   .tab-containers{
     .columns{
       margin-left: 0px !important;
-    }
-    .details{
       margin-top: 11px;
     }
 
     .tab-content{
       display: none;
-      min-height: 188.7px;
       position: relative;
+      &#servic-tab  .option{
+        margin-right: 2px !important;
+        padding: 7px 12px !important;
+      }
+      &#dev-tab button{
+        margin-top: 87px !important;
+      }
       button{
-        position: absolute;
-        bottom: 0px;
+        // position: absolute;
+        margin-top: 40px;
       }
       &.active{
         display: block;
@@ -400,7 +419,7 @@ button{
       .option{
         margin-right: 12px;
         margin-bottom: 16px;
-        padding: 7px 20px;
+        padding: 7px 17px;
         border-radius: 4px;
         border: solid 1px #b7b7b7;
         line-height: normal;
@@ -576,14 +595,21 @@ input{
   width: 64px;
   height: 16px;
 }
-.lds-ellipsis div {
-  position: absolute;
-  top: 5px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+.lds-ellipsis  {
+  &.dark{
+    div{
+      background: #686868 !important;
+    }
+  }
+  div{
+    position: absolute;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
 }
 .lds-ellipsis div:nth-child(1) {
   left: 6px;

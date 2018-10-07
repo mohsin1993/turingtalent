@@ -295,6 +295,9 @@ button.primary {
   letter-spacing: normal;
   color: #4a4a4a;
 }
+.tt-section .divided-sects .image {
+  height: 70px;
+}
 .tt-section .divided-sects .content {
   margin-top: 12px;
   line-height: 20px;
@@ -318,7 +321,6 @@ button.primary {
 }
 .pricing .total-price {
   text-align: center;
-  margin-top: 62px;
   display: table-caption;
   margin-left: auto;
   display: table;
@@ -327,10 +329,10 @@ button.primary {
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
-  margin-top: 47px;
+  margin-top: 60px;
 }
 .pricing .total-price .rectangle {
-  height: 80px;
+  height: 83px;
   min-width: 176px;
   border-radius: 4px;
   border: solid 1px #b7b7b7;
@@ -338,6 +340,8 @@ button.primary {
   position: relative;
 }
 .pricing .total-price .rectangle .price-label {
+  height: 33px;
+  overflow: hidden;
   font-size: 32px !important;
   font-weight: bold !important;
   line-height: normal;
@@ -348,6 +352,12 @@ button.primary {
   top: 16px;
   left: 0;
   right: 0;
+}
+.pricing .total-price .rectangle .price-label .value {
+  height: 33px;
+}
+.pricing .total-price .rectangle .price-label .loader {
+  height: 18px;
 }
 .pricing .total-price .rectangle .time {
   position: absolute;
@@ -369,6 +379,9 @@ button.primary {
   margin-right: 24px;
   flex: 0 0 0;
 }
+.pricing .tab .tab-item:first-child a {
+  padding-left: 0px !important;
+}
 .pricing .tab .tab-item.active a {
   color: #048ab6;
   border-bottom-color: #048ab6;
@@ -378,18 +391,21 @@ button.primary {
 }
 .pricing .tab-containers .columns {
   margin-left: 0px !important;
-}
-.pricing .tab-containers .details {
   margin-top: 11px;
 }
 .pricing .tab-containers .tab-content {
   display: none;
-  min-height: 188.7px;
   position: relative;
 }
+.pricing .tab-containers .tab-content#servic-tab .option {
+  margin-right: 2px !important;
+  padding: 7px 12px !important;
+}
+.pricing .tab-containers .tab-content#dev-tab button {
+  margin-top: 87px !important;
+}
 .pricing .tab-containers .tab-content button {
-  position: absolute;
-  bottom: 0px;
+  margin-top: 40px;
 }
 .pricing .tab-containers .tab-content.active {
   display: block;
@@ -397,7 +413,7 @@ button.primary {
 .pricing .tab-containers .options .option {
   margin-right: 12px;
   margin-bottom: 16px;
-  padding: 7px 20px;
+  padding: 7px 17px;
   border-radius: 4px;
   border: solid 1px #b7b7b7;
   line-height: normal;
@@ -588,6 +604,9 @@ input {
   width: 64px;
   height: 16px;
 }
+.lds-ellipsis.dark div {
+  background: #686868 !important;
+}
 .lds-ellipsis div {
   position: absolute;
   top: 5px;
@@ -646,7 +665,6 @@ input {
   border-color: #f5c6cb;
 }
 .alert {
-  height: 50px;
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
