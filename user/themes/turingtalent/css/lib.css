@@ -320,10 +320,10 @@ button.primary {
   display: none !important;
 }
 .navbar {
-  padding: 20px 24px 30px 16px;
+  padding: 10px 24px 20px 16px;
 }
 .navbar .navbar-brand {
-  padding: 0px !important;
+  padding: 10px  0px !important;
 }
 .navbar .Turing-Talent-Logo {
   vertical-align: middle;
@@ -887,6 +887,7 @@ input {
   padding-left: 0px;
 }
 .dropdown-toggle {
+  margin-top: 10px;
   display: none;
 }
 #toggle-menu-icon {
