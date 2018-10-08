@@ -38,6 +38,7 @@
 @media (min-width: 0px) and (max-width: 600px) {
   .navbar ul.top {
     display: none;
+    padding: 0px;
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -936,4 +937,9 @@ input {
 }
 #toggle-menu-icon .line.line-3 {
   top: 100%;
+}
+ol,
+ul {
+  list-style-position: outside !important;
+  padding-left: 20px;
 }
