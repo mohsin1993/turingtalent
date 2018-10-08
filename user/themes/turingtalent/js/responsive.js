@@ -8,7 +8,7 @@
       $(this).toggleClass("active");
       $(".navbar ul.navbar-section.top").slideToggle("fast");
     }
-    $(".navbar-brand").on("click", function () {
+    $(".navbar-brand,.Turing-Talent-Logo").on("click", function () {
       window.href = "/";
     })
     ///////////////Mobile Dimension change/////////////
