@@ -28,8 +28,45 @@
   .banner-section .text-section p {
     font-size: 18px !important;
   }
+  .footer section.navbar-section {
+    justify-content: space-around !important;
+  }
+  .footer ul.navbar-section {
+    display: none !important;
+  }
 }
 @media (min-width: 0px) and (max-width: 600px) {
+  .navbar ul.top {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    z-index: 999;
+    left: 0;
+    background: #f1f1f1;
+  }
+  .navbar ul.top li {
+    border-bottom: 1px solid #dcdbdb82;
+    text-align: center !important;
+    transition: all 0.3;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  }
+  .navbar ul.top li:last-child {
+    border: none !important;
+  }
+  .navbar ul.top li a {
+    font-weight: 400 !important;
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+  }
+  .navbar ul.top li:hover {
+    transition: all 0.3;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  }
   .oval object {
     width: 80px !important;
     height: 80px !important;
@@ -856,4 +893,47 @@ input {
   letter-spacing: 0.42px;
   color: #686868;
   padding-left: 0px;
+}
+.dropdown-toggle {
+  display: none;
+}
+#toggle-menu-icon {
+  width: 30px;
+  height: 17px;
+  position: relative;
+  display: block;
+}
+#toggle-menu-icon.active .line-1 {
+  transform: translateY(8.4px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(8.4px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(8.4px) translateX(0) rotate(45deg);
+}
+#toggle-menu-icon.active .line-2 {
+  opacity: 0;
+}
+#toggle-menu-icon.active .line-3 {
+  transform: translateY(-8.4px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-8.4px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-8.4px) translateX(0) rotate(-45deg);
+}
+#toggle-menu-icon .line {
+  display: block;
+  background: black;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+#toggle-menu-icon .line.line-1 {
+  top: 0;
+}
+#toggle-menu-icon .line.line-2 {
+  top: 50%;
+}
+#toggle-menu-icon .line.line-3 {
+  top: 100%;
 }

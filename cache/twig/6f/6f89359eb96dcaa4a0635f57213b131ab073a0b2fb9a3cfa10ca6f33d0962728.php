@@ -21,13 +21,18 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 2
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://code.jquery.com/jquery-3.3.1.min.js", 1 => array("group" => "bottom")), "method");
+        // line 3
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.js", 1 => array("group" => "bottom")), "method");
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 2
+    // line 4
     public function block_content($context, array $blocks = array())
     {
-        // line 3
+        // line 5
         echo "  <section style=\"min-height: 153px;\" class=\"main-header normal-font\">
     <div class=\"columns ml0\">
       <div class=\"col-12 content-padding\">
@@ -40,10 +45,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
     </div>
   </section>
-
-  ";
-        // line 28
-        echo "  <section style=\"min-height: 413px;\" class=\"about-sect tt-section\">
+  <section style=\"min-height: 413px;\" class=\"about-sect tt-section\">
     <h3 class=\"left-border normal-font\">
       Founders
     </h3>
@@ -51,7 +53,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       <div class=\"col-6 col-md-12 col-xs-12 column animated fadeInDown people\">
         <div>
           <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"";
-        // line 35
+        // line 24
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/christina.png");
         echo "\" srcset=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/christina@2x.png");
@@ -71,7 +73,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <div>
           <img class=\"bitmap\" height=\"160\" width=\"160\" src=\"";
-        // line 48
+        // line 37
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/corine.png");
         echo "\" srcset=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/corine@2x.png");
@@ -98,7 +100,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <div>
           <img class=\"bitmap\" src=\"";
-        // line 68
+        // line 57
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/daniel.png");
         echo "\" srcset=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/daniel@2x.png");
@@ -118,7 +120,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       <div class=\"col-6 col-md-12 col-xs-12 column people animated fadeInDown\">
         <div>
           <img class=\"bitmap\" src=\"";
-        // line 81
+        // line 70
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/jon.png");
         echo "\" srcset=\"";
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/jon@2x.png");
@@ -152,7 +154,7 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
 
     public function getDebugInfo()
     {
-        return array (  122 => 81,  102 => 68,  75 => 48,  55 => 35,  46 => 28,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  124 => 70,  104 => 57,  77 => 37,  57 => 24,  36 => 5,  33 => 4,  29 => 1,  27 => 3,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -166,6 +168,8 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
+{% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
 {% block content %}
   <section style=\"min-height: 153px;\" class=\"main-header normal-font\">
     <div class=\"columns ml0\">
@@ -179,19 +183,6 @@ class __TwigTemplate_577775a8ef57e041d52150f105111eeb833154793abc46bb7d7043c8a9b
       </div>
     </div>
   </section>
-
-  {# <section style=\"min-height: 153px;\" class=\"main-header normal-font content-padding tt-section \">
-    <div class=\"columns\">
-      <div class=\"col-9 col-md-12 col-xs-12 column\">
-        <h1 class=\"normal-font\">
-          About
-        </h1>
-        <p class=\"normal-font tt-section-content mt32 mb0\">
-          Talent is everywhere, opportunity is not. We are changing that. 
-        </p>
-      </div>
-    </div>
-  </section> #}
   <section style=\"min-height: 413px;\" class=\"about-sect tt-section\">
     <h3 class=\"left-border normal-font\">
       Founders

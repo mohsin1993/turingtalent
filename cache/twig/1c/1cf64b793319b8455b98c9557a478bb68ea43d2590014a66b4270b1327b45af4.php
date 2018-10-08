@@ -24,10 +24,10 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 2
+    // line 3
     public function block_content($context, array $blocks = array())
     {
-        // line 3
+        // line 4
         echo "  <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
       <div class=\"col-12 content-padding\">
@@ -96,7 +96,7 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
 
     public function getDebugInfo()
     {
-        return array (  31 => 3,  28 => 2,  11 => 1,);
+        return array (  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -110,6 +110,7 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
+
 {% block content %}
   <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">

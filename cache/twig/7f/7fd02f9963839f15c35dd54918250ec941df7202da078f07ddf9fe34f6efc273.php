@@ -35,32 +35,32 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 35
+        // line 36
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 36
+        // line 37
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo " site-container\">
 
 ";
-        // line 38
+        // line 39
         $this->displayBlock('header', $context, $blocks);
-        // line 55
-        echo "
-";
-        // line 56
-        $this->displayBlock('body', $context, $blocks);
         // line 63
         echo "
 ";
         // line 64
-        $this->displayBlock('footer', $context, $blocks);
-        // line 81
+        $this->displayBlock('body', $context, $blocks);
+        // line 71
         echo "
 ";
-        // line 82
+        // line 72
+        $this->displayBlock('footer', $context, $blocks);
+        // line 89
+        echo "
+";
+        // line 90
         $this->displayBlock('bottom', $context, $blocks);
-        // line 100
+        // line 108
         echo "
 </body>
 </html>
@@ -111,7 +111,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     ";
         // line 28
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 33
+        // line 34
         echo "
 ";
     }
@@ -140,98 +140,98 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     {
         // line 29
         echo "      ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://unpkg.com/axios@0.18.0/dist/axios.min.js", 1 => array("group" => "bottom")), "method");
-        // line 30
-        echo "      ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://code.jquery.com/jquery-3.3.1.min.js", 1 => array("group" => "bottom")), "method");
-        // line 31
-        echo "      ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/custom.js", 1 => array("group" => "bottom")), "method");
-        // line 32
+        // line 33
         echo "    ";
     }
 
-    // line 38
+    // line 39
     public function block_header($context, array $blocks = array())
     {
-        // line 39
+        // line 40
         echo "  <section class=\"content-padding\">
     <section class=\"top-rectangle\"></section>
-    <header class=\"navbar\">
+    <header class=\"navbar\" style=\"position: relative;\">
       <section class=\"navbar-section\">
         <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
           <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 44
+        // line 45
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
             Your browser does not support SVG
           </object>
          </a>
       </section>
-      <ul class=\"navbar-section right\">
+      <section class=\"dropdown-toggle animated fadeIn show-sm\">
+        <a id=\"toggle-menu-icon\" title=\"Menu\">
+          <span class=\"line line-1\"></span>
+          <span class=\"line line-2\"></span>
+          <span class=\"line line-3\"></span>
+        </a>
+      </section>
+      <ul class=\"navbar-section right top \">
         ";
-        // line 50
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 50)->display($context);
-        // line 51
+        // line 58
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 58)->display($context);
+        // line 59
         echo "      </ul>
     </header>
   </section>
 ";
     }
 
-    // line 56
+    // line 64
     public function block_body($context, array $blocks = array())
     {
-        // line 57
+        // line 65
         echo "    <section id=\"body\">
         <div>
         ";
-        // line 59
+        // line 67
         $this->displayBlock('content', $context, $blocks);
-        // line 60
+        // line 68
         echo "        </div>
     </section>
 ";
     }
 
-    // line 59
+    // line 67
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 64
+    // line 72
     public function block_footer($context, array $blocks = array())
     {
-        // line 65
+        // line 73
         echo "    <div class=\"footer\" style=\"padding: 0px 15px;\">
       <div class=\"navbar\" style=\"padding-top: 30px;\">
         <section class=\"navbar-section\">
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
             <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 69
+        // line 77
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
               Your browser does not support SVG
             </object>
             ";
-        // line 73
+        // line 81
         echo "          </a>
         </section>
         <ul class=\"navbar-section right\">
           ";
-        // line 76
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 76)->display($context);
-        // line 77
+        // line 84
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 84)->display($context);
+        // line 85
         echo "        </ul>
       </div>
     </div>
 ";
     }
 
-    // line 82
+    // line 90
     public function block_bottom($context, array $blocks = array())
     {
-        // line 83
+        // line 91
         echo "    <script>
       function fadeIn(el, time) {
         el.style.opacity = 0;
@@ -248,7 +248,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       fadeIn(document.querySelector(\".fouc\"), 300);
     </script>
     ";
-        // line 98
+        // line 106
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
 ";
@@ -266,7 +266,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     public function getDebugInfo()
     {
-        return array (  252 => 98,  235 => 83,  232 => 82,  225 => 77,  223 => 76,  218 => 73,  212 => 69,  206 => 65,  203 => 64,  198 => 59,  192 => 60,  190 => 59,  186 => 57,  183 => 56,  176 => 51,  174 => 50,  165 => 44,  158 => 39,  155 => 38,  151 => 32,  148 => 31,  145 => 30,  142 => 29,  139 => 28,  135 => 25,  132 => 24,  129 => 23,  126 => 22,  123 => 21,  120 => 20,  115 => 33,  113 => 28,  107 => 26,  105 => 20,  95 => 13,  90 => 12,  88 => 11,  77 => 7,  74 => 6,  71 => 5,  64 => 100,  62 => 82,  59 => 81,  57 => 64,  54 => 63,  52 => 56,  49 => 55,  47 => 38,  42 => 36,  39 => 35,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
+        return array (  252 => 106,  235 => 91,  232 => 90,  225 => 85,  223 => 84,  218 => 81,  212 => 77,  206 => 73,  203 => 72,  198 => 67,  192 => 68,  190 => 67,  186 => 65,  183 => 64,  176 => 59,  174 => 58,  158 => 45,  151 => 40,  148 => 39,  144 => 33,  142 => 29,  139 => 28,  135 => 25,  132 => 24,  129 => 23,  126 => 22,  123 => 21,  120 => 20,  115 => 34,  113 => 28,  107 => 26,  105 => 20,  95 => 13,  90 => 12,  88 => 11,  77 => 7,  74 => 6,  71 => 5,  64 => 108,  62 => 90,  59 => 89,  57 => 72,  54 => 71,  52 => 64,  49 => 63,  47 => 39,  42 => 37,  39 => 36,  37 => 5,  32 => 3,  29 => 2,  27 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -307,9 +307,10 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     {{ assets.css() }}
 
     {% block javascripts %}
+      {# {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
       {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
-      {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
       {% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
+      {% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %} #}
     {% endblock %}
 
 {% endblock head %}
@@ -319,7 +320,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 {% block header %}
   <section class=\"content-padding\">
     <section class=\"top-rectangle\"></section>
-    <header class=\"navbar\">
+    <header class=\"navbar\" style=\"position: relative;\">
       <section class=\"navbar-section\">
         <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
           <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ url('theme://images/turing-talent-logo.svg') }}\">
@@ -327,7 +328,14 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
           </object>
          </a>
       </section>
-      <ul class=\"navbar-section right\">
+      <section class=\"dropdown-toggle animated fadeIn show-sm\">
+        <a id=\"toggle-menu-icon\" title=\"Menu\">
+          <span class=\"line line-1\"></span>
+          <span class=\"line line-2\"></span>
+          <span class=\"line line-3\"></span>
+        </a>
+      </section>
+      <ul class=\"navbar-section right top \">
         {% include 'partials/navigation.html.twig' %}
       </ul>
     </header>

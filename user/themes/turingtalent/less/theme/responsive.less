@@ -31,12 +31,55 @@
   }
 
   .banner-section .text-section p{
-    font-size: 18px !important;;
+    font-size: 18px !important;
+  }
+
+  .footer section.navbar-section{
+    justify-content: space-around !important;
+  }
+
+  .footer ul.navbar-section{
+    display: none !important;
   }
 }
 
 
 @media (min-width: 0px) and (max-width: @screen-sm-min){
+  .navbar{
+    ul.top{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 56px;
+      z-index: 999;
+      left: 0;
+      background: #f1f1f1;
+      li{
+        &:last-child{
+          border: none !important;
+        }
+        a{
+          font-weight: 400 !important;
+          display: inline-block;
+          width: 100%;
+          line-height: 50px;
+        }
+        border-bottom: 1px solid #dcdbdb82;
+        
+        text-align: center !important;
+        transition: all 0.3;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        &:hover{
+          // background: #717171;
+          transition: all 0.3;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+        }
+      }
+    }
+  }
   .oval object{
     width: 80px !important;
     height: 80px !important;

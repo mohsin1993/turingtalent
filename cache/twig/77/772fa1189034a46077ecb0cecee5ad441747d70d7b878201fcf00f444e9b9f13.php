@@ -21,17 +21,22 @@ class __TwigTemplate_159294e6ad995f190ef487e100aa1f9d619bc4090a57c22d1f38d3c6ea5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 2
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://code.jquery.com/jquery-3.3.1.min.js", 1 => array("group" => "bottom")), "method");
+        // line 3
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.js", 1 => array("group" => "bottom")), "method");
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 3
+    // line 4
     public function block_content($context, array $blocks = array())
     {
-        // line 4
+        // line 5
         echo "    <div class=\"lead text-center\">
         <h1>Error!</h1>
         ";
-        // line 6
+        // line 7
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
         echo "
     </div>
@@ -50,7 +55,7 @@ class __TwigTemplate_159294e6ad995f190ef487e100aa1f9d619bc4090a57c22d1f38d3c6ea5
 
     public function getDebugInfo()
     {
-        return array (  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  40 => 7,  36 => 5,  33 => 4,  29 => 1,  27 => 3,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -64,7 +69,8 @@ class __TwigTemplate_159294e6ad995f190ef487e100aa1f9d619bc4090a57c22d1f38d3c6ea5
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
-
+{% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
 {% block content %}
     <div class=\"lead text-center\">
         <h1>Error!</h1>

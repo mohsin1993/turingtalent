@@ -26,9 +26,10 @@
     {{ assets.css() }}
 
     {% block javascripts %}
+      {# {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
       {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
-      {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
       {% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
+      {% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %} #}
     {% endblock %}
 
 {% endblock head %}
@@ -38,7 +39,7 @@
 {% block header %}
   <section class="content-padding">
     <section class="top-rectangle"></section>
-    <header class="navbar">
+    <header class="navbar" style="position: relative;">
       <section class="navbar-section">
         <a href="/" class="navbar-brand mr-2 nav-item small-font">
           <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
@@ -46,7 +47,14 @@
           </object>
          </a>
       </section>
-      <ul class="navbar-section right">
+      <section class="dropdown-toggle animated fadeIn show-sm">
+        <a id="toggle-menu-icon" title="Menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </a>
+      </section>
+      <ul class="navbar-section right top ">
         {% include 'partials/navigation.html.twig' %}
       </ul>
     </header>

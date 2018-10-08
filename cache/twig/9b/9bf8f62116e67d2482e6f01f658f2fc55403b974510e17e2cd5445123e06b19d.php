@@ -21,13 +21,18 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 2
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://code.jquery.com/jquery-3.3.1.min.js", 1 => array("group" => "bottom")), "method");
+        // line 3
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.js", 1 => array("group" => "bottom")), "method");
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 2
+    // line 4
     public function block_content($context, array $blocks = array())
     {
-        // line 3
+        // line 5
         echo "<section>
   <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
@@ -70,7 +75,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 44
+        // line 46
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/talent.svg");
         echo "\">
                   Your browser does not support SVG
@@ -92,7 +97,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 63
+        // line 65
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
@@ -115,7 +120,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 83
+        // line 85
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
@@ -137,7 +142,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 102
+        // line 104
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
@@ -216,7 +221,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
 
     public function getDebugInfo()
     {
-        return array (  141 => 102,  119 => 83,  96 => 63,  74 => 44,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  146 => 104,  124 => 85,  101 => 65,  79 => 46,  36 => 5,  33 => 4,  29 => 1,  27 => 3,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -230,6 +235,8 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
+{% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
 {% block content %}
 <section>
   <section class=\"main-header normal-font\">

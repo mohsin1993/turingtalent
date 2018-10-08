@@ -21,17 +21,26 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 2
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://code.jquery.com/jquery-3.3.1.min.js", 1 => array("group" => "bottom")), "method");
+        // line 3
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://unpkg.com/axios@0.18.0/dist/axios.min.js", 1 => array("group" => "bottom")), "method");
+        // line 4
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/custom.js", 1 => array("group" => "bottom")), "method");
+        // line 5
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.js", 1 => array("group" => "bottom")), "method");
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 2
+    // line 6
     public function block_content($context, array $blocks = array())
     {
-        // line 3
+        // line 7
         echo "  <section class=\"animated fadeInDown\" style=\"padding-bottom: 37px;\">
     <div class=\"banner-section\">
       ";
-        // line 9
+        // line 13
         echo "      <div class=\"padded\">
         <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
         <div class=\"columns\">
@@ -46,7 +55,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div class=\"image\">
               <div class=\"oval\">
                 <object type=\"image/svg+xml\" data=\"";
-        // line 22
+        // line 26
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/distributed.svg");
         echo "\">
                   Your browser does not support SVG
@@ -78,14 +87,14 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         One Monthly Fee, Many Benefits.
       </h3>
       ";
-        // line 55
+        // line 59
         echo "      <div class=\"divided-sects content-padding\">
         <div class=\"columns\">
           <div class=\"column col-3 col-md-6 col-sm-12\">
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 60
+        // line 64
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/talent.svg");
         echo "\">
                   Your browser does not support SVG
@@ -110,7 +119,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 82
+        // line 86
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
@@ -134,7 +143,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 103
+        // line 107
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
@@ -158,7 +167,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 124
+        // line 128
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
@@ -333,7 +342,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                     </div>
                   </div>
                   ";
-        // line 297
+        // line 301
         echo "                </div>
                 <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
@@ -428,7 +437,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               </div>
               <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;display: none;\"></div>
               ";
-        // line 391
+        // line 395
         echo "            </div>
           </div>
         </div>
@@ -450,7 +459,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  432 => 391,  337 => 297,  162 => 124,  138 => 103,  114 => 82,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  441 => 395,  346 => 301,  171 => 128,  147 => 107,  123 => 86,  98 => 64,  91 => 59,  59 => 26,  44 => 13,  40 => 7,  37 => 6,  33 => 1,  31 => 5,  29 => 4,  27 => 3,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -464,6 +473,10 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
     public function getSourceContext()
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
+{% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
+{% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
+{% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
 {% block content %}
   <section class=\"animated fadeInDown\" style=\"padding-bottom: 37px;\">
     <div class=\"banner-section\">
@@ -859,7 +872,6 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </div>
     </div>
   </section>
-{% endblock %}
-", "home.html.twig", "/Users/mohsanriaz/Sites/grav-admin/user/themes/turingtalent/templates/home.html.twig");
+{% endblock %}", "home.html.twig", "/Users/mohsanriaz/Sites/grav-admin/user/themes/turingtalent/templates/home.html.twig");
     }
 }

@@ -1,4 +1,6 @@
 {% extends 'partials/base.html.twig' %}
+{% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
 {% block content %}
   <section style="min-height: 153px;" class="main-header normal-font">
     <div class="columns ml0">
@@ -12,19 +14,6 @@
       </div>
     </div>
   </section>
-
-  {# <section style="min-height: 153px;" class="main-header normal-font content-padding tt-section ">
-    <div class="columns">
-      <div class="col-9 col-md-12 col-xs-12 column">
-        <h1 class="normal-font">
-          About
-        </h1>
-        <p class="normal-font tt-section-content mt32 mb0">
-          Talent is everywhere, opportunity is not. We are changing that. 
-        </p>
-      </div>
-    </div>
-  </section> #}
   <section style="min-height: 413px;" class="about-sect tt-section">
     <h3 class="left-border normal-font">
       Founders
