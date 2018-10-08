@@ -918,7 +918,7 @@ input {
 }
 #toggle-menu-icon .line {
   display: block;
-  background: black;
+  background: #686868;
   width: 30px;
   height: 3px;
   position: absolute;
