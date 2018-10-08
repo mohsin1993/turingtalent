@@ -29,9 +29,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
     {
         // line 3
         echo "<section>
-  <section class=\"main-header normal-font content-padding\">
+  <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
-      <div class=\"col-12\">
+      <div class=\"col-12 content-padding\">
         <h1 class=\"normal-font\">
           A Happy Home for Engineers
         </h1>
@@ -44,7 +44,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Why Turing Talent
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content\">
+        <div class=\"column col-9 col-md-12 tt-section-content\">
           <p class=\"normal-font\">
             We help companies ‘build their own remote technical teams in our European hubs. You get the benefits of being a full-time employee of the company you’re working at, as well as being part of a local, high-calibre Turing Talent community.
           </p>
@@ -58,7 +58,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         More than a Job
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <p class=\"small-font\">
             Once you’re part of Turing Talent you’ll have access to a range of benefits and perks that will help you advance your career.
           </p>
@@ -66,8 +66,8 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
       <div class=\"divided-sects content-padding\">
         <div class=\"columns\">
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 44
@@ -76,76 +76,84 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Career Acceleration
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Soft skills and leadership development program that will help you grow and</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Career Acceleration
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Soft skills and leadership development program that will help you grow and</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 61
+        // line 63
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Work Life Balance
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Child care for parents</li>
-                  <li>Personalised mentoring programme</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Work Life Balance
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Child care for parents</li>
+                    <li>Personalised mentoring programme</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 79
+        // line 83
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Community
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Friends for life. Build a high-calibre network of fellow engineers and data scientists</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Community
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Friends for life. Build a high-calibre network of fellow engineers and data scientists</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 96
+        // line 102
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Give Back
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Opportunities to give back</li>
-                  <li>Coaching</li>
-                  <li>Contributing to open source projects</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Give Back
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Opportunities to give back</li>
+                    <li>Coaching</li>
+                    <li>Contributing to open source projects</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -159,7 +167,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Application Process
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <div class=\"small-font\">
             <ol>
               <li>Apply to Turing Talent</li>
@@ -179,7 +187,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Open Jobs
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <div class=\"small-font\">
             <ul>
               <li>Frontend Engineer at Host Compliance</li>
@@ -208,7 +216,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
 
     public function getDebugInfo()
     {
-        return array (  135 => 96,  115 => 79,  94 => 61,  74 => 44,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  141 => 102,  119 => 83,  96 => 63,  74 => 44,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -224,9 +232,9 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% block content %}
 <section>
-  <section class=\"main-header normal-font content-padding\">
+  <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
-      <div class=\"col-12\">
+      <div class=\"col-12 content-padding\">
         <h1 class=\"normal-font\">
           A Happy Home for Engineers
         </h1>
@@ -239,7 +247,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Why Turing Talent
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content\">
+        <div class=\"column col-9 col-md-12 tt-section-content\">
           <p class=\"normal-font\">
             We help companies ‘build their own remote technical teams in our European hubs. You get the benefits of being a full-time employee of the company you’re working at, as well as being part of a local, high-calibre Turing Talent community.
           </p>
@@ -253,7 +261,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         More than a Job
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <p class=\"small-font\">
             Once you’re part of Turing Talent you’ll have access to a range of benefits and perks that will help you advance your career.
           </p>
@@ -261,74 +269,82 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
       </div>
       <div class=\"divided-sects content-padding\">
         <div class=\"columns\">
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/talent.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Career Acceleration
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Soft skills and leadership development program that will help you grow and</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Career Acceleration
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Soft skills and leadership development program that will help you grow and</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/office.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Work Life Balance
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Child care for parents</li>
-                  <li>Personalised mentoring programme</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Work Life Balance
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Child care for parents</li>
+                    <li>Personalised mentoring programme</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/operations.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Community
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Friends for life. Build a high-calibre network of fellow engineers and data scientists</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Community
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Friends for life. Build a high-calibre network of fellow engineers and data scientists</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\" style=\"padding-right: 25px;\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/community.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Give Back
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Opportunities to give back</li>
-                  <li>Coaching</li>
-                  <li>Contributing to open source projects</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Give Back
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Opportunities to give back</li>
+                    <li>Coaching</li>
+                    <li>Contributing to open source projects</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -342,7 +358,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Application Process
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <div class=\"small-font\">
             <ol>
               <li>Apply to Turing Talent</li>
@@ -362,7 +378,7 @@ class __TwigTemplate_6649fe7aaa56231608900763acb8a436adb50c61c01fb7575f8dde939e4
         Open Jobs
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small\">
           <div class=\"small-font\">
             <ul>
               <li>Frontend Engineer at Host Compliance</li>

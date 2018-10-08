@@ -2,12 +2,190 @@
   .people{
     margin-bottom: 40px;
   }
-  
 }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
+  .oval object{
+    width: 121px !important;
+    height: 121px !important;
+  }
+  .option{
+    margin-right: 7px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: @screen-xs-min){
+  .people{
+    .contet-sect{
+      margin-left: 0px !important;
+    }
+    flex-direction: column;
+  }
+  
+  .tt-section h3{
+    font-size: 18px !important;
+  }
+
+  .tt-section-content{
+    font-size: 16px !important;
+  }
+
+  .banner-section .text-section p{
+    font-size: 18px !important;;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: @screen-sm-min){
+  .oval object{
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .banner-section .oval{
+    margin-top: 73px !important;
+    margin-right: 37 !important;
+  }
+
+  .banner-section .text-section p{
+    font-size: 21px;
+  }
+
+  .divided-sects{
+    .divided-sect{
+      display: flex;
+      .contet-sect{
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .total-price{
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .est{
+      margin-top: 20px !important;
+    }
+  }
+
+  .headline{
+    margin-top: 15px !important;
+  }
+
+  .option{
+    margin-right: 4px !important;
+    padding: 7px 15px !important;
+  }
+
+  .pricing .tab-containers .tab-content button {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: @screen-xs-min){
+  .people{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px){
+  .people{
+    margin-bottom: 40px;
+  }
+  .banner-section .oval{
+    margin-top: 73px !important;
+    margin-right: 30px !important;
+  }
+
+  .pricing .tab .tab-item {
+    margin-right: 7px !important;
+  }
+}
+
 
 @media (min-width: @screen-md-min){
   .people{
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: @screen-md-min){
+  .people{
+    padding: 0px !important;
+    display: flex;
+    .contet-sect{
+      margin-left: 16px;
+    }
+  }
+
+  .job {
+    h3{
+      padding: 0px 15px !important;
+    }
+    .actions{
+      padding: 0px 20px !important;
+    }
+    h3 + p{
+      padding: 0px 25px !important;
+    }
+
+    ul, ol{
+      padding: 0px 25px !important;
+      margin-left: 25px !important;
+    }
+  }
+
+  .about-sect .content-padding{
+    margin-left: 0px !important;
+  }
+  
+  .tt-section{
+    margin-top: 20px !important;
+    h3{
+      padding-left: 15px !important;
+    }
+    .content-padding{
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+  }
+
+  .divided-sects{
+    margin-top: 0px !important;
+    .column{
+      margin-top: 20px;
+    }
+  }
+  .main-header h1{
+    font-size: 37px !important;
+  }
+
+  .banner-section {
+    margin: 0px 10px;
+    height: 380px !important;;
+    padding: 25px 15px 15px 15px !important;
+
+    .image{
+      margin-top: 0px !important;
+      position: inherit !important;
+      .oval{
+        margin-top: 150px;
+        margin-right: 20px;
+        padding: 0px !important;
+        top: 0px !important; 
+        background-color: transparent !important;
+        border-radius: 204px;
+        right: 0px !important;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 755px){
+  .banner-section h1{
+    font-size: 35px !important;
   }
 }
 

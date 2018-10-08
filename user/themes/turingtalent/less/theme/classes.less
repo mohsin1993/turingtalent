@@ -184,7 +184,7 @@ button{
   border-radius: 4px;
   background-color: #5fb7e0;
   color: #ffffff;
-  padding: 75px 0px 15px 0px;
+  padding: 75px 15px 15px 15px;
 
   .padded{
     max-width: 800px;
@@ -206,7 +206,7 @@ button{
     font-weight: 900;
     line-height: normal;
     color: #ffffff;
-    height: 66px;
+    min-height: 66px;
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
@@ -219,12 +219,25 @@ button{
     background-color: #5fb7e0;
     border-radius: 204px;
     right: -42px;
+
+    object{
+      height: 173px;
+      width: 173px;
+    }
   }
 
   .image{
     margin-top: 40px;
     margin-left: 8px;
     position: relative;
+  }
+
+  .text-section{
+    z-index: 1;
+  }
+
+  .image-section{
+    z-index: 0;
   }
 }
 
@@ -254,14 +267,14 @@ button{
 .tt-section{
   margin-top: 40px;
   h3{
-    height: 32px;
+    min-height: 32px;
     font-size: 24px;
     font-weight: @boldWeight;
     line-height: normal;
     letter-spacing: 0.10px;
     color: #82b604;
     margin-bottom: 16px;
-    padding-left: 40px !important;
+    padding-left: 40px;
   }
 
   .tt-section-content{
@@ -280,6 +293,7 @@ button{
   }
 
   .divided-sects{
+    margin-top: 40px;
     .image{
       height: 70px;
     }
@@ -403,15 +417,19 @@ button{
         margin-right: 2px !important;
         padding: 7px 12px !important;
       }
-      &#dev-tab button{
-        margin-top: 87px !important;
-      }
+      // &#dev-tab button{
+      //   margin-top: 87px !important;
+      // }
       button{
         // position: absolute;
         margin-top: 40px;
       }
       &.active{
         display: block;
+      }
+
+      .details{
+        min-height: 98px;
       }
     }
 
@@ -446,6 +464,9 @@ button{
   margin-bottom: 32px;
   margin-top: 7px;
   color: #9b9b9b;
+  .columns{
+    padding: 0px 15px !important;
+  }
   h1{
     font-size: 48px; 
     font-weight: 900;
@@ -471,21 +492,25 @@ object{
 .job{
   .content-padding;
   .small-font;
+  max-width: 900px !important;
+  .actions{
+    padding-left: 50px;
+  }
   h3{
     .left-border;
     .normal-font;
-    height: 32px;
+    min-height: 32px;
     font-size: 24px;
     font-weight: 800;
     line-height: normal;
     letter-spacing: 0.1px;
     color: #82b604;
-    padding-left: 40px !important;
-    margin-left: -50px !important;;
+    padding-left: 40px;
   }
 
   h3 + p{
     .small-font;
+    .content-padding;
     line-height: 24px;
     letter-spacing: normal;
     color: #4a4a4a;
@@ -498,12 +523,16 @@ object{
 
   ol, ul{
     .small-font;
+    .content-padding;
+    list-style-position: outside;
+    margin-left: 75px;
+    margin-top: 16px;
   }
 
   button{
     .small-font;
     margin-top: 56px;
-    width: 385px;
+    max-width: 385px;
   }
 }
 
@@ -668,4 +697,22 @@ input{
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: .25rem;
+}
+
+.tt-section{
+  .columns{
+    // padding: 0px;
+    .tt-section-content{
+      padding: 0px !important;
+    }
+  }
+}
+
+.normal-size{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  color: #686868;
+  padding-left: 0px;
 }

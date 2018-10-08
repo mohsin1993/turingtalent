@@ -28,9 +28,9 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
     public function block_content($context, array $blocks = array())
     {
         // line 3
-        echo "  <section class=\"main-header normal-font content-padding\">
+        echo "  <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
-      <div class=\"col-12\">
+      <div class=\"col-12 content-padding\">
         <h1 class=\"normal-font\">
           Frontend Engineer
         </h1>
@@ -77,7 +77,7 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
         <li>You should also be a person who thrives in an extremely fast-paced environment. We solve hard problems on tight deadlines and release multiple times per week.</li>
       </ul>
     </div>
-    <div>
+    <div class=\"actions\">
       <button>Apply</button>
     </div>
   </section>
@@ -111,9 +111,9 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
     {
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% block content %}
-  <section class=\"main-header normal-font content-padding\">
+  <section class=\"main-header normal-font\">
     <div class=\"columns ml0\">
-      <div class=\"col-12\">
+      <div class=\"col-12 content-padding\">
         <h1 class=\"normal-font\">
           Frontend Engineer
         </h1>
@@ -160,7 +160,7 @@ class __TwigTemplate_012079535e0a36166d65c9412f16c5c608779593487d6c885bcd7627421
         <li>You should also be a person who thrives in an extremely fast-paced environment. We solve hard problems on tight deadlines and release multiple times per week.</li>
       </ul>
     </div>
-    <div>
+    <div class=\"actions\">
       <button>Apply</button>
     </div>
   </section>

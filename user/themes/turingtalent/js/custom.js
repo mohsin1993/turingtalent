@@ -125,6 +125,9 @@ function loadAsync(src, callback, relative){
       Services: ""
     }, filters = [], airTableURL = 'https://api.airtable.com/v0/'+pricingTableID+'/';
 
+    if ($(".tab-content .options").length == 0)
+      return;
+
     $(".tab-content .options").each(function () {
       var key = this.dataset.key;
       var val = $(this).find(".option.active")[0].dataset.value;

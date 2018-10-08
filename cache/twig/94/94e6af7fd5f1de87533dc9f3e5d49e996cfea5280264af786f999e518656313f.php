@@ -35,17 +35,17 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         echo "      <div class=\"padded\">
         <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
         <div class=\"columns\">
-          <div class=\"column col-8 text-section\">
+          <div class=\"column col-8 col-md-9 col-sm-12 text-section\">
             <div class=\"content\">
               <p class=\"normal-font\">
                 Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
               </p>
             </div>
           </div>
-          <div class=\"column col-4 text-right image-section\">
+          <div class=\"column col-4 col-md-3 col-sm 12 text-right image-section\">
             <div class=\"image\">
               <div class=\"oval\">
-                <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"";
+                <object type=\"image/svg+xml\" data=\"";
         // line 22
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/distributed.svg");
         echo "\">
@@ -60,11 +60,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         We’re All About The Talent
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content\">
+        <div class=\"column col-9 col-md-12 tt-section-content\">
           <p class=\"normal-font\">
             Our ‘talent first’ philosophy guides our unique community and training, putting all hub members on an accelerated career paths, and helping you build high-functioning and happy teams.
           </p>
@@ -74,15 +74,15 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         One Monthly Fee, Many Benefits.
       </h3>
       ";
         // line 55
-        echo "      <div class=\"divided-sects content-padding\" style=\"margin-top: 40px;\">
+        echo "      <div class=\"divided-sects content-padding\">
         <div class=\"columns\">
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 60
@@ -91,82 +91,90 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Talent
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Hire untapped, high calibre talent</li>
-                  <li>Insource Outsource</li>
-                  <li>Build teams in weeks, not months</li>
-                  <li>Trained to work in remote teams</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Talent
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Hire untapped, high calibre talent</li>
+                    <li>Insource Outsource</li>
+                    <li>Build teams in weeks, not months</li>
+                    <li>Trained to work in remote teams</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 80
+        // line 82
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Office
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Fully managed office space</li>
-                  <li>Purpose equipped for effective remote teams</li>
-                  <li>Flexible, no-hassle lease</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Office
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Fully managed office space</li>
+                    <li>Purpose equipped for effective remote teams</li>
+                    <li>Flexible, no-hassle lease</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 99
+        // line 103
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                HR & Operations
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Legal</li>
-                  <li>Payroll</li>
-                  <li>Accounting</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  HR & Operations
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Legal</li>
+                    <li>Payroll</li>
+                    <li>Accounting</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
-        // line 118
+        // line 124
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
         echo "\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Community
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Flagship soft skills & leadership development programme</li>
-                  <li>Mentoring programme</li>
-                  <li>Pay it forward: opportunity to coach under-privileged communities</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Community
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Flagship soft skills & leadership development programme</li>
+                    <li>Mentoring programme</li>
+                    <li>Pay it forward: opportunity to coach under-privileged communities</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -176,11 +184,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 60px;\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         Simple and Transparent Pricing
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small-font small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
           We customize our model based on your needs. You can be the direct employer, or choose a simple all-in-one fee that includes salary, operations and office.
         </div>
       </div>
@@ -188,7 +196,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         <div class=\"title normal-font\">
           Get an Instant Estimate
         </div>
-        <div class=\"content col-9\">
+        <div class=\"content col-9 col-md-12\">
           <div class=\"tabs-list\">
             <ul class=\"tab tab-block\">
               <li class=\"tab-item small-font active\">
@@ -209,7 +217,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
               <div class=\"headline small-font\">Whats is your required tech stack?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Language\">
                       <span data-value=\"C / C++\" class=\"option small-font\">C / C++</span>
@@ -224,7 +232,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -247,7 +255,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Developers\">
                       <span data-value=\"1-10\" class=\"active option small-font\">1-10</span>
@@ -258,7 +266,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -281,7 +289,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">How many years of experience do you require?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Experience\">
                       <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
@@ -292,7 +300,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -315,7 +323,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">Whats service do you need?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Services\">
                       <span data-value=\"Talent sourcing & screening\" class=\"option small-font active\">Talent sourcing & screening</span>
@@ -326,7 +334,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -353,14 +361,14 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section signup\" style=\"margin-top: 60px\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         Sign Up to Get Started
       </h3>
       <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\" style=\"padding-right: 0px !important;\">
+          <div class=\"column col-9 col-md-12 tt-section-content\" style=\"padding-right: 0px !important;\">
             <div class=\"columns ml0\"> 
-              <div class=\"col-8\">
+              <div class=\"col-8 col-sm-12\">
                 <div class=\"form-group\">
                   <div class=\"alert alert-danger small-font\" style=\"display: none;\" role=\"alert\">
                     Valid email address is required!
@@ -380,9 +388,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </form>
       <form class=\"step2\" style=\"display: none;\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\">
+          <div class=\"column col-9 col-md-12 tt-section-content\">
             <div class=\"columns ml0\"> 
-              <div class=\"col-8\">
+              <div class=\"col-8 col-sm-12\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
                   <input class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
@@ -414,12 +422,12 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-loader\" style=\"min-width:320px;height:380px;margin-left: 27%;margin-top: 15%;\">
+              <div class=\"calendly-loader\" style=\"min-width:310px;height:380px;margin-left: 42%;margin-top: 15%;\">
                 <div class=\"dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
               </div>
               <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;display: none;\"></div>
               ";
-        // line 383
+        // line 391
         echo "            </div>
           </div>
         </div>
@@ -441,7 +449,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  423 => 383,  156 => 118,  134 => 99,  112 => 80,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  431 => 391,  162 => 124,  138 => 103,  114 => 82,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -465,17 +473,17 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       <div class=\"padded\">
         <h1 class=\"normal-font\">Distributed Teams as a Service</h1>
         <div class=\"columns\">
-          <div class=\"column col-8 text-section\">
+          <div class=\"column col-8 col-md-9 col-sm-12 text-section\">
             <div class=\"content\">
               <p class=\"normal-font\">
                 Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.
               </p>
             </div>
           </div>
-          <div class=\"column col-4 text-right image-section\">
+          <div class=\"column col-4 col-md-3 col-sm 12 text-right image-section\">
             <div class=\"image\">
               <div class=\"oval\">
-                <object width=\"173px\" height=\"173px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/distributed.svg') }}\">
+                <object type=\"image/svg+xml\" data=\"{{ url('theme://images/distributed.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
@@ -487,11 +495,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         We’re All About The Talent
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content\">
+        <div class=\"column col-9 col-md-12 tt-section-content\">
           <p class=\"normal-font\">
             Our ‘talent first’ philosophy guides our unique community and training, putting all hub members on an accelerated career paths, and helping you build high-functioning and happy teams.
           </p>
@@ -501,89 +509,97 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 30px;\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         One Monthly Fee, Many Benefits.
       </h3>
       {# <div class=\"columns content-padding\">
         <div class=\"column col-9 tt-section-content\">
         </div>
       </div> #}
-      <div class=\"divided-sects content-padding\" style=\"margin-top: 40px;\">
+      <div class=\"divided-sects content-padding\">
         <div class=\"columns\">
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/talent.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Talent
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Hire untapped, high calibre talent</li>
-                  <li>Insource Outsource</li>
-                  <li>Build teams in weeks, not months</li>
-                  <li>Trained to work in remote teams</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Talent
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Hire untapped, high calibre talent</li>
+                    <li>Insource Outsource</li>
+                    <li>Build teams in weeks, not months</li>
+                    <li>Trained to work in remote teams</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/office.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Office
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Fully managed office space</li>
-                  <li>Purpose equipped for effective remote teams</li>
-                  <li>Flexible, no-hassle lease</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Office
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Fully managed office space</li>
+                    <li>Purpose equipped for effective remote teams</li>
+                    <li>Flexible, no-hassle lease</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/operations.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                HR & Operations
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Legal</li>
-                  <li>Payroll</li>
-                  <li>Accounting</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  HR & Operations
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Legal</li>
+                    <li>Payroll</li>
+                    <li>Accounting</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class=\"column col-3\" style=\"padding-right: 25px;\">
-            <div>
+          <div class=\"column col-3 col-md-6 col-sm-12\">
+            <div class=\"divided-sect\">
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/community.svg') }}\">
                   Your browser does not support SVG
                 </object>
               </div>
-              <div class=\"title normal-font\">
-                Community
-              </div>
-              <div class=\"content small-font\">
-                <ul>
-                  <li>Flagship soft skills & leadership development programme</li>
-                  <li>Mentoring programme</li>
-                  <li>Pay it forward: opportunity to coach under-privileged communities</li>
-                </ul>
+              <div class=\"contet-sect\">
+                <div class=\"title normal-font\">
+                  Community
+                </div>
+                <div class=\"content small-font\">
+                  <ul>
+                    <li>Flagship soft skills & leadership development programme</li>
+                    <li>Mentoring programme</li>
+                    <li>Pay it forward: opportunity to coach under-privileged communities</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -593,11 +609,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section\" style=\"margin-top: 60px;\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         Simple and Transparent Pricing
       </h3>
       <div class=\"columns content-padding\">
-        <div class=\"column col-9 tt-section-content small-font small\">
+        <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
           We customize our model based on your needs. You can be the direct employer, or choose a simple all-in-one fee that includes salary, operations and office.
         </div>
       </div>
@@ -605,7 +621,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         <div class=\"title normal-font\">
           Get an Instant Estimate
         </div>
-        <div class=\"content col-9\">
+        <div class=\"content col-9 col-md-12\">
           <div class=\"tabs-list\">
             <ul class=\"tab tab-block\">
               <li class=\"tab-item small-font active\">
@@ -626,7 +642,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
               <div class=\"headline small-font\">Whats is your required tech stack?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Language\">
                       <span data-value=\"C / C++\" class=\"option small-font\">C / C++</span>
@@ -641,7 +657,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#exp-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -664,7 +680,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"dev-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">How many remote developers are you looking to hire?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Developers\">
                       <span data-value=\"1-10\" class=\"active option small-font\">1-10</span>
@@ -675,7 +691,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -698,7 +714,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"exp-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">How many years of experience do you require?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Experience\">
                       <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
@@ -709,7 +725,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font next\" data-href=\"#dev-tab\">Next</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -732,7 +748,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
             <div id=\"servic-tab\" class=\"tab-content animated fadeIn\">
               <div class=\"headline small-font\">Whats service do you need?</div>
               <div class=\"columns\">
-                <div class=\"col-8\">
+                <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Services\">
                       <span data-value=\"Talent sourcing & screening\" class=\"option small-font active\">Talent sourcing & screening</span>
@@ -743,7 +759,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                   </div>
                   <button class=\"small-font primary submit\">Estimate Price</button>
                 </div>
-                <div class=\"col-4\">
+                <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
                       <div class=\"price-label small-font\">
@@ -770,14 +786,14 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
   </section>
   <section class=\"animated fadeInDown\">
     <div class=\"tt-section signup\" style=\"margin-top: 60px\">
-      <h3 class=\"left-border normal-font\" style=\"padding-left: 40px !important;\">
+      <h3 class=\"left-border normal-font\">
         Sign Up to Get Started
       </h3>
       <form class=\"step1 animated fadeIn\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\" style=\"padding-right: 0px !important;\">
+          <div class=\"column col-9 col-md-12 tt-section-content\" style=\"padding-right: 0px !important;\">
             <div class=\"columns ml0\"> 
-              <div class=\"col-8\">
+              <div class=\"col-8 col-sm-12\">
                 <div class=\"form-group\">
                   <div class=\"alert alert-danger small-font\" style=\"display: none;\" role=\"alert\">
                     Valid email address is required!
@@ -797,9 +813,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </form>
       <form class=\"step2\" style=\"display: none;\">
         <div class=\"columns content-padding\">
-          <div class=\"column col-9 tt-section-content\">
+          <div class=\"column col-9 col-md-12 tt-section-content\">
             <div class=\"columns ml0\"> 
-              <div class=\"col-8\">
+              <div class=\"col-8 col-sm-12\">
                 <div class=\"form-group\">
                   <label class=\"small-font\">Email</label>
                   <input class=\"form-control\" name=\"Email\" placeholder=\"Your Email\" type=\"text\">
@@ -831,7 +847,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               Want to get started sooner? Schedule a time to talk to us.
             </div>
             <div style=\"margin-top: 20px;\"> 
-              <div class=\"calendly-loader\" style=\"min-width:320px;height:380px;margin-left: 27%;margin-top: 15%;\">
+              <div class=\"calendly-loader\" style=\"min-width:310px;height:380px;margin-left: 42%;margin-top: 15%;\">
                 <div class=\"dark lds-ellipsis\"><div></div><div></div><div></div><div></div></div>
               </div>
               <div class=\"calendly-inline-widget\" data-url=\"https://calendly.com/mohsinriaz224/15min\" style=\"min-width:320px;height:380px;display: none;\"></div>

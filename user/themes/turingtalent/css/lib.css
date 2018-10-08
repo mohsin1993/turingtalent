@@ -3,9 +3,158 @@
     margin-bottom: 40px;
   }
 }
+@media (min-width: 600px) and (max-width: 840px) {
+  .oval object {
+    width: 121px !important;
+    height: 121px !important;
+  }
+  .option {
+    margin-right: 7px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .people {
+    flex-direction: column;
+  }
+  .people .contet-sect {
+    margin-left: 0px !important;
+  }
+  .tt-section h3 {
+    font-size: 18px !important;
+  }
+  .tt-section-content {
+    font-size: 16px !important;
+  }
+  .banner-section .text-section p {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  .oval object {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .banner-section .oval {
+    margin-top: 73px !important;
+    margin-right: 37 !important;
+  }
+  .banner-section .text-section p {
+    font-size: 21px;
+  }
+  .divided-sects .divided-sect {
+    display: flex;
+  }
+  .divided-sects .divided-sect .contet-sect {
+    margin-left: 16px;
+  }
+  .total-price {
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .total-price .est {
+    margin-top: 20px !important;
+  }
+  .headline {
+    margin-top: 15px !important;
+  }
+  .option {
+    margin-right: 4px !important;
+    padding: 7px 15px !important;
+  }
+  .pricing .tab-containers .tab-content button {
+    margin-top: 0px !important;
+  }
+}
+@media (min-width: 480px) {
+  .people {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .people {
+    margin-bottom: 40px;
+  }
+  .banner-section .oval {
+    margin-top: 73px !important;
+    margin-right: 30px !important;
+  }
+  .pricing .tab .tab-item {
+    margin-right: 7px !important;
+  }
+}
 @media (min-width: 840px) {
   .people {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 840px) {
+  .people {
+    padding: 0px !important;
+    display: flex;
+  }
+  .people .contet-sect {
+    margin-left: 16px;
+  }
+  .job h3 {
+    padding: 0px 15px !important;
+  }
+  .job .actions {
+    padding: 0px 20px !important;
+  }
+  .job h3 + p {
+    padding: 0px 25px !important;
+  }
+  .job ul,
+  .job ol {
+    padding: 0px 25px !important;
+    margin-left: 25px !important;
+  }
+  .about-sect .content-padding {
+    margin-left: 0px !important;
+  }
+  .tt-section {
+    margin-top: 20px !important;
+  }
+  .tt-section h3 {
+    padding-left: 15px !important;
+  }
+  .tt-section .content-padding {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .divided-sects {
+    margin-top: 0px !important;
+  }
+  .divided-sects .column {
+    margin-top: 20px;
+  }
+  .main-header h1 {
+    font-size: 37px !important;
+  }
+  .banner-section {
+    margin: 0px 10px;
+    height: 380px !important;
+    padding: 25px 15px 15px 15px !important;
+  }
+  .banner-section .image {
+    margin-top: 0px !important;
+    position: inherit !important;
+  }
+  .banner-section .image .oval {
+    margin-top: 150px;
+    margin-right: 20px;
+    padding: 0px !important;
+    top: 0px !important;
+    background-color: transparent !important;
+    border-radius: 204px;
+    right: 0px !important;
+  }
+}
+@media (max-width: 755px) {
+  .banner-section h1 {
+    font-size: 35px !important;
   }
 }
 @media (min-width: 1280px) {
@@ -212,7 +361,7 @@ button.primary {
   border-radius: 4px;
   background-color: #5fb7e0;
   color: #ffffff;
-  padding: 75px 0px 15px 0px;
+  padding: 75px 15px 15px 15px;
 }
 .banner-section .padded {
   max-width: 800px;
@@ -232,7 +381,7 @@ button.primary {
   font-weight: 900;
   line-height: normal;
   color: #ffffff;
-  height: 66px;
+  min-height: 66px;
   max-width: 800px;
   margin: auto;
   margin-bottom: 30px;
@@ -245,10 +394,20 @@ button.primary {
   border-radius: 204px;
   right: -42px;
 }
+.banner-section .oval object {
+  height: 173px;
+  width: 173px;
+}
 .banner-section .image {
   margin-top: 40px;
   margin-left: 8px;
   position: relative;
+}
+.banner-section .text-section {
+  z-index: 1;
+}
+.banner-section .image-section {
+  z-index: 0;
 }
 .pl0 {
   padding-left: 0px;
@@ -273,14 +432,14 @@ button.primary {
   margin-top: 40px;
 }
 .tt-section h3 {
-  height: 32px;
+  min-height: 32px;
   font-size: 24px;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 0.1px;
   color: #82b604;
   margin-bottom: 16px;
-  padding-left: 40px !important;
+  padding-left: 40px;
 }
 .tt-section .tt-section-content {
   font-size: 24px;
@@ -294,6 +453,9 @@ button.primary {
   line-height: 24px;
   letter-spacing: normal;
   color: #4a4a4a;
+}
+.tt-section .divided-sects {
+  margin-top: 40px;
 }
 .tt-section .divided-sects .image {
   height: 70px;
@@ -401,14 +563,14 @@ button.primary {
   margin-right: 2px !important;
   padding: 7px 12px !important;
 }
-.pricing .tab-containers .tab-content#dev-tab button {
-  margin-top: 87px !important;
-}
 .pricing .tab-containers .tab-content button {
   margin-top: 40px;
 }
 .pricing .tab-containers .tab-content.active {
   display: block;
+}
+.pricing .tab-containers .tab-content .details {
+  min-height: 98px;
 }
 .pricing .tab-containers .options .option {
   margin-right: 12px;
@@ -436,6 +598,9 @@ button.primary {
   margin-bottom: 32px;
   margin-top: 7px;
   color: #9b9b9b;
+}
+.main-header .columns {
+  padding: 0px 15px !important;
 }
 .main-header h1 {
   font-size: 48px;
@@ -465,6 +630,10 @@ object {
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 900px !important;
+}
+.job .actions {
+  padding-left: 50px;
 }
 .job h3 {
   border-radius: 2px;
@@ -475,14 +644,13 @@ object {
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 32px;
+  min-height: 32px;
   font-size: 24px;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 0.1px;
   color: #82b604;
-  padding-left: 40px !important;
-  margin-left: -50px !important;
+  padding-left: 40px;
 }
 .job h3 + p {
   font-family: 'Inconsolata', monospace !important;
@@ -493,6 +661,8 @@ object {
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 800px;
+  margin: auto;
   line-height: 24px;
   letter-spacing: normal;
   color: #4a4a4a;
@@ -511,6 +681,11 @@ object {
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 800px;
+  margin: auto;
+  list-style-position: outside;
+  margin-left: 75px;
+  margin-top: 16px;
 }
 .job button {
   font-family: 'Inconsolata', monospace !important;
@@ -522,7 +697,7 @@ object {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-top: 56px;
-  width: 385px;
+  max-width: 385px;
 }
 .faded-black {
   color: #4c4c4c !important;
@@ -670,4 +845,15 @@ input {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+}
+.tt-section .columns .tt-section-content {
+  padding: 0px !important;
+}
+.normal-size {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  color: #686868;
+  padding-left: 0px;
 }
