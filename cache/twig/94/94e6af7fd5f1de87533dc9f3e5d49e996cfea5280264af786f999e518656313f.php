@@ -332,8 +332,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span data-value=\"Community & development\" class=\"option small-font\">Community & development</span>
                     </div>
                   </div>
-                  <button class=\"small-font primary submit\">Estimate Price</button>
-                </div>
+                  ";
+        // line 297
+        echo "                </div>
                 <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
@@ -449,7 +450,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  431 => 391,  162 => 124,  138 => 103,  114 => 82,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
+        return array (  432 => 391,  337 => 297,  162 => 124,  138 => 103,  114 => 82,  89 => 60,  82 => 55,  50 => 22,  35 => 9,  31 => 3,  28 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -757,7 +758,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span data-value=\"Community & development\" class=\"option small-font\">Community & development</span>
                     </div>
                   </div>
-                  <button class=\"small-font primary submit\">Estimate Price</button>
+                  {# <button class=\"small-font primary submit\">Estimate Price</button> #}
                 </div>
                 <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
