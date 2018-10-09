@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/user/config/system.yaml',
-    'modified' => 1539051075,
+    'modified' => 1539123651,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -123,16 +123,16 @@ return [
             'css_minify' => true,
             'css_minify_windows' => true,
             'css_rewrite' => true,
+            'css_gzip' => true,
             'js_pipeline' => false,
             'js_pipeline_include_externals' => true,
             'js_pipeline_before_excludes' => true,
             'js_minify' => true,
+            'js_gzip' => true,
             'enable_asset_timestamp' => false,
             'collections' => [
                 'jquery' => 'system://assets/jquery/jquery-2.x.min.js'
             ],
-            'css_gzip' => true,
-            'js_gzip' => true,
             'gzip' => true
         ],
         'errors' => [
@@ -151,18 +151,20 @@ return [
             'cache_all' => false,
             'cache_perms' => '0755',
             'debug' => false,
-            'auto_fix_orientation' => false
+            'auto_fix_orientation' => false,
+            'gzip' => true
         ],
         'media' => [
             'enable_media_timestamp' => false,
             'auto_metadata_exif' => false,
-            'upload_limit' => 2097152
+            'upload_limit' => 2097152,
+            'gzip' => true
         ],
         'session' => [
             'enabled' => true,
             'initialize' => true,
             'timeout' => 1800,
-            'name' => 'grav-site',
+            'name' => 'turing-talent',
             'secure' => false,
             'httponly' => true,
             'split' => true

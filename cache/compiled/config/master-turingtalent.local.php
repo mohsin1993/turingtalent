@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1539051080,
-    'checksum' => 'de6bc8595b204d2602c60bcd0cffddc5',
+    'timestamp' => 1539123654,
+    'checksum' => 'e613df749e854704a9920b7cc0a04f52',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1539047356
+                'modified' => 1539119661
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1539051075
+                'modified' => 1539123651
             ]
         ],
         'system/config' => [
@@ -613,7 +613,8 @@ return [
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.'
+                'description' => 'Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.',
+                'title' => 'Turing Talent'
             ],
             'summary' => [
                 'enabled' => true,
@@ -810,7 +811,8 @@ return [
                 'cache_all' => false,
                 'cache_perms' => '0755',
                 'debug' => false,
-                'auto_fix_orientation' => false
+                'auto_fix_orientation' => false,
+                'gzip' => true
             ],
             'media' => [
                 'enable_media_timestamp' => false,
@@ -821,13 +823,14 @@ return [
                     
                 ],
                 'auto_metadata_exif' => false,
-                'upload_limit' => 2097152
+                'upload_limit' => 2097152,
+                'gzip' => true
             ],
             'session' => [
                 'enabled' => true,
                 'initialize' => true,
                 'timeout' => 1800,
-                'name' => 'grav-site',
+                'name' => 'turing-talent',
                 'secure' => false,
                 'httponly' => true,
                 'split' => true,

@@ -56,7 +56,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"oval\">
                 <object type=\"image/svg+xml\" data=\"";
         // line 26
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/distributed.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "distributed.svg", array(), "array"), "url", array());
         echo "\">
                   Your browser does not support SVG
                 </object>
@@ -95,7 +95,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 64
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/talent.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "talent.svg", array(), "array"), "url", array());
         echo "\">
                   Your browser does not support SVG
                 </object>
@@ -120,7 +120,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 86
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/office.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "office.svg", array(), "array"), "url", array());
         echo "\">
                   Your browser does not support SVG
                 </object>
@@ -144,7 +144,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 107
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/operations.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "operations.svg", array(), "array"), "url", array());
         echo "\">
                   Your browser does not support SVG
                 </object>
@@ -168,7 +168,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
               <div class=\"image\">
                 <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"";
         // line 128
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/community.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "community.svg", array(), "array"), "url", array());
         echo "\">
                   Your browser does not support SVG
                 </object>
@@ -497,7 +497,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-4 col-md-3 col-sm 12 text-right image-section\">
             <div class=\"image\">
               <div class=\"oval\">
-                <object type=\"image/svg+xml\" data=\"{{ url('theme://images/distributed.svg') }}\">
+                <object type=\"image/svg+xml\" data=\"{{ page.find('/images').media['distributed.svg'].url }}\">
                   Your browser does not support SVG
                 </object>
               </div>
@@ -535,7 +535,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-3 col-md-6 col-sm-12\">
             <div class=\"divided-sect\">
               <div class=\"image\">
-                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/talent.svg') }}\">
+                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['talent.svg'].url }}\">
                   Your browser does not support SVG
                 </object>
               </div>
@@ -557,7 +557,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-3 col-md-6 col-sm-12\">
             <div class=\"divided-sect\">
               <div class=\"image\">
-                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/office.svg') }}\">
+                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['office.svg'].url }}\">
                   Your browser does not support SVG
                 </object>
               </div>
@@ -578,7 +578,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-3 col-md-6 col-sm-12\">
             <div class=\"divided-sect\">
               <div class=\"image\">
-                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/operations.svg') }}\">
+                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['operations.svg'].url }}\">
                   Your browser does not support SVG
                 </object>
               </div>
@@ -599,7 +599,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-3 col-md-6 col-sm-12\">
             <div class=\"divided-sect\">
               <div class=\"image\">
-                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ url('theme://images/community.svg') }}\">
+                <object width=\"64px\" height=\"64px\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['community.svg'].url }}\">
                   Your browser does not support SVG
                 </object>
               </div>

@@ -271,7 +271,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     {% include 'partials/metadata.html.twig' %}
-    {# <link rel=\"shortcut icon\" type=\"image/png\" href=\"{{ url('theme://images/turing-talent-logo.png') }}\" /> #}
+    {# <link rel=\"icon\" type=\"image/png\" href=\"{{page.media['turing-talent-logo.png'].sepia().display('thumbnail').html() }}\" /> #}
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <style>
       .fouc{
