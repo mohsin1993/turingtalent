@@ -34,31 +34,31 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
         // line 5
         $this->displayBlock('head', $context, $blocks);
-        // line 26
+        // line 28
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 27
+        // line 29
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo " site-container\">
 ";
-        // line 28
+        // line 30
         $this->displayBlock('header', $context, $blocks);
-        // line 52
+        // line 54
         echo "
 ";
-        // line 53
+        // line 55
         $this->displayBlock('body', $context, $blocks);
-        // line 60
+        // line 62
         echo "
 ";
-        // line 61
+        // line 63
         $this->displayBlock('footer', $context, $blocks);
-        // line 77
+        // line 79
         echo "
 ";
-        // line 78
+        // line 80
         $this->displayBlock('bottom', $context, $blocks);
-        // line 96
+        // line 98
         echo "
 </body>
 </html>
@@ -70,25 +70,26 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     {
         // line 6
         echo "    <meta charset=\"utf-8\" />
-    <title>";
-        // line 7
+    <title>
+      ";
+        // line 8
         if ($this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array())) {
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["header"]) ? $context["header"] : null), "title", array()), "html");
             echo " | ";
         }
+        echo " ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["site"]) ? $context["site"] : null), "title", array()), "html");
-        echo "</title>
+        echo "
+    </title>
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     ";
-        // line 10
-        $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 10)->display($context);
-        // line 11
-        echo "    <link rel=\"icon\" type=\"image/png\" href=\"";
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/logo.png");
-        echo "\" />
-    <link rel=\"canonical\" href=\"";
         // line 12
+        $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 12)->display($context);
+        // line 13
+        echo "    ";
+        // line 14
+        echo "    <link rel=\"canonical\" href=\"";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\" />
     <style>
@@ -97,45 +98,45 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       }
     </style>
     ";
-        // line 18
+        // line 20
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 24
+        // line 26
         echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "css", array(), "method");
         echo "
 ";
     }
 
-    // line 18
+    // line 20
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 19
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css", 1 => 99), "method");
-        // line 20
-        echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900", 1 => 100), "method");
         // line 21
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/lib.css", 1 => 98), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css", 1 => 99), "method");
         // line 22
         echo "        ";
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css", 1 => 101), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900", 1 => 100), "method");
         // line 23
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "theme://css/lib.css", 1 => 98), "method");
+        // line 24
+        echo "        ";
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css", 1 => 101), "method");
+        // line 25
         echo "    ";
     }
 
-    // line 28
+    // line 30
     public function block_header($context, array $blocks = array())
     {
-        // line 29
+        // line 31
         echo "  <section class=\"content-padding\">
     <section class=\"top-rectangle\"></section>
     <header class=\"navbar\" style=\"position: relative;\">
       <section class=\"navbar-section\">
         <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
           <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 34
+        // line 36
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
             Your browser does not support SVG
@@ -151,45 +152,45 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       </section>
       <ul class=\"navbar-section right top \">
         ";
-        // line 47
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 47)->display($context);
-        // line 48
+        // line 49
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 49)->display($context);
+        // line 50
         echo "      </ul>
     </header>
   </section>
 ";
     }
 
-    // line 53
+    // line 55
     public function block_body($context, array $blocks = array())
     {
-        // line 54
+        // line 56
         echo "    <section id=\"body\">
         <div>
         ";
-        // line 56
+        // line 58
         $this->displayBlock('content', $context, $blocks);
-        // line 57
+        // line 59
         echo "        </div>
     </section>
 ";
     }
 
-    // line 56
+    // line 58
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 61
+    // line 63
     public function block_footer($context, array $blocks = array())
     {
-        // line 62
+        // line 64
         echo "    <div class=\"footer\" style=\"padding: 0px 15px;\">
       <div class=\"navbar\" style=\"padding-top: 30px;\">
         <section class=\"navbar-section\">
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
             <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
-        // line 66
+        // line 68
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
         echo "\">
               Your browser does not support SVG
@@ -198,19 +199,19 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
         </section>
         <ul class=\"navbar-section right\">
           ";
-        // line 72
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 72)->display($context);
-        // line 73
+        // line 74
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 74)->display($context);
+        // line 75
         echo "        </ul>
       </div>
     </div>
 ";
     }
 
-    // line 78
+    // line 80
     public function block_bottom($context, array $blocks = array())
     {
-        // line 79
+        // line 81
         echo "    <script>
       function fadeIn(el, time) {
         el.style.opacity = 0;
@@ -227,7 +228,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       fadeIn(document.querySelector(\".fouc\"), 300);
     </script>
     ";
-        // line 94
+        // line 96
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
 ";
@@ -245,7 +246,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     public function getDebugInfo()
     {
-        return array (  231 => 94,  214 => 79,  211 => 78,  204 => 73,  202 => 72,  193 => 66,  187 => 62,  184 => 61,  179 => 56,  173 => 57,  171 => 56,  167 => 54,  164 => 53,  157 => 48,  155 => 47,  139 => 34,  132 => 29,  129 => 28,  125 => 23,  122 => 22,  119 => 21,  116 => 20,  113 => 19,  110 => 18,  103 => 24,  101 => 18,  92 => 12,  87 => 11,  85 => 10,  75 => 7,  72 => 6,  69 => 5,  62 => 96,  60 => 78,  57 => 77,  55 => 61,  52 => 60,  50 => 53,  47 => 52,  45 => 28,  41 => 27,  38 => 26,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
+        return array (  232 => 96,  215 => 81,  212 => 80,  205 => 75,  203 => 74,  194 => 68,  188 => 64,  185 => 63,  180 => 58,  174 => 59,  172 => 58,  168 => 56,  165 => 55,  158 => 50,  156 => 49,  140 => 36,  133 => 31,  130 => 30,  126 => 25,  123 => 24,  120 => 23,  117 => 22,  114 => 21,  111 => 20,  104 => 26,  102 => 20,  92 => 14,  90 => 13,  88 => 12,  76 => 8,  72 => 6,  69 => 5,  62 => 98,  60 => 80,  57 => 79,  55 => 63,  52 => 62,  50 => 55,  47 => 54,  45 => 30,  41 => 29,  38 => 28,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -264,11 +265,13 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 <head>
 {% block head %}
     <meta charset=\"utf-8\" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <title>
+      {% if header.title %}{{ header.title|e('html') }} | {% endif %} {{ site.title|e('html') }}
+    </title>
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     {% include 'partials/metadata.html.twig' %}
-    <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/logo.png') }}\" />
+    {# <link rel=\"shortcut icon\" type=\"image/png\" href=\"{{ url('theme://images/turing-talent-logo.png') }}\" /> #}
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <style>
       .fouc{

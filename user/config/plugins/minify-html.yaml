@@ -1,3 +1,3 @@
-enabled: false
-cache: false
+enabled: true
+cache: true
 mode: fastest

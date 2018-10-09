@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1538663207,
-    'checksum' => 'b8d09fab6f3f6d77cf464c9cd2217a21',
+    'timestamp' => 1539049779,
+    'checksum' => '089ecf0db1da3429d41f1022f1096000',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -50,6 +50,10 @@ return [
             'plugins/git-sync' => [
                 'file' => 'user/plugins/git-sync/blueprints.yaml',
                 'modified' => 1538663206
+            ],
+            'plugins/lazy-image' => [
+                'file' => 'user/plugins/lazy-image/blueprints.yaml',
+                'modified' => 1539045170
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
@@ -3267,6 +3271,34 @@ return [
                 'name' => 'plugins.git-sync._wizard',
                 'validation' => 'strict'
             ],
+            'plugins.lazy-image' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.lazy-image.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.lazy-image.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.lazy-image.lazy_img_class' => [
+                'type' => 'text',
+                'label' => 'Image CSS Class',
+                'name' => 'plugins.lazy-image.lazy_img_class',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -4191,6 +4223,10 @@ return [
                     'logging' => 'plugins.git-sync.logging',
                     'Actions' => 'plugins.git-sync.Actions',
                     '_wizard' => 'plugins.git-sync._wizard'
+                ],
+                'lazy-image' => [
+                    'enabled' => 'plugins.lazy-image.enabled',
+                    'lazy_img_class' => 'plugins.lazy-image.lazy_img_class'
                 ],
                 'login' => [
                     'tabs' => 'plugins.login.tabs',

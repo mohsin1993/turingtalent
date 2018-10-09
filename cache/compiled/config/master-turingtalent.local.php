@@ -1,17 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1538663207,
-    'checksum' => 'b89906c637bbf578a43ff2b8f8f2e45a',
+    'timestamp' => 1539049779,
+    'checksum' => '3dad4928a93e056fcedb3cc49fce9621',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1537701574
             ],
+            'plugins/lazy-image' => [
+                'file' => 'user/config/plugins/lazy-image.yaml',
+                'modified' => 1539045368
+            ],
             'plugins/minify-html' => [
                 'file' => 'user/config/plugins/minify-html.yaml',
-                'modified' => 1538600443
+                'modified' => 1539047726
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -19,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1535007886
+                'modified' => 1539047356
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -27,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1538226122
+                'modified' => 1539049776
             ]
         ],
         'system/config' => [
@@ -76,6 +80,10 @@ return [
             'plugins/git-sync' => [
                 'file' => 'user/plugins/git-sync/git-sync.yaml',
                 'modified' => 1538663206
+            ],
+            'plugins/lazy-image' => [
+                'file' => 'user/plugins/lazy-image/lazy-image.yaml',
+                'modified' => 1539045170
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -210,6 +218,10 @@ return [
                 'enabled' => true,
                 'text_var' => 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
             ],
+            'lazy-image' => [
+                'enabled' => false,
+                'lazy_img_class' => 'img-fluid'
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -275,8 +287,8 @@ return [
                 ]
             ],
             'minify-html' => [
-                'enabled' => false,
-                'cache' => false,
+                'enabled' => true,
+                'cache' => true,
                 'mode' => 'fastest'
             ],
             'problems' => [
@@ -583,18 +595,18 @@ return [
             'salt' => 'KWIOBRvuph6bd9'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Turing Talent',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Christina',
+                'email' => 'christina@turingtalent.io'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.'
             ],
             'summary' => [
                 'enabled' => true,
@@ -706,11 +718,11 @@ return [
                 'append_url_extension' => '',
                 'expires' => 604800,
                 'cache_control' => NULL,
-                'last_modified' => false,
-                'etag' => false,
-                'vary_accept_encoding' => false,
+                'last_modified' => true,
+                'etag' => true,
+                'vary_accept_encoding' => true,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -727,7 +739,8 @@ return [
                         0 => 'form',
                         1 => 'forms'
                     ]
-                ]
+                ],
+                'gzip' => true
             ],
             'cache' => [
                 'enabled' => true,
@@ -739,7 +752,7 @@ return [
                 'clear_images_by_default' => true,
                 'cli_compatibility' => false,
                 'lifetime' => 604800,
-                'gzip' => false,
+                'gzip' => true,
                 'allow_webserver_gzip' => false,
                 'redis' => [
                     'socket' => false
@@ -752,14 +765,15 @@ return [
                 'autoescape' => false,
                 'undefined_functions' => true,
                 'undefined_filters' => true,
-                'umask_fix' => false
+                'umask_fix' => false,
+                'gzip' => true
             ],
             'assets' => [
                 'css_pipeline' => false,
                 'css_pipeline_include_externals' => true,
                 'css_pipeline_before_excludes' => true,
                 'css_minify' => true,
-                'css_minify_windows' => false,
+                'css_minify_windows' => true,
                 'css_rewrite' => true,
                 'js_pipeline' => false,
                 'js_pipeline_include_externals' => true,
@@ -768,10 +782,13 @@ return [
                 'enable_asset_timestamp' => false,
                 'collections' => [
                     'jquery' => 'system://assets/jquery/jquery-2.x.min.js'
-                ]
+                ],
+                'css_gzip' => true,
+                'js_gzip' => true,
+                'gzip' => true
             ],
             'errors' => [
-                'display' => true,
+                'display' => 1,
                 'log' => true
             ],
             'debugger' => [
@@ -796,7 +813,8 @@ return [
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,

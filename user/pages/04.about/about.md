@@ -1,5 +1,5 @@
 ---
-title: about
+title: About
 menu: About
 ---
 
