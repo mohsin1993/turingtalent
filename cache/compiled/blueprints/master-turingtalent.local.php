@@ -1,29 +1,29 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1539049779,
-    'checksum' => '089ecf0db1da3429d41f1022f1096000',
+    'timestamp' => 1539051080,
+    'checksum' => 'd6f0a94ecdfea16758689c3a0908f652',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'security' => [
                 'file' => 'system/blueprints/config/security.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ]
         ],
         'user/plugins' => [
@@ -89,10 +89,10 @@ return [
                     'validation' => 'loose'
                 ]
             ],
-            'security.security_section' => [
+            'security.xss_section' => [
                 'type' => 'section',
                 'underline' => true,
-                'name' => 'security.security_section',
+                'name' => 'security.xss_section',
                 'validation' => 'loose'
             ],
             'security.xss_whitelist' => [
@@ -195,6 +195,23 @@ return [
                     'type' => 'commalist'
                 ],
                 'name' => 'security.xss_dangerous_tags',
+                'validation' => 'loose'
+            ],
+            'security.uploads_section' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'security.uploads_section',
+                'validation' => 'loose'
+            ],
+            'security.uploads_dangerous_extensions' => [
+                'type' => 'selectize',
+                'size' => 'large',
+                'label' => 'PLUGIN_ADMIN.UPLOADS_DANGEROUS_EXTENSIONS',
+                'classes' => 'fancy',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'security.uploads_dangerous_extensions',
                 'validation' => 'loose'
             ],
             'site' => [
@@ -3863,7 +3880,7 @@ return [
         'nested' => [
             'media' => 'media',
             'security' => [
-                'security_section' => 'security.security_section',
+                'xss_section' => 'security.xss_section',
                 'xss_whitelist' => 'security.xss_whitelist',
                 'xss_enabled' => [
                     'on_events' => 'security.xss_enabled.on_events',
@@ -3872,7 +3889,9 @@ return [
                     'html_inline_styles' => 'security.xss_enabled.html_inline_styles',
                     'dangerous_tags' => 'security.xss_enabled.dangerous_tags'
                 ],
-                'xss_dangerous_tags' => 'security.xss_dangerous_tags'
+                'xss_dangerous_tags' => 'security.xss_dangerous_tags',
+                'uploads_section' => 'security.uploads_section',
+                'uploads_dangerous_extensions' => 'security.uploads_dangerous_extensions'
             ],
             'site' => [
                 'content' => 'site.content',

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1539049779,
-    'checksum' => '3dad4928a93e056fcedb3cc49fce9621',
+    'timestamp' => 1539051080,
+    'checksum' => 'de6bc8595b204d2602c60bcd0cffddc5',
     'files' => [
         'user/config' => [
             'media' => [
@@ -31,29 +31,29 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1539049776
+                'modified' => 1539051075
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1538663048
+                'modified' => 1539050286
             ]
         ],
         'user/plugins' => [
@@ -591,6 +591,13 @@ return [
                 14 => 'bgsound',
                 15 => 'title',
                 16 => 'base'
+            ],
+            'uploads_dangerous_extensions' => [
+                0 => 'php',
+                1 => 'html',
+                2 => 'htm',
+                3 => 'js',
+                4 => 'exe'
             ],
             'salt' => 'KWIOBRvuph6bd9'
         ],

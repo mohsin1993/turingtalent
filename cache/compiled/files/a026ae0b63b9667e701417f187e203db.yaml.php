@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/system/blueprints/config/security.yaml',
-    'modified' => 1538663048,
+    'modified' => 1539050286,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SECURITY',
         'form' => [
             'validation' => 'loose',
             'fields' => [
-                'security_section' => [
+                'xss_section' => [
                     'type' => 'section',
                     'title' => 'PLUGIN_ADMIN.XSS_SECURITY',
                     'underline' => true
@@ -93,6 +93,21 @@ return [
                     'type' => 'selectize',
                     'size' => 'large',
                     'label' => 'PLUGIN_ADMIN.XSS_DANGEROUS_TAGS_LIST',
+                    'classes' => 'fancy',
+                    'validate' => [
+                        'type' => 'commalist'
+                    ]
+                ],
+                'uploads_section' => [
+                    'type' => 'section',
+                    'title' => 'PLUGIN_ADMIN.UPLOADS_SECURITY',
+                    'underline' => true
+                ],
+                'uploads_dangerous_extensions' => [
+                    'type' => 'selectize',
+                    'size' => 'large',
+                    'label' => 'PLUGIN_ADMIN.UPLOADS_DANGEROUS_EXTENSIONS',
+                    'help' => 'PLUGIN_ADMIN.UPLOADS_DANGEROUS_EXTENSIONS_HELP',
                     'classes' => 'fancy',
                     'validate' => [
                         'type' => 'commalist'

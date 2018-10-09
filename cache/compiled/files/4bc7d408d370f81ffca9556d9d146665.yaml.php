@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/system/config/security.yaml',
-    'modified' => 1538663048,
+    'modified' => 1539050286,
     'data' => [
         'xss_whitelist' => [
             0 => 'admin.super'
@@ -32,6 +32,13 @@ return [
             14 => 'bgsound',
             15 => 'title',
             16 => 'base'
+        ],
+        'uploads_dangerous_extensions' => [
+            0 => 'php',
+            1 => 'html',
+            2 => 'htm',
+            3 => 'js',
+            4 => 'exe'
         ]
     ]
 ];
