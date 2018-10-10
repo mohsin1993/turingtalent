@@ -117,13 +117,13 @@ function loadAsync(src, callback, relative){
     $(tabContainer).find(selector).addClass("active");
   }
 
-  function calculatePrice() {
+  function getPriceParams(){
     var params = {
       Language: "",
       Experience: "",
       Developers: "",
       Services: ""
-    }, filters = [], airTableURL = 'https://api.airtable.com/v0/'+pricingTableID+'/';
+    }
 
     if ($(".tab-content .options").length == 0)
       return;
@@ -134,24 +134,66 @@ function loadAsync(src, callback, relative){
       params[key] = val;
     });
 
+    return params;
+  }
+
+  function calculatePrice() {
+    var filters = [], airTableURL = 'https://api.airtable.com/v0/'+pricingTableID+'/';
+    var params = getPriceParams();
+
     $(".price-label .loader").slideDown("fast");
-    
-    airTable.get(airTableURL + "mapping-table?filterByFormula=Language='" + encodeURIComponent(params.Language) + "'")
-      .then(function (resp) {
-        params['Language'] = resp.data.records[0].fields.Type;
+
+    window.langMap = window.langMap || airTable.get(airTableURL + "mapping-table");
+
+    window.langMap
+      .then(function (langs) {
+        return langs.data.records.filter(function (item) {
+          return item.fields.Language == params.Language;
+        })[0].fields;
+      })
+      .then(function (lang) {
+        params['Language'] = lang.Type;
         return params;
       })
       .then(function (params) {
+        filters = [];
         for (var key in params) {
           filters.push(key+"='"+encodeURIComponent(params[key])+"'");
         }
+        return filters
+      })
+      .then(function (filters) {
         return airTable.get(airTableURL + 'pricing-table?filterByFormula=AND(' + filters.join(',') + ')')
       })
       .then(function (priceResp) {
-        $(".price-label .value").html("$"+priceResp.data.records[0].fields['Price per month ($)'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-        $(".price-label .loader").slideUp("fast", function (params) {
-          return true;
-        });
+        validateAndFillPrice(priceResp);
+      });
+  }
+
+  function validateAndFillPrice(priceResp) {
+    var params = getPriceParams(), record = priceResp.data.records[0].fields;
+    window.langMap
+      .then(function (langs) {
+        return langs.data.records.filter(function (item) {
+          return item.fields.Language == params.Language;
+        })[0].fields;
+      })
+      .then(function (lang) {
+        params['Language'] = lang.Type;
+        return params;
+      })
+      .then(function (params) {
+        if (
+          record.Language == params.Language &&
+          record.Developers == params.Developers &&
+          record.Services == params.Services &&
+          record.Experience == params.Experience
+        ) {
+          $(".price-label .value").html("$" + priceResp.data.records[0].fields['Price per month ($)'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+          $(".price-label .loader").slideUp("fast", function (params) {
+            return true;
+          });
+        }
       });
   }
 
