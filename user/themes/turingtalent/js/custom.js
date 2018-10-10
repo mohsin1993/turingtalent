@@ -3,15 +3,15 @@
 
   $(init);
 
-  const signUpTableID = "app4QLkg922q3alKE";
-  const pricingTableID = "appd6kVCdE1rvU09g";
-  const loader = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
+  var signUpTableID = "app4QLkg922q3alKE";
+  var pricingTableID = "appd6kVCdE1rvU09g";
+  var loader = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
   
-  const clearbit = axios.create({
+  var clearbit = axios.create({
     headers: {"Authorization": "Bearer sk_087804f26c8aac10230bed129295c2ec"}
   });
   
-  const airTable = axios.create({
+  var airTable = axios.create({
     headers: {"Authorization": "Bearer keyYcmhufGC3SvYAH"}
   });
   
@@ -85,7 +85,7 @@ function loadAsync(src, callback, relative){
       $(".signup .step2").slideUp();
       $(".signup .step3").slideDown();
       loadAsync("https://assets.calendly.com/assets/external/widget.js", function () {
-        setTimeout(() => {
+        setTimeout(function() {
           $(".calendly-loader").slideUp();
           $(".calendly-inline-widget").slideDown();
         }, 3000);

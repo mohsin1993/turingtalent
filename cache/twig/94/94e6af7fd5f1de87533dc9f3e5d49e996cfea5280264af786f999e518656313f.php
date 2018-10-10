@@ -26,9 +26,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         // line 3
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "https://unpkg.com/axios@0.18.0/dist/axios.min.js", 1 => array("group" => "bottom")), "method");
         // line 4
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/custom.js", 1 => array("group" => "bottom")), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/custom.min.js", 1 => array("group" => "bottom")), "method");
         // line 5
-        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.js", 1 => array("group" => "bottom")), "method");
+        $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/responsive.min.js", 1 => array("group" => "bottom")), "method");
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
@@ -475,8 +475,8 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
 {% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
-{% do assets.addJs('theme://js/custom.js', {group:'bottom'}) %}
-{% do assets.addJs('theme://js/responsive.js', {group:'bottom'}) %}
+{% do assets.addJs('theme://js/custom.min.js', {group:'bottom'}) %}
+{% do assets.addJs('theme://js/responsive.min.js', {group:'bottom'}) %}
 {% block content %}
   <section class=\"animated fadeInDown\" style=\"padding-bottom: 37px;\">
     <div class=\"banner-section\">
