@@ -87,9 +87,11 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
         // line 12
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 12)->display($context);
         // line 13
-        echo "    ";
+        echo "    <link rel=\"shortcut icon\"  type=\"image/x-icon\" href=\"";
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "favicon.ico", array(), "array"), "url", array());
+        echo "\" />
+    <link rel=\"canonical\" href=\"";
         // line 14
-        echo "    <link rel=\"canonical\" href=\"";
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\" />
     <style>
@@ -137,7 +139,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
         <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
           <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
         // line 36
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "turing-talent-logo.svg", array(), "array"), "url", array());
         echo "\">
             Your browser does not support SVG
           </object>
@@ -191,7 +193,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
             <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"";
         // line 68
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/turing-talent-logo.svg");
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "turing-talent-logo.svg", array(), "array"), "url", array());
         echo "\">
               Your browser does not support SVG
             </object>
@@ -246,7 +248,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     public function getDebugInfo()
     {
-        return array (  232 => 96,  215 => 81,  212 => 80,  205 => 75,  203 => 74,  194 => 68,  188 => 64,  185 => 63,  180 => 58,  174 => 59,  172 => 58,  168 => 56,  165 => 55,  158 => 50,  156 => 49,  140 => 36,  133 => 31,  130 => 30,  126 => 25,  123 => 24,  120 => 23,  117 => 22,  114 => 21,  111 => 20,  104 => 26,  102 => 20,  92 => 14,  90 => 13,  88 => 12,  76 => 8,  72 => 6,  69 => 5,  62 => 98,  60 => 80,  57 => 79,  55 => 63,  52 => 62,  50 => 55,  47 => 54,  45 => 30,  41 => 29,  38 => 28,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
+        return array (  234 => 96,  217 => 81,  214 => 80,  207 => 75,  205 => 74,  196 => 68,  190 => 64,  187 => 63,  182 => 58,  176 => 59,  174 => 58,  170 => 56,  167 => 55,  160 => 50,  158 => 49,  142 => 36,  135 => 31,  132 => 30,  128 => 25,  125 => 24,  122 => 23,  119 => 22,  116 => 21,  113 => 20,  106 => 26,  104 => 20,  95 => 14,  90 => 13,  88 => 12,  76 => 8,  72 => 6,  69 => 5,  62 => 98,  60 => 80,  57 => 79,  55 => 63,  52 => 62,  50 => 55,  47 => 54,  45 => 30,  41 => 29,  38 => 28,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -271,7 +273,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     {% include 'partials/metadata.html.twig' %}
-    {# <link rel=\"icon\" type=\"image/png\" href=\"{{page.media['turing-talent-logo.png'].sepia().display('thumbnail').html() }}\" /> #}
+    <link rel=\"shortcut icon\"  type=\"image/x-icon\" href=\"{{ page.find('/images').media['favicon.ico'].url }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
     <style>
       .fouc{
@@ -294,7 +296,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     <header class=\"navbar\" style=\"position: relative;\">
       <section class=\"navbar-section\">
         <a href=\"/\" class=\"navbar-brand mr-2 nav-item small-font\">
-          <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ url('theme://images/turing-talent-logo.svg') }}\">
+          <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['turing-talent-logo.svg'].url }}\">
             Your browser does not support SVG
           </object>
          </a>
@@ -326,7 +328,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       <div class=\"navbar\" style=\"padding-top: 30px;\">
         <section class=\"navbar-section\">
           <a href=\"#\" class=\"navbar-brand mr-2 faded-black nav-item small-font\">
-            <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ url('theme://images/turing-talent-logo.svg') }}\">
+            <object width=\"132px\" height=\"20px\" class=\"Turing-Talent-Logo\" type=\"image/svg+xml\" data=\"{{ page.find('/images').media['turing-talent-logo.svg'].url }}\">
               Your browser does not support SVG
             </object>
           </a>

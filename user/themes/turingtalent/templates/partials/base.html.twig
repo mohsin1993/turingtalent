@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
-    {# <link rel="icon" type="image/png" href="{{page.media['turing-talent-logo.png'].sepia().display('thumbnail').html() }}" /> #}
+    <link rel="shortcut icon"  type="image/x-icon" href="{{ page.find('/images').media['favicon.ico'].url }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
     <style>
       .fouc{
@@ -33,7 +33,7 @@
     <header class="navbar" style="position: relative;">
       <section class="navbar-section">
         <a href="/" class="navbar-brand mr-2 nav-item small-font">
-          <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+          <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ page.find('/images').media['turing-talent-logo.svg'].url }}">
             Your browser does not support SVG
           </object>
          </a>
@@ -65,7 +65,7 @@
       <div class="navbar" style="padding-top: 30px;">
         <section class="navbar-section">
           <a href="#" class="navbar-brand mr-2 faded-black nav-item small-font">
-            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ url('theme://images/turing-talent-logo.svg') }}">
+            <object width="132px" height="20px" class="Turing-Talent-Logo" type="image/svg+xml" data="{{ page.find('/images').media['turing-talent-logo.svg'].url }}">
               Your browser does not support SVG
             </object>
           </a>

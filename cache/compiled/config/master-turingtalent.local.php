@@ -1,13 +1,13 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1539130788,
-    'checksum' => '691f66956b467189c946d055b241fd2c',
+    'timestamp' => 1539134424,
+    'checksum' => 'ef1ed641fa0c568fa022e88aa0a4dac8',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1537701574
+                'modified' => 1539133941
             ],
             'plugins/lazy-image' => [
                 'file' => 'user/config/plugins/lazy-image.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1539119661
+                'modified' => 1539132655
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -31,13 +31,13 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1539130784
+                'modified' => 1539134421
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1539124120
+                'modified' => 1539133845
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
@@ -559,6 +559,10 @@ return [
                     'type' => 'file',
                     'thumb' => 'media/thumb-json.png',
                     'mime' => 'application/json'
+                ],
+                'ico' => [
+                    'type' => 'image',
+                    'mime' => 'image/x-icon'
                 ]
             ]
         ],
@@ -614,7 +618,8 @@ return [
             ],
             'metadata' => [
                 'description' => 'Turing Talent enables you to build world class distributed technical teams, by providing hussle-free talent sourcing, operations, managed offices, learning and development.',
-                'title' => 'Turing Talent'
+                'title' => 'Turing Talent',
+                'keywords' => 'turing talent, hiring, talent sourcing, operations, managed offices, distributed, teams, technical'
             ],
             'summary' => [
                 'enabled' => true,
