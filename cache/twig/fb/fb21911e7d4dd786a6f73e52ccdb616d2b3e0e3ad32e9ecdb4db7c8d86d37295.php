@@ -58,41 +58,43 @@ class __TwigTemplate_ee9bc07ef25a8d3f6e855e47e34348c7b8efddbf8fc88d487aaaa366c38
         // line 7
         echo "<meta property=\"og:site_name\" content=\"Turing Talent\"/>
 <meta property=\"og:title\" content=\"Turing Talent\"/>
+<meta property=\"og:description\" content=\"Turing Talent breaks down the barriers between the worlds best talent and 
+most exciting companies - reinventing the potential for distributed teams.\"/>
 <meta property=\"og:url\" content=\"";
-        // line 9
+        // line 11
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\"/>
 <meta property=\"og:type\" content=\"website\"/>
 <meta property=\"og:image\" content=\"";
-        // line 11
+        // line 13
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta property=\"og:image:width\" content=\"1200\"/>
 <meta property=\"og:image:height\" content=\"630\"/>
 <meta itemprop=\"name\" content=\"Turing Talent\"/>
 <meta itemprop=\"url\" content=\"";
-        // line 15
+        // line 17
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\"/>
 <meta itemprop=\"thumbnailUrl\" content=\"";
-        // line 16
+        // line 18
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <link rel=\"image_src\" href=\"";
-        // line 17
+        // line 19
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\" />
 <meta itemprop=\"image\" content=\"";
-        // line 18
+        // line 20
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta name=\"twitter:title\" content=\"Turing Talent\"/>
 <meta name=\"twitter:image\" content=\"";
-        // line 20
+        // line 22
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta name=\"twitter:url\" content=\"";
-        // line 21
+        // line 23
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "url", array(0 => true, 1 => true), "method");
         echo "\"/>
 <meta name=\"twitter:card\" content=\"summary\"/>
@@ -112,7 +114,7 @@ most exciting companies - reinventing the potential for distributed teams.\" />"
 
     public function getDebugInfo()
     {
-        return array (  96 => 21,  92 => 20,  87 => 18,  83 => 17,  79 => 16,  75 => 15,  68 => 11,  63 => 9,  59 => 7,  56 => 4,  23 => 2,  19 => 1,);
+        return array (  98 => 23,  94 => 22,  89 => 20,  85 => 19,  81 => 18,  77 => 17,  70 => 13,  65 => 11,  59 => 7,  56 => 4,  23 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -133,6 +135,8 @@ most exciting companies - reinventing the potential for distributed teams.\" />"
 {# <link rel=\"canonical\" href=\"https://www.turingtalent.io/\"/> #}
 <meta property=\"og:site_name\" content=\"Turing Talent\"/>
 <meta property=\"og:title\" content=\"Turing Talent\"/>
+<meta property=\"og:description\" content=\"Turing Talent breaks down the barriers between the worlds best talent and 
+most exciting companies - reinventing the potential for distributed teams.\"/>
 <meta property=\"og:url\" content=\"{{ page.url(true, true) }}\"/>
 <meta property=\"og:type\" content=\"website\"/>
 <meta property=\"og:image\" content=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
