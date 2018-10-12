@@ -65,10 +65,10 @@ class __TwigTemplate_ee9bc07ef25a8d3f6e855e47e34348c7b8efddbf8fc88d487aaaa366c38
 <meta property=\"og:type\" content=\"website\"/>
 <meta property=\"og:image\" content=\"";
         // line 11
-        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-square.png", array(), "array"), "url", array());
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "large-square.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
-<meta property=\"og:image:width\" content=\"1000\"/>
-<meta property=\"og:image:height\" content=\"319\"/>
+<meta property=\"og:image:width\" content=\"1200\"/>
+<meta property=\"og:image:height\" content=\"630\"/>
 <meta itemprop=\"name\" content=\"Turing Talent\"/>
 <meta itemprop=\"url\" content=\"";
         // line 15
@@ -76,7 +76,7 @@ class __TwigTemplate_ee9bc07ef25a8d3f6e855e47e34348c7b8efddbf8fc88d487aaaa366c38
         echo "\"/>
 <meta itemprop=\"thumbnailUrl\" content=\"";
         // line 16
-        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-square.png", array(), "array"), "resize", array(0 => 200, 1 => 200), "method"), "url", array());
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "large-square.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <link rel=\"image_src\" href=\"";
         // line 17
@@ -89,7 +89,7 @@ class __TwigTemplate_ee9bc07ef25a8d3f6e855e47e34348c7b8efddbf8fc88d487aaaa366c38
 <meta name=\"twitter:title\" content=\"Turing Talent\"/>
 <meta name=\"twitter:image\" content=\"";
         // line 20
-        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-square.png", array(), "array"), "url", array());
+        echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "large-square.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta name=\"twitter:url\" content=\"";
         // line 21
@@ -135,16 +135,16 @@ most exciting companies - reinventing the potential for distributed teams.\" />"
 <meta property=\"og:title\" content=\"Turing Talent\"/>
 <meta property=\"og:url\" content=\"{{ page.url(true, true) }}\"/>
 <meta property=\"og:type\" content=\"website\"/>
-<meta property=\"og:image\" content=\"{{ page.find('/images').media['share-square.png'].url }}\"/>
-<meta property=\"og:image:width\" content=\"1000\"/>
-<meta property=\"og:image:height\" content=\"319\"/>
+<meta property=\"og:image\" content=\"{{ page.find('/images').media['large-square.png'].resize(1200, 630).url }}\"/>
+<meta property=\"og:image:width\" content=\"1200\"/>
+<meta property=\"og:image:height\" content=\"630\"/>
 <meta itemprop=\"name\" content=\"Turing Talent\"/>
 <meta itemprop=\"url\" content=\"{{ page.url(true, true) }}\"/>
-<meta itemprop=\"thumbnailUrl\" content=\"{{ page.find('/images').media['share-square.png'].resize(200, 200).url }}\"/>
+<meta itemprop=\"thumbnailUrl\" content=\"{{ page.find('/images').media['large-square.png'].resize(1200, 630).url }}\"/>
 <link rel=\"image_src\" href=\"{{ page.find('/images').media['share-square.png'].url }}\" />
 <meta itemprop=\"image\" content=\"{{ page.find('/images').media['share-square.png'].url }}\"/>
 <meta name=\"twitter:title\" content=\"Turing Talent\"/>
-<meta name=\"twitter:image\" content=\"{{ page.find('/images').media['share-square.png'].url }}\"/>
+<meta name=\"twitter:image\" content=\"{{ page.find('/images').media['large-square.png'].resize(1200, 630).url }}\"/>
 <meta name=\"twitter:url\" content=\"{{ page.url(true, true) }}\"/>
 <meta name=\"twitter:card\" content=\"summary\"/>
 <meta name=\"description\" content=\"Turing Talent breaks down the barriers between the worlds best talent and 
