@@ -67,6 +67,7 @@ most exciting companies - reinventing the potential for distributed teams.\"/>
 <meta property=\"og:type\" content=\"website\"/>
 <meta property=\"og:image\" content=\"";
         // line 13
+        echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta property=\"og:image:width\" content=\"1200\"/>
@@ -78,19 +79,23 @@ most exciting companies - reinventing the potential for distributed teams.\"/>
         echo "\"/>
 <meta itemprop=\"thumbnailUrl\" content=\"";
         // line 18
+        echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <link rel=\"image_src\" href=\"";
         // line 19
+        echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\" />
 <meta itemprop=\"image\" content=\"";
         // line 20
+        echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta name=\"twitter:title\" content=\"Turing Talent\"/>
 <meta name=\"twitter:image\" content=\"";
         // line 22
+        echo (isset($context["base_url_absolute"]) ? $context["base_url_absolute"] : null);
         echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "find", array(0 => "/images"), "method"), "media", array()), "share-large.png", array(), "array"), "resize", array(0 => 1200, 1 => 630), "method"), "url", array());
         echo "\"/>
 <meta name=\"twitter:url\" content=\"";
@@ -114,7 +119,7 @@ most exciting companies - reinventing the potential for distributed teams.\" />"
 
     public function getDebugInfo()
     {
-        return array (  98 => 23,  94 => 22,  89 => 20,  85 => 19,  81 => 18,  77 => 17,  70 => 13,  65 => 11,  59 => 7,  56 => 4,  23 => 2,  19 => 1,);
+        return array (  103 => 23,  98 => 22,  92 => 20,  87 => 19,  82 => 18,  78 => 17,  70 => 13,  65 => 11,  59 => 7,  56 => 4,  23 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -139,16 +144,16 @@ most exciting companies - reinventing the potential for distributed teams.\" />"
 most exciting companies - reinventing the potential for distributed teams.\"/>
 <meta property=\"og:url\" content=\"{{ page.url(true, true) }}\"/>
 <meta property=\"og:type\" content=\"website\"/>
-<meta property=\"og:image\" content=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
+<meta property=\"og:image\" content=\"{{base_url_absolute}}{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
 <meta property=\"og:image:width\" content=\"1200\"/>
 <meta property=\"og:image:height\" content=\"630\"/>
 <meta itemprop=\"name\" content=\"Turing Talent\"/>
 <meta itemprop=\"url\" content=\"{{ page.url(true, true) }}\"/>
-<meta itemprop=\"thumbnailUrl\" content=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
-<link rel=\"image_src\" href=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\" />
-<meta itemprop=\"image\" content=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
+<meta itemprop=\"thumbnailUrl\" content=\"{{base_url_absolute}}{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
+<link rel=\"image_src\" href=\"{{base_url_absolute}}{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\" />
+<meta itemprop=\"image\" content=\"{{base_url_absolute}}{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
 <meta name=\"twitter:title\" content=\"Turing Talent\"/>
-<meta name=\"twitter:image\" content=\"{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
+<meta name=\"twitter:image\" content=\"{{base_url_absolute}}{{ page.find('/images').media['share-large.png'].resize(1200, 630).url }}\"/>
 <meta name=\"twitter:url\" content=\"{{ page.url(true, true) }}\"/>
 <meta name=\"twitter:card\" content=\"summary\"/>
 <meta name=\"description\" content=\"Turing Talent breaks down the barriers between the worlds best talent and 
