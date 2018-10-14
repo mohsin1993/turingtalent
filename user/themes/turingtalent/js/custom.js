@@ -219,6 +219,10 @@ function loadAsync(src, callback, relative){
         calculatePrice();
       }
     })
+
+    $(".recal").click(function () {
+      calculatePrice();
+    })
   }
 
   function validateEmail(email) {
