@@ -29,7 +29,7 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
             echo "    <li class=\"";
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo " nav-item small-font\">
-        <a class=\"";
+        <a class=\"nav-link ";
             // line 28
             echo (isset($context["current_page"]) ? $context["current_page"] : null);
             echo "\" href=\"";
@@ -197,7 +197,7 @@ class __TwigTemplate_577786c6cd89c3199bc99a05e522ad799b90d00b7ff3be96c30d24466c2
 {% for page in pages.children.visible %}
     {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
     <li class=\"{{ current_page }} nav-item small-font\">
-        <a class=\"{{ current_page }}\" href=\"{{ page.url }}\">
+        <a class=\"nav-link {{ current_page }}\" href=\"{{ page.url }}\">
           <b>{{ page.menu }}</b>
         </a>
     </li>

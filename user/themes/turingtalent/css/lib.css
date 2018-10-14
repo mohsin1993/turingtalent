@@ -649,6 +649,10 @@ button.primary {
 object {
   pointer-events: none;
 }
+a:not(.nav-link) {
+  color: #048ab6 !important;
+  text-decoration: none !important;
+}
 .job {
   max-width: 800px;
   margin: auto;
@@ -664,6 +668,35 @@ object {
 }
 .job .actions {
   padding-left: 50px;
+  margin-top: 40px;
+}
+.job h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 800px;
+  margin: auto;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  letter-spacing: normal;
+  color: #9b9b9b;
+}
+.job h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: optional;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 800px;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 800;
+  color: #9b9b9b;
 }
 .job h3 {
   border-radius: 2px;
@@ -682,7 +715,7 @@ object {
   color: #82b604;
   padding-left: 40px;
 }
-.job h3 + p {
+.job p {
   font-family: 'Inconsolata', monospace !important;
   font-size: 16px !important;
   font-style: normal !important;
@@ -716,6 +749,10 @@ object {
   list-style-position: outside;
   margin-left: 75px;
   margin-top: 16px;
+}
+.job ol li ul,
+.job ul li ul {
+  margin-left: 15px !important;
 }
 .job button {
   font-family: 'Inconsolata', monospace !important;
@@ -939,4 +976,7 @@ ul {
 ul.tab,
 .divided-sect ul {
   padding-left: 0px !important;
+}
+.custom-pricing div {
+  line-height: 80px;
 }

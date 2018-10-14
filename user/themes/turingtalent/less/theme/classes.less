@@ -490,13 +490,40 @@ object{
   pointer-events: none;
 }
 
+
+
+a:not(.nav-link){
+  color: #048ab6 !important;
+  text-decoration: none !important;
+}
+
 .job{
   .content-padding;
   .small-font;
   max-width: 900px !important;
   .actions{
     padding-left: 50px;
+    margin-top: 40px;
   }
+
+  h1{
+    .normal-font;
+    .content-padding;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    letter-spacing: normal;
+    color: #9b9b9b;
+  }
+
+  h2{
+    .normal-font;
+    .content-padding;
+    font-size: 24px;
+    font-weight: 800;
+    color: #9b9b9b;
+  }
+
   h3{
     .left-border;
     .normal-font;
@@ -509,7 +536,7 @@ object{
     padding-left: 40px;
   }
 
-  h3 + p{
+  p{
     .small-font;
     .content-padding;
     line-height: 24px;
@@ -528,6 +555,12 @@ object{
     list-style-position: outside;
     margin-left: 75px;
     margin-top: 16px;
+
+    li{
+      ul{
+        margin-left: 15px !important;
+      }
+    }
   }
 
   button{
@@ -797,4 +830,10 @@ ol,ul{
 
 ul.tab, .divided-sect ul{
     padding-left: 0px !important;
+}
+
+.custom-pricing{
+  div{
+    line-height: 80px;
+  }
 }

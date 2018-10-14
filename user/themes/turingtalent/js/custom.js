@@ -189,7 +189,9 @@ function loadAsync(src, callback, relative){
           record.Services == params.Services &&
           record.Experience == params.Experience
         ) {
-          $(".price-label .value").html("$" + priceResp.data.records[0].fields['Price per month ($)'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+          var price = priceResp.data.records[0].fields['Price p.a. ($)'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",").trim().toLowerCase();
+          $(".price-label .value").html( price == 'custom' ? '<div style="font-size: 20px; margin-top: 10px;">Custom pricing</div>' : "$"+price);
+          (price == 'custom') ? $(".time").slideUp("fast") : $(".time").slideDown("fast");
           $(".price-label .loader").slideUp("fast", function (params) {
             return true;
           });

@@ -198,7 +198,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <div class=\"columns content-padding\">
         <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
-          We customize our model based on your needs. You can be the direct employer, or choose a simple all-in-one fee that includes salary, operations and office.
+          We customize our model based on your needs. Directly employ and manage talent yourself, or choose a simple all-in-one service fee that includes talent salary, operations and office management.
         </div>
       </div>
       <div class=\"pricing content-padding\">
@@ -209,18 +209,17 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"tabs-list\">
             <ul class=\"tab tab-block\">
               <li class=\"tab-item small-font active\">
-                <a href=\"#lang-tab\">Language</a>
+                <a class=\"nav-link\" href=\"#lang-tab\">Language</a>
               </li>
               <li class=\"tab-item small-font\">
-                <a href=\"#exp-tab\">Experience</a>
+                <a class=\"nav-link\" href=\"#exp-tab\">Experience</a>
               </li>
               <li class=\"tab-item small-font\">
-                <a href=\"#dev-tab\">Developers</a>
+                <a class=\"nav-link\" href=\"#dev-tab\">Developers</a>
               </li>
-              <li class=\"tab-item small-font\">
-                <a href=\"#servic-tab\">Services</a>
-              </li>
-            </ul>
+              ";
+        // line 179
+        echo "            </ul>
           </div>
           <div class=\"tab-containers\">
             <div id=\"lang-tab\" class=\"tab-content active animated fadeIn\">
@@ -251,7 +250,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -273,8 +272,9 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span data-value=\"100+\" class=\"option small-font\">100+</span>
                     </div>
                   </div>
-                  <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
-                </div>
+                  ";
+        // line 233
+        echo "                </div>
                 <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
                     <div class=\"rectangle\">
@@ -285,7 +285,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -319,7 +319,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -354,7 +354,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -459,7 +459,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
 
     public function getDebugInfo()
     {
-        return array (  441 => 395,  346 => 301,  171 => 128,  147 => 107,  123 => 86,  98 => 64,  91 => 59,  59 => 26,  44 => 13,  40 => 7,  37 => 6,  33 => 1,  31 => 5,  29 => 4,  27 => 3,  25 => 2,  11 => 1,);
+        return array (  441 => 395,  346 => 301,  277 => 233,  222 => 179,  171 => 128,  147 => 107,  123 => 86,  98 => 64,  91 => 59,  59 => 26,  44 => 13,  40 => 7,  37 => 6,  33 => 1,  31 => 5,  29 => 4,  27 => 3,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -628,7 +628,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <div class=\"columns content-padding\">
         <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
-          We customize our model based on your needs. You can be the direct employer, or choose a simple all-in-one fee that includes salary, operations and office.
+          We customize our model based on your needs. Directly employ and manage talent yourself, or choose a simple all-in-one service fee that includes talent salary, operations and office management.
         </div>
       </div>
       <div class=\"pricing content-padding\">
@@ -639,17 +639,17 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"tabs-list\">
             <ul class=\"tab tab-block\">
               <li class=\"tab-item small-font active\">
-                <a href=\"#lang-tab\">Language</a>
+                <a class=\"nav-link\" href=\"#lang-tab\">Language</a>
               </li>
               <li class=\"tab-item small-font\">
-                <a href=\"#exp-tab\">Experience</a>
+                <a class=\"nav-link\" href=\"#exp-tab\">Experience</a>
               </li>
               <li class=\"tab-item small-font\">
-                <a href=\"#dev-tab\">Developers</a>
+                <a class=\"nav-link\" href=\"#dev-tab\">Developers</a>
               </li>
-              <li class=\"tab-item small-font\">
+              {# <li class=\"tab-item small-font\">
                 <a href=\"#servic-tab\">Services</a>
-              </li>
+              </li> #}
             </ul>
           </div>
           <div class=\"tab-containers\">
@@ -681,7 +681,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -703,7 +703,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                       <span data-value=\"100+\" class=\"option small-font\">100+</span>
                     </div>
                   </div>
-                  <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button>
+                  {# <button class=\"small-font next\" data-href=\"#servic-tab\">Next</button> #}
                 </div>
                 <div class=\"col-4 col-sm-12\">
                   <div class=\"total-price\">
@@ -715,7 +715,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -749,7 +749,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">
@@ -783,7 +783,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per month
+                        per year
                       </div>
                     </div>
                     <div class=\"est small-font\">

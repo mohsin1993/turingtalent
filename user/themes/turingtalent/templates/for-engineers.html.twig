@@ -20,7 +20,7 @@
       <div class="columns content-padding">
         <div class="column col-9 col-md-12 tt-section-content">
           <p class="normal-font">
-            We help companies ‘build their own remote technical teams in our European hubs. You get the benefits of being a full-time employee of the company you’re working at, as well as being part of a local, high-calibre Turing Talent community.
+            We help companies ‘build their own’ remote technical teams in our European hubs. You get the benefits of being a full-time employee of the company where you’re working, as well as being part of a local, high-calibre Turing Talent community.
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@
       <div class="columns content-padding">
         <div class="column col-9 col-md-12 tt-section-content small">
           <p class="small-font">
-            Once you’re part of Turing Talent you’ll have access to a range of benefits and perks that will help you advance your career.
+            Once you’re part of Turing Talent, you’ll have access to a range of benefits and perks that will help you advance your career.
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="content small-font">
                   <ul>
-                    <li>Friends for life. Build a high-calibre network of fellow engineers and data scientists</li>
+                    <li>Friends for life: Build a high-calibre network of fellow engineers and data scientists</li>
                   </ul>
                 </div>
               </div>
@@ -133,7 +133,7 @@
           <div class="small-font">
             <ol>
               <li>Apply to Turing Talent</li>
-              <li>Take the coding challenge which is designed for your specialisation</li>
+              <li>Take the coding challenge, which is designed for your specialisation</li>
               <li>An online video call so we get to know you better as a person</li>
               <li>Start getting matched with suitable companies</li>
             </ol>
@@ -152,10 +152,13 @@
         <div class="column col-9 col-md-12 tt-section-content small">
           <div class="small-font">
             <ul>
-              <li>Frontend Engineer at Host Compliance</li>
+            {% for post in taxonomy.findTaxonomy({'tag':['job']}) %}
+              <li><a class="job" href="{{post.slug}}">{{ post.title }}</a> at {{post.header.company}}</li>
+            {% endfor %}
+              {# <li>Frontend Engineer at Host Compliance</li>
               <li>Python Engineer with a Data Focus at Host Compliance</li>
               <li>Director of Engineering at Host Compliance</li>
-              <li>Data Scientist for Open application</li>
+              <li>Data Scientist for Open application</li> #}
             </ul>
           </div>
         </div>
