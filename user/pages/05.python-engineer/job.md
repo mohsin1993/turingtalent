@@ -4,6 +4,7 @@ taxonomy:
     tag:
         - job
 visible: false
+company: 'Host Compliance'
 ---
 
 # Python Engineer with a Data Focus
