@@ -16,7 +16,7 @@ Host Compliance is a privately held tech company located in the heart of Califor
 ### About Turing Talent:
 We are a new breed of talent acquisition and incubation. We are reinventing distributed engineering teams by breaking down barriers between the world's best talent and the most exciting companies. Turing Talent has created the first pan-European hubs which house international engineering teams for the most cutting-edge tech companies from Silicon Valley and beyond.
 
-[www.turingtalent.io](www.turingtalent.io)
+[www.turingtalent.io](https://www.turingtalent.io)
 
 Are you a 100x backend software engineer with team management experience and technical founder/leadership aspirations? Are you looking to join a super-fast-growing startup where you can set product strategy and prioritise / manage product work as we continue to scale and grow? If so we need to talk!
 As the Director of Engineering you will be a key member of the company's executive management team and the leader of our 5-person (and rapidly growing) distributed engineering team. As such you will be responsible for attracting and managing top tier technical talent and providing direction, mentoring and support to both backend and frontend engineers. To do so effectively, you will need to be a strong contributing member of the engineering team, live in the code and be able to provide real-time, detailed technical feedback whenever needed. In addition you will be the custodian of the company's engineering team culture and inspire and motivate team members to grow and learn as we ship product in an extremely fast paced, scaled environment. 

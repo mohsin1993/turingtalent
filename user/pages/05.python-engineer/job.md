@@ -17,7 +17,7 @@ Host Compliance is a privately held tech company located in the heart of Califor
 ### About Turing Talent:
 We are a new breed of talent acquisition and incubation. We are reinventing distributed engineering teams by breaking down barriers between the world's best talent and the most exciting companies. Turing Talent has created the first pan-European hubs which house international engineering teams for the most cutting-edge tech companies from Silicon Valley and beyond.
 
-[www.turingtalent.io](www.turingtalent.io)
+[www.turingtalent.io](https://www.turingtalent.io)
 
 Are you a top-notch Python engineer with a keen eye for data? If so, we need to talk! We're looking for someone who can help us build software around our data services. We help local governments address the challenges around short-term rentals like Airbnb. The tools you build will help local governments make better choices around permitting, collecting a fair tax, and keeping neighbourhoods safe. We are making a difference with more than 130 local governments across the US and Canada using our services. 
 
