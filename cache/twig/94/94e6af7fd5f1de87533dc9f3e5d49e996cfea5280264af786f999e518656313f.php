@@ -47,7 +47,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-8 col-md-9 col-sm-12 text-section\">
             <div class=\"content\">
               <p class=\"normal-font\">
-                Turing Talent enables you to build world class distributed technical teams, by providing Hassle-free talent sourcing, operations, managed offices, learning and development.
+                Turing Talent enables you to build world class distributed technical teams, by providing hassle-free talent sourcing, operations, managed offices, learning and development.
               </p>
             </div>
           </div>
@@ -489,7 +489,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
           <div class=\"column col-8 col-md-9 col-sm-12 text-section\">
             <div class=\"content\">
               <p class=\"normal-font\">
-                Turing Talent enables you to build world class distributed technical teams, by providing Hassle-free talent sourcing, operations, managed offices, learning and development.
+                Turing Talent enables you to build world class distributed technical teams, by providing hassle-free talent sourcing, operations, managed offices, learning and development.
               </p>
             </div>
           </div>

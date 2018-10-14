@@ -42,7 +42,12 @@
     display: none !important;
   }
 }
-
+// font-size: 30px !important;
+@media (min-width: 0px) and (max-width: 339px){
+  .banner-section{
+    min-height: 420px;
+  }
+}
 
 @media (min-width: 0px) and (max-width: @screen-sm-min){
   .navbar{
@@ -138,7 +143,7 @@
     margin-bottom: 40px;
   }
   .banner-section .oval{
-    margin-top: 73px !important;
+    margin-top: 62px !important;
     margin-right: 30px !important;
   }
 
@@ -206,7 +211,7 @@
 
   .banner-section {
     margin: 0px 10px;
-    height: 380px !important;;
+    height: 360px !important;;
     padding: 25px 15px 15px 15px !important;
 
     .image{
@@ -226,9 +231,16 @@
   
 }
 
-@media (max-width: 755px){
+@media (min-width: @screen-xs-min) and (max-width: 755px){
   .banner-section h1{
     font-size: 35px !important;
+  }
+}
+
+
+@media (max-width: @screen-xs-min){
+  .banner-section h1{
+    font-size: 30px !important;
   }
 }
 

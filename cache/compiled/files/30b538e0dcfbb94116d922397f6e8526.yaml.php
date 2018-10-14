@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/user/config/site.yaml',
-    'modified' => 1539132655,
+    'modified' => 1539546039,
     'data' => [
         'title' => 'Turing Talent',
         'default_lang' => 'en',

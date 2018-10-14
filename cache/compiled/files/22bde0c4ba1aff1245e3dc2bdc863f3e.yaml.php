@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/user/plugins/lazy-image/blueprints.yaml',
-    'modified' => 1539045170,
+    'modified' => 1539546041,
     'data' => [
         'name' => 'Lazy Image',
         'version' => '1.0.3',
