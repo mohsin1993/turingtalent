@@ -1,0 +1,39 @@
+1540138518
+a:2:{s:7:"content";s:5905:"<h1>Full Stack Engineer</h1>
+<h2>at Quorso</h2>
+<h3>About Quorso</h3>
+<p>We’re on a mission to unlock the human ingenuity that powers the world’s organisations. We want to help managers at all levels take ownership of their part of the business, improve profits, and grow professionally.</p>
+<p>At its core, Quorso is a web application that surfaces opportunities hidden deep within the financials of our clients' businesses. It provides compelling suggestions to managers for improving the running of their businesses and enables them to share their methods with peers in order to build a learning loop. We've found that highlighting opportunities at the most granular level results in massive savings across the client's entire organisation.</p>
+<p>We are a band of seasoned professionals from all over the world, coming from a broad range of industries. Our clients already manage billions of dollars through Quorso, and we’re growing very fast. We are well-funded and have recently closed our second round of seed funding. Our investors are excited about the mission of Quorso and are invested for the long-haul.</p>
+<p>Quorso is partnering with Turing Talent to grow its engineering function.</p>
+<p><a href="https://quorso.com">https://quorso.com</a></p>
+<h3>About Turing Talent</h3>
+<p>Turing Talent is reinventing distributed engineering teams – by breaking down barriers between global talent and exciting companies in Silicon Valley and beyond. We facilitate companies to build engineer teams in our European hubs.</p>
+<p>We have a talent first philosophy, investing in three pillars to ensure you have an accelerated career:</p>
+<ul>
+<li><strong>Awesome job –</strong> with a world-class company. Directly, not through third-party outsourcing firms</li>
+<li><strong>Learning –</strong> through Turing Talent’s flagship soft skills and leadership development programme</li>
+<li><strong>Network –</strong> high-calibre community of fellow engineers and data scientists. </li>
+</ul>
+<p><a href="https://turingtalent.io">https://turingtalent.io</a></p>
+<h3>Working at Quorso</h3>
+<p>Quorso is a technology company with a team the aims for the stars but has its feet firmly on the ground. We’re bold and strive to make an impact in the world, but we’re practical about how approach it.</p>
+<p>As a young company, we're still shaping our culture and our team. We would love for you to be a part of the journey we're taking towards achieving this.</p>
+<p>We're well aware that job specifications sometimes aren't the best ways to truly get an idea of what a company is like, and whether it would be a right fit for you. </p>
+<h3>The Technology</h3>
+<p>As a full-stack engineer at Quorso, we believe having the following technology traits will set you up to be successful here:  </p>
+<ul>
+<li><strong>Comfortable with a Unix-like environment.</strong> All of our servers run a flavour of Linux. We occasionally SSH into our environments to modify system settings and our CI setup runs linters that listen for exit codes. If none of the above sounds strange or daunting, then you shouldn't have too much of a problem getting up and running with our team in no time!</li>
+<li><strong>Practical experience building, high-quality web-based software using a dynamic programming language like Ruby or Python.</strong> If you've worked for a startup, large company or anything in-between and have practical experience in delivering high-quality software to end-users for at least two years, then we would love to speak with you. We use Ruby as our go-to language unless the solution requires otherwise, so a desire to get up to speed quickly with Ruby is a must.</li>
+<li><strong>Practical knowledge of databases.</strong> You've written SQL to extract data from databases. You understand why it's sometimes useful to reach for raw SQL instead of an abstracted ORM.</li>
+<li><strong>You understand why testing applications is important.</strong> You're perfectly comfortable writing code which is well-tested. You understand the concepts used in most test suites, such as assertion, setup, teardown, dependency injection, and can reach for them to build easy-to understand and well-tested code.</li>
+<li><strong>You've used at least one major JavaScript framework and are comfortable writing code for the front-end.</strong> You embrace the event-driven asynchronous nature of the web, you understand the DOM tree, you have an opinion on an ideal way to manage complex states (we use React + Redux for this), and you can appreciate the usefulness of componentising re-usable parts of the front-end.</li>
+</ul>
+<h3>The Human</h3>
+<p>An engineer at Quorso isn't just a function of how much code they can spew out in a day. They are an integral part of a product-focused team, working together to achieve a unified goal. We believe in the human at Quorso – it's what our entire product is based on. Quorso values humans with the following traits:</p>
+<ul>
+<li><strong>Intrigued and fascinated about building high-quality products.</strong> You may have had previous experience working as an engineer in a product team, or have a genuine fascination about quality digital products and their positive impact on people's lives. </li>
+<li><strong>You demonstrate passion for learning, and self-improvement.</strong> You're pro-active by nature and hold yourself to a high standard of quality and professionalism in your approach.</li>
+<li><strong>The human behind the engineer shows through.</strong> You bring yourself and all of your flaws to the office and you demonstrate humility and an ability to give and receive candid feedback.</li>
+<li><strong>You're ready for start-up life.</strong> You have a willingness to roll up sleeves and wade outside your area of responsibility when necessary. You're interested in helping to shape and build our culture and who we are as a team.</li>
+</ul>";s:12:"content_meta";N;}
