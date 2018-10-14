@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1539477270,
-    'checksum' => '6f6fb84b828ad4774b344b5f9ace6da5',
+    'timestamp' => 1539477372,
+    'checksum' => 'cabeb1bb8d789c9c60c29efa0d23a81e',
     'files' => [
         'user/config' => [
             'media' => [
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1539477266
+                'modified' => 1539477372
             ]
         ],
         'system/config' => [
@@ -792,7 +792,7 @@ return [
                 'js_pipeline_include_externals' => true,
                 'js_pipeline_before_excludes' => true,
                 'js_minify' => true,
-                'enable_asset_timestamp' => false,
+                'enable_asset_timestamp' => true,
                 'collections' => [
                     'jquery' => 'system://assets/jquery/jquery-2.x.min.js'
                 ],
