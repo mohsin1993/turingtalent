@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/mohsanriaz/Sites/grav-admin/user/config/system.yaml',
-    'modified' => 1539477266,
+    'modified' => 1539478871,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -123,16 +123,16 @@ return [
             'css_minify' => true,
             'css_minify_windows' => true,
             'css_rewrite' => true,
-            'css_gzip' => true,
             'js_pipeline' => false,
             'js_pipeline_include_externals' => true,
             'js_pipeline_before_excludes' => true,
             'js_minify' => true,
-            'js_gzip' => true,
-            'enable_asset_timestamp' => false,
+            'enable_asset_timestamp' => true,
             'collections' => [
                 'jquery' => 'system://assets/jquery/jquery-2.x.min.js'
             ],
+            'css_gzip' => true,
+            'js_gzip' => true,
             'gzip' => true
         ],
         'errors' => [

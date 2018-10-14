@@ -126,13 +126,15 @@
   .people .contet-sect {
     margin-left: 16px;
   }
+  .job h1,
+  .job h2,
   .job h3 {
     padding: 0px 15px !important;
   }
   .job .actions {
     padding: 0px 20px !important;
   }
-  .job h3 + p {
+  .job p {
     padding: 0px 25px !important;
   }
   .job ul,
@@ -159,7 +161,8 @@
   .divided-sects .column {
     margin-top: 20px;
   }
-  .main-header h1 {
+  .main-header h1,
+  .job h1 {
     font-size: 37px !important;
   }
   .banner-section {
