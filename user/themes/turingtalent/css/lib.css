@@ -993,3 +993,19 @@ ul.tab,
 .custom-pricing div {
   line-height: 80px;
 }
+button {
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+button:hover {
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+button:hover.next {
+  background: #989898;
+}
+button:hover.primary {
+  background: #6a9405;
+}
