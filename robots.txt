@@ -1,3 +1,4 @@
+Sitemap: http://www.turingtalent.io/sitemap.xml
 User-agent: *
 Disallow: /backup/
 Disallow: /bin/
@@ -10,4 +11,3 @@ Disallow: /user/
 Allow: /user/pages/
 Allow: /user/themes/
 Allow: /user/images/
-Sitemap: http://www.turingtalent.io/sitemap.xml
