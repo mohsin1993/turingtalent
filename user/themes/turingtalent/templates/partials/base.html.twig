@@ -13,16 +13,19 @@
     <link rel="shortcut icon"  type="image/x-icon" href="{{ page.find('/images').media['favicon.ico'].url }}?v=2" />
     <link rel="icon" type="image/png" href="{{ page.find('/images').media['favicon.png'].url }}?v=2"/>
     <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900" type="text/css" rel="stylesheet" />
+    <link href="https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css" type="text/css" rel="stylesheet" />
     <style>
       .fouc{
         opacity: 0
       }
     </style>
     {% block stylesheets %}
-        {% do assets.addCss('https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css', 99) %}
-        {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %}
+        {# {% do assets.addCss('https://unpkg.com/spectre.css@0.5.3/dist/spectre.min.css', 99) %} #}
+        {# {% do assets.addCss('https://fonts.googleapis.com/css?family=Inconsolata|Nunito+Sans:300,400,600,700,800,900', 100) %} #}
         {% do assets.addCss('theme://css/lib.min.css', 98) %}
-        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %}
+        {# {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', 101) %} #}
     {% endblock %}
     {{ assets.css() }}
 {% endblock head %}

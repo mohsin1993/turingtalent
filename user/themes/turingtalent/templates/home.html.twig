@@ -1,6 +1,5 @@
 {% extends 'partials/base.html.twig' %}
 {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
-{% do assets.addJs('https://unpkg.com/axios@0.18.0/dist/axios.min.js', {group:'bottom'}) %}
 {% do assets.addJs('theme://js/custom.min.js', {group:'bottom'}) %}
 {% do assets.addJs('theme://js/responsive.min.js', {group:'bottom'}) %}
 {% block content %}
@@ -397,4 +396,5 @@
       </div>
     </div>
   </section>
+  <script src="https://unpkg.com/axios@0.18.0/dist/axios.min.js" type="text/javascript"></script>
 {% endblock %}
