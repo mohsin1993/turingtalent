@@ -1,4 +1,4 @@
-Sitemap: http://www.turingtalent.io/sitemap.xml
+Sitemap: https://www.turingtalent.io/sitemap.xml
 User-agent: *
 Disallow: /backup/
 Disallow: /bin/
