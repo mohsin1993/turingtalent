@@ -45,9 +45,21 @@ RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 # ...or just a plain old http request directly from the client
 RewriteCond %{HTTP:X-Forwarded-Proto} =""
 RewriteCond %{HTTPS} !=on
-
 # Redirect to https version
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^(.*)joinus(.*)$ /? [L,R=301]
+RewriteRule ^(.*)jobs(.*)$ /for-engineers/? [L,R=301]
+RewriteRule ^(.*)faq(.*)$ /? [L,R=301]
+RewriteRule ^(.*)contact(.*)$ /? [L,R=301]
+RewriteRule ^(.*)director-of-engineering(.*)$ /for-engineers/? [L,R=301]
+RewriteRule ^(.*)frontend-engineer(.*)$ /for-engineers/? [L,R=301]
+RewriteRule ^(.*)search(.*)$ /? [L,R=301]
+RewriteRule ^(.*)privacy-policy(.*)$ /? [L,R=301]
+RewriteRule ^(.*)seeopennings(.*)$ /for-engineers/? [L,R=301]
+RewriteRule ^(.*)companies(.*)$ /for-engineers/? [L,R=301]
+
+
 ## Begin - Index
 # If the requested path and file is not /index.php and the request
 # has not already been internally rewritten to the index.php script
