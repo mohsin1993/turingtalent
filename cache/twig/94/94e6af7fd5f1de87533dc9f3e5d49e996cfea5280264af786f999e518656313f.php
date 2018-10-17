@@ -196,7 +196,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <div class=\"columns content-padding\">
         <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
-          We customize our model based on your needs. Directly employ and manage talent yourself, or choose a simple all-in-one service fee that includes talent salary, operations and office management.
+          Our simple all-in-one fee includes salary, operations and office. We also customize our model based on your needs, either way you’re always the employer.
         </div>
       </div>
       <div class=\"pricing content-padding\">
@@ -248,11 +248,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -282,11 +282,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -298,8 +298,8 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                 <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Experience\">
-                      <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
-                      <span data-value=\"3-6 years\" class=\"option small-font\">3-6 years</span>
+                      <span data-value=\"1-3 years\" class=\"option small-font\">1-3 years</span>
+                      <span data-value=\"3-6 years\" class=\"active option small-font\">3-6 years</span>
                       <span data-value=\"6-9 years\" class=\"option small-font\">6-9 years</span>
                       <span data-value=\"9+ years\" class=\"option small-font\">9+ years</span>
                     </div>
@@ -316,11 +316,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -351,11 +351,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -623,7 +623,7 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
       </h3>
       <div class=\"columns content-padding\">
         <div class=\"column col-9 col-md-12 tt-section-content small-font small\">
-          We customize our model based on your needs. Directly employ and manage talent yourself, or choose a simple all-in-one service fee that includes talent salary, operations and office management.
+          Our simple all-in-one fee includes salary, operations and office. We also customize our model based on your needs, either way you’re always the employer.
         </div>
       </div>
       <div class=\"pricing content-padding\">
@@ -676,11 +676,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -710,11 +710,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -726,8 +726,8 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                 <div class=\"col-8 col-sm-12\">
                   <div class=\"details\">
                     <div class=\"options\" data-key=\"Experience\">
-                      <span data-value=\"1-3 years\" class=\"active option small-font\">1-3 years</span>
-                      <span data-value=\"3-6 years\" class=\"option small-font\">3-6 years</span>
+                      <span data-value=\"1-3 years\" class=\"option small-font\">1-3 years</span>
+                      <span data-value=\"3-6 years\" class=\"active option small-font\">3-6 years</span>
                       <span data-value=\"6-9 years\" class=\"option small-font\">6-9 years</span>
                       <span data-value=\"9+ years\" class=\"option small-font\">9+ years</span>
                     </div>
@@ -744,11 +744,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>
@@ -778,11 +778,11 @@ class __TwigTemplate_f26e24040b00010fbcb6aaf6bb04e2a36320e6be1d7fad3eff16c37fde8
                         </div>
                       </div>
                       <div class=\"time small-font\">
-                        per year
+                        All-in-one cost: <b>Salary &amp; Operation</b>
                       </div>
                     </div>
                     <div class=\"est small-font\">
-                      Ongoing cost estimate
+                      Yearly estimate
                     </div>
                   </div>
                 </div>

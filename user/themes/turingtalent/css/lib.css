@@ -534,10 +534,10 @@ button.primary {
   line-height: normal;
   letter-spacing: normal;
   color: #b7b7b7;
-  margin-top: 60px;
+  margin-top: 13px;
 }
 .pricing .total-price .rectangle {
-  height: 83px;
+  height: 112px;
   min-width: 176px;
   border-radius: 4px;
   border: solid 1px #b7b7b7;
@@ -551,7 +551,7 @@ button.primary {
   font-weight: bold !important;
   line-height: normal;
   letter-spacing: normal;
-  color: #686868;
+  color: #82b604;
   vertical-align: middle;
   position: absolute;
   top: 16px;
@@ -566,12 +566,15 @@ button.primary {
 }
 .pricing .total-price .rectangle .time {
   position: absolute;
-  top: 53px;
+  top: 60px;
   left: 0;
   right: 0;
   line-height: normal;
   letter-spacing: normal;
   color: #686868;
+}
+.pricing .total-price .rectangle .time b {
+  white-space: nowrap;
 }
 .pricing .tab {
   border-bottom: none;
@@ -607,7 +610,7 @@ button.primary {
   padding: 7px 12px !important;
 }
 .pricing .tab-containers .tab-content button {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .pricing .tab-containers .tab-content.active {
   display: block;
@@ -845,7 +848,7 @@ input {
   }
 }
 .tab-containers {
-  min-height: 245px;
+  min-height: 200px;
 }
 .tab-containers .col-8 {
   overflow: hidden;
