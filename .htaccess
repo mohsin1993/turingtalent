@@ -44,18 +44,18 @@ RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 
 # ...or just a plain old http request directly from the client
 RewriteCond %{HTTP:X-Forwarded-Proto} =""
-RewriteCond %{HTTPS} !=on
+# RewriteCond %{HTTPS} !=on
 # Redirect to https version
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteRule ^(.*)joinus(.*)$ /? [L,R=301]
-RewriteRule ^(.*)jobs(.*)$ /for-engineers/? [L,R=301]
-RewriteRule ^(.*)faq(.*)$ /? [L,R=301]
-RewriteRule ^(.*)contact(.*)$ /? [L,R=301]
-RewriteRule ^(.*)search(.*)$ /? [L,R=301]
-RewriteRule ^(.*)privacy-policy(.*)$ /? [L,R=301]
-RewriteRule ^(.*)seeopennings(.*)$ /for-engineers/? [L,R=301]
-RewriteRule ^(.*)companies(.*)$ /for-engineers/? [L,R=301]
+RewriteRule ^(.*)joinus(.*)$ /? [L,R=302]
+RewriteRule ^(.*)jobs(.*)$ /for-engineers/? [L,R=302]
+RewriteRule ^(.*)faq(.*)$ /? [L,R=302]
+RewriteRule ^(.*)contact(.*)$ /? [L,R=302]
+RewriteRule ^(.*)search(.*)$ /? [L,R=302]
+RewriteRule ^(.*)privacy-policy(.*)$ /? [L,R=302]
+RewriteRule ^(.*)seeopennings(.*)$ /for-engineers/? [L,R=302]
+RewriteRule ^(.*)companies(.*)$ /for-engineers/? [L,R=302]
 
 
 ## Begin - Index
