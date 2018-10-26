@@ -58,7 +58,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 ";
         // line 84
         $this->displayBlock('bottom', $context, $blocks);
-        // line 102
+        // line 103
         echo "
 </body>
 </html>
@@ -235,6 +235,9 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
     </script>
     ";
         // line 100
+        $this->loadTemplate("partials/analytics.html.twig", "partials/base.html.twig", 100)->display($context);
+        // line 101
+        echo "    ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(0 => "bottom"), "method");
         echo "
 ";
@@ -252,7 +255,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
 
     public function getDebugInfo()
     {
-        return array (  238 => 100,  221 => 85,  218 => 84,  211 => 79,  209 => 78,  200 => 72,  194 => 68,  191 => 67,  186 => 62,  180 => 63,  178 => 62,  174 => 60,  171 => 59,  164 => 54,  162 => 53,  146 => 40,  139 => 35,  136 => 34,  132 => 29,  130 => 28,  127 => 27,  125 => 26,  123 => 25,  120 => 24,  113 => 30,  111 => 24,  99 => 15,  95 => 14,  90 => 13,  88 => 12,  76 => 8,  72 => 6,  69 => 5,  62 => 102,  60 => 84,  57 => 83,  55 => 67,  52 => 66,  50 => 59,  47 => 58,  45 => 34,  41 => 33,  38 => 32,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
+        return array (  240 => 101,  238 => 100,  221 => 85,  218 => 84,  211 => 79,  209 => 78,  200 => 72,  194 => 68,  191 => 67,  186 => 62,  180 => 63,  178 => 62,  174 => 60,  171 => 59,  164 => 54,  162 => 53,  146 => 40,  139 => 35,  136 => 34,  132 => 29,  130 => 28,  127 => 27,  125 => 26,  123 => 25,  120 => 24,  113 => 30,  111 => 24,  99 => 15,  95 => 14,  90 => 13,  88 => 12,  76 => 8,  72 => 6,  69 => 5,  62 => 103,  60 => 84,  57 => 83,  55 => 67,  52 => 66,  50 => 59,  47 => 58,  45 => 34,  41 => 33,  38 => 32,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -364,6 +367,7 @@ class __TwigTemplate_9f5cffa9cb04f8773b6a3732a5ed485bd0530baef8183a3ebdc5c1fc5df
       }
       fadeIn(document.querySelector(\".fouc\"), 300);
     </script>
+    {% include 'partials/analytics.html.twig' %}
     {{ assets.js('bottom') }}
 {% endblock %}
 
