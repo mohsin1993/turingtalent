@@ -48,9 +48,6 @@ RewriteCond %{HTTP:X-Forwarded-Proto} =""
 # Redirect to https version
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{HTTPS} !on [OR]
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteRule ^(.*)joinus(.*)$ /? [L,R=302]
 RewriteRule ^(.*)jobs(.*)$ /for-engineers/? [L,R=302]
@@ -60,6 +57,10 @@ RewriteRule ^(.*)search(.*)$ /? [L,R=302]
 RewriteRule ^(.*)privacy-policy(.*)$ /? [L,R=302]
 RewriteRule ^(.*)seeopennings(.*)$ /for-engineers/? [L,R=302]
 RewriteRule ^(.*)companies(.*)$ /for-engineers/? [L,R=302]
+
+RewriteCond %{HTTPS} !on [OR]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
 ## Begin - Index
