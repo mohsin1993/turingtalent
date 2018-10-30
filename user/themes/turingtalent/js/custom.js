@@ -19,11 +19,15 @@
     tabList = ".tabs-list",
     options = ".options";
 
-  function init(params) {
+  function init() {
     initTabs();
     initOptions();
     calculatePrice();
-    
+    registerEvents();
+    window.initIntercom();
+  }
+
+  function registerEvents() {
     $("form").on("submit", function (e) {
       e.preventDefault();
       if ($(this).hasClass("step1")) {
@@ -36,31 +40,31 @@
   }
 
   //for requiring a script loaded asynchronously.
-function loadAsync(src, callback, relative){
-  var baseUrl = "/resources/script/";
-  var script = document.createElement('script');
-  if(relative === true){
-      script.src = baseUrl + src;  
-  }else{
-      script.src = src; 
-  }
+  function loadAsync(src, callback, relative){
+    var baseUrl = "/resources/script/";
+    var script = document.createElement('script');
+    if(relative === true){
+        script.src = baseUrl + src;  
+    }else{
+        script.src = src; 
+    }
 
-  if(callback !== null){
-      if (script.readyState) { // IE, incl. IE9
-          script.onreadystatechange = function() {
-              if (script.readyState == "loaded" || script.readyState == "complete") {
-                  script.onreadystatechange = null;
-                  callback();
-              }
-          };
-      } else {
-          script.onload = function() { // Other browsers
-              callback();
-          };
-      }
+    if(callback !== null){
+        if (script.readyState) { // IE, incl. IE9
+            script.onreadystatechange = function() {
+                if (script.readyState == "loaded" || script.readyState == "complete") {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function() { // Other browsers
+                callback();
+            };
+        }
+    }
+    document.getElementsByTagName('head')[0].appendChild(script);
   }
-  document.getElementsByTagName('head')[0].appendChild(script);
-}
 
   function loadScript(url) {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -236,7 +240,7 @@ function loadAsync(src, callback, relative){
     var name = (data && data.person && data.person.name && data.person.name.fullName) ? data.person.name.fullName : '';
     var company = (data && data.company && data.company.name) ? data.company.name : '';
     var website = (data && data.company && data.company.domain) ? data.company.domain : '';
-
+    window.reinitIntercom(email, name, company, website);
     form.find("[name='Email']").val(email);
     form.find("[name='Name']").val(name);
     form.find("[name='Company']").val(company);

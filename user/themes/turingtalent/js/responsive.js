@@ -14,7 +14,6 @@
     ///////////////Mobile Dimension change/////////////
     wasVisible = $(".dropdown-toggle").is(":visible")
     $(window).resize(function () {
-      console.log('here');
       var isVisible = $(".dropdown-toggle").is(":visible");
       if (!wasVisible) {
         if (isVisible) {
