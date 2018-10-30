@@ -24,7 +24,7 @@
     initOptions();
     calculatePrice();
     registerEvents();
-    window.initIntercom();
+    // window.initIntercom();
   }
 
   function registerEvents() {
@@ -240,7 +240,7 @@
     var name = (data && data.person && data.person.name && data.person.name.fullName) ? data.person.name.fullName : '';
     var company = (data && data.company && data.company.name) ? data.company.name : '';
     var website = (data && data.company && data.company.domain) ? data.company.domain : '';
-    window.reinitIntercom(email, name, company, website);
+    // window.reinitIntercom(email, name, company, website);
     form.find("[name='Email']").val(email);
     form.find("[name='Name']").val(name);
     form.find("[name='Company']").val(company);
