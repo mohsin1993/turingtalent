@@ -12,19 +12,23 @@
     };
     
     localStorage.setItem("intercom_user", JSON.stringify(user));
-    window.Intercom('update', {...user, app_id: intercom_app_id});
+    user.app_id = intercom_app_id;
+    window.Intercom('update', user);
   }
   
   function initIntercom() {
     var user = localStorage.getItem("intercom_user");
     if (user) {
       user = JSON.parse(user);
-      window.Intercom('boot', {app_id: intercom_app_id, ...user});
+      user.app_id = intercom_app_id;
+      window.Intercom('boot', user);
     } else {
-      window.Intercom('boot', {app_id: intercom_app_id});
+      window.Intercom('boot', { app_id: intercom_app_id });
     } 
   }
 
   window.reinitIntercom = reinitIntercom;
   window.initIntercom = initIntercom;
+
+  initIntercom();
 })();
