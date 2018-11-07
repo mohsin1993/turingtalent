@@ -2,6 +2,7 @@
 {% do assets.addJs('https://code.jquery.com/jquery-3.3.1.min.js', {group: 'bottom'}) %}
 {% do assets.addJs('theme://js/responsive.min.js', {group:'bottom'}) %}
 {% block content %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" /> 
 <section>
   <section class="main-header normal-font">
     <div class="columns ml0">
@@ -150,17 +151,26 @@
       </h3>
       <div class="columns content-padding">
         <div class="column col-9 col-md-12 tt-section-content small">
-          <div class="small-font">
+          <div>
+            <a class="small-font primary link" style="margin-top: 30px;
+    width: 350px;
+    display: block;
+    padding: 5px;
+    background: #8eb045;
+    color: white !important;
+    text-align: center;
+    border-radius: 5px;" target="_blank" href="https://jobs.lever.co/turingtalent">
+              <span>See all positions</span><i style="    margin-left: 15px;
+    font-size: 14px;" class="fa fa-external-link"></i>
+            </a>
+          </div>
+          {# <div class="small-font">
             <ul>
             {% for post in taxonomy.findTaxonomy({'tag':['job']}) %}
               <li><a class="job" href="{{post.slug}}">{{ post.title }}</a> at {{post.header.company}}</li>
             {% endfor %}
-              {# <li>Frontend Engineer at Host Compliance</li>
-              <li>Python Engineer with a Data Focus at Host Compliance</li>
-              <li>Director of Engineering at Host Compliance</li>
-              <li>Data Scientist for Open application</li> #}
             </ul>
-          </div>
+          </div> #}
         </div>
       </div>
     </div>
